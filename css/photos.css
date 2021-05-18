@@ -63,7 +63,7 @@
 
   .home-bottom {
     position: absolute;
-    bottom: 3rem;
+    bottom: 4rem;
     left: 50%;
     margin-left: -25px;
     cursor: pointer;
@@ -102,6 +102,8 @@
   }
 
   .nav-ul {
+    width: 1440px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -138,7 +140,7 @@
   right: 100%;
   bottom: -5px;
   border-bottom: 2px solid #c55050;
-  transition: .8s;
+  transition: .5s;
 }
 .hover-text-from-middle::before {
   content: '';
@@ -148,7 +150,7 @@
   left: 100%;
   bottom: -5px;
   border-bottom: 2px solid #c55050;
-  transition: .8s;
+  transition: .5s;
 }
 
 .item-to-underline:hover .hover-text-from-middle::after {
