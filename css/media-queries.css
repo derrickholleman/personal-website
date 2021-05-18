@@ -49,8 +49,12 @@
     .hero-title {
         margin-top: 9rem;
     }
+    .hero-p-title {
+        font-size: 1.9rem;
+    }
     .hero-p {
         color: #974646;
+        font-size: 1.1rem;
     }
     .mobile-heart {
         display: block;
