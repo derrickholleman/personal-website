@@ -45,7 +45,7 @@
     padding-top: 1rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: clamp(.9rem, 2vw, 1.2rem);
+    font-size: clamp(.9rem, 2vw, 1.05rem);
     line-height: 1.75rem;
   }
 
