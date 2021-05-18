@@ -26,12 +26,15 @@
 
   .page-title {
     font-size: 2.5rem;
-    color: #c55050;
+    color: #833636;
     text-align: center;
     width: 95%;
     margin: 5rem auto 0 auto;
     font-size: clamp(2.5rem, 6vw, 4rem);
     letter-spacing: .15rem;
+  }
+  .period {
+    color: rgb(168, 168, 168);
   }
 
   p {
