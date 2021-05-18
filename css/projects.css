@@ -1,8 +1,39 @@
-.container {
+  .container {
     position: relative;
     width: 1440px;
-    margin: 0 auto;
+    margin: 5rem auto 3rem auto;
     max-width: 100%;
+  }
+
+  .home-top {
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    margin-left: -25px;
+    cursor: pointer;
+  }
+
+  .home-top:hover path, 
+  .home-top:focus path, 
+  .home-top:active path {
+    fill: #c55050;
+    transition: .2s;
+  }
+
+  .title {
+    color: #833636;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    letter-spacing: .15rem;
+    text-align: center;
+  }
+  .period {
+    color: rgb(168, 168, 168);
+  }
+
+  .project-section {
+    display: flex;
+    flex-flow: row;
+    flex: 50%;
   }
 
   /* NAV/FOOTER STYLES */
@@ -30,6 +61,7 @@
 
   .nav-ul {
     width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
