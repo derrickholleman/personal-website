@@ -1,13 +1,13 @@
   .container {
     position: relative;
     width: 1440px;
-    margin: 5rem auto 3rem auto;
+    margin: 4rem auto 6rem auto;
     max-width: 100%;
   }
 
   .home-top {
     position: absolute;
-    top: -3.5rem;
+    top: -3.2rem;
     left: 50%;
     margin-left: -25px;
     cursor: pointer;
@@ -29,13 +29,21 @@
   .period {
     color: rgb(168, 168, 168);
   }
+  .directions {
+    color: rgb(168, 168, 168);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: .8rem;
+    width: 90%;
+    margin: 0 auto;
+  }
 
   .project-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: max-content;
     gap: 3rem;
-    margin: 5rem auto;
   }
   .project {
     margin: 0 1rem;
