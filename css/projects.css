@@ -44,6 +44,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: max-content;
     gap: 3rem;
+    margin-bottom: 4rem;
   }
   .project {
     margin: 2rem 1rem;
