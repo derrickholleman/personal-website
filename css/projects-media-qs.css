@@ -1,4 +1,7 @@
 @media screen and (max-width: 782px) {
+    footer {
+        margin-top: -2rem;
+    }
     .project-section {
         grid-template-columns: repeat(1, 1fr);
         gap: 0rem;
@@ -10,10 +13,15 @@
     .project-title {
         font-size: clamp(1.7rem, 7vw, 3rem);
         text-align: center;
+        width: 85%;
+        margin: 0 auto 1rem auto;
     }
+    .project-title::after {
+        content: none;
+      }
     .project-description {
         text-align: center;
-        width: 75%;
+        width: 80%;
         margin: 0 auto;
         color: #df7171;
     }

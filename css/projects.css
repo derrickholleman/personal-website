@@ -50,18 +50,35 @@
     margin: 2rem 1rem;
   }
   .project-title {
+    position: relative;
     color: rgb(168, 168, 168);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: clamp(1.8rem, 3vw, 3rem);
-    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .project-title::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #833636;
   }
   .project-description {
     color: #c55050;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: clamp(.9rem, 2vw, 1rem);
-    padding-bottom: .75rem;
+    padding-bottom: 1rem;
+    width: 90%;
+  }
+  .faq {
+    padding-bottom: 1.15rem;
+  }
+  .ping {
+    margin-bottom: .2rem;
   }
   .project img:hover, 
   .project img:active {
