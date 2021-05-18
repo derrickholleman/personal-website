@@ -1,0 +1,150 @@
+  .home-top {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    margin-left: -25px;
+    cursor: pointer;
+  }
+
+  .home-top:hover path, 
+  .home-top:focus path, 
+  .home-top:active path {
+    fill: #c55050;
+    transition: .2s;
+  }
+
+  header {
+    margin-top: 5rem;
+  }
+
+  .title {
+    color: #833636;
+    font-size: clamp(3rem, 6vw, 5rem);
+    letter-spacing: .15rem;
+    text-align: center;
+  }
+  .period {
+    color: rgb(168, 168, 168);
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    margin: .8rem auto;
+  }
+  .icon path {
+    fill: "#a8a8a8";
+    transition: .35s;
+  }
+  .icon:hover path {
+    fill: #c55050;
+  }
+
+/* NAV/FOOTER STYLES */
+nav {
+    width: 100%;
+  }
+
+  @keyframes Pulse {
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  .heart {
+    transform: scale(1);
+    animation: Pulse 1.5s infinite ease-in-out;
+  }
+
+  .mobile-heart {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .nav-ul {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+
+  .nav-ul li {
+    flex: 20%;
+    text-align: center;
+  }
+
+  .nav-ul li a {
+    color: rgb(168, 168, 168);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    transition: .2s;
+    position: relative; /* needed for underline */
+  }
+  .nav-ul li a.is-open, .mobile-nav li a.is-open {
+    color: #c55050;
+  }
+  .nav-ul li a:hover, 
+  .nav-ul li a:focus, 
+  .nav-ul li a:active {
+    color: #c55050;
+  }
+
+    /* UNDERLINE FROM MIDDLE */
+.hover-text-from-middle::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 50%;
+  right: 100%;
+  bottom: -5px;
+  border-bottom: 2px solid #c55050;
+  transition: .5s;
+}
+.hover-text-from-middle::before {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 50%;
+  left: 100%;
+  bottom: -5px;
+  border-bottom: 2px solid #c55050;
+  transition: .5s;
+}
+
+.item-to-underline:hover .hover-text-from-middle::after {
+  right: -2px; /* 10px goes to the edge of the text, 0 is too far */
+}
+.item-to-underline:hover .hover-text-from-middle::before {
+  left: 0;
+}
+
+  .home-bottom {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    margin-left: -26px;
+    cursor: pointer;
+  }
+
+  .home-bottom:hover path, 
+  .home-bottom:focus path, 
+  .home-bottom:active path {
+    fill: #c55050;
+    transition: .2s;
+  }
+
+  .copyright {
+    position: relative;
+    color: rgb(168, 168, 168);
+    font-size: .7rem;
+    text-align: center;
+    width: 90%;
+    margin: 8rem auto 1rem auto;
+  }
