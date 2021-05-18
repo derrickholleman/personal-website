@@ -59,7 +59,7 @@
     color: #c55050;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: clamp(.8rem, 2vw, 1rem);
+    font-size: clamp(.9rem, 2vw, 1rem);
     padding-bottom: .75rem;
   }
   .project img:hover, 

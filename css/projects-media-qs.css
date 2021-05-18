@@ -1,10 +1,19 @@
 @media screen and (max-width: 782px) {
     .project-section {
         grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+    }
+    .project {
+        margin: 3rem 1rem
     }
     .project-title {
         font-size: clamp(1.7rem, 7vw, 3rem);
         text-align: center;
+    }
+    .project-description {
+        text-align: center;
+        width: 75%;
+        margin: 0 auto;
     }
     footer .nav-ul {
         display: none;
