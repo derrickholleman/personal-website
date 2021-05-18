@@ -42,7 +42,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 30%;
-    margin: 0 auto;
+    margin: .8rem auto;
   }
   .icon path {
     fill: "#a8a8a8";
