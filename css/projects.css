@@ -1,84 +1,11 @@
-  .container {
+.container {
     position: relative;
     width: 1440px;
     margin: 0 auto;
     max-width: 100%;
   }
 
-  .photo-display {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 3rem 0rem;
-  }
-  .photo-column {
-    max-width: 24%; /* 24% of container leaves room for margin on columns */
-    margin: 0 .25rem; /* space between columns */
-  }
-  .photo-column img {  
-    width: 100%;
-    margin-top: .5rem; /* vertical space between photos */
-  }
-
-  img {
-    color: rgb(168, 168, 168);
-  }
-
-  .page-title {
-    font-size: 2.5rem;
-    color: #c55050;
-    text-align: center;
-    width: 95%;
-    margin: 5rem auto 0 auto;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    letter-spacing: .15rem;
-  }
-
-  p {
-    color: rgb(168, 168, 168);
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-size: clamp(.85rem, 2vw, 1rem);
-    line-height: 1.75rem;
-  }
-
-  .home-top {
-    position: absolute;
-    top: -4rem;
-    left: 50%;
-    margin-left: -25px;
-    cursor: pointer;
-  }
-
-  .home-top:hover path, 
-  .home-top:focus path, 
-  .home-top:active path {
-    fill: #c55050;
-    transition: .2s;
-  }
-
-  .home-bottom {
-    position: absolute;
-    bottom: 3rem;
-    left: 50%;
-    margin-left: -25px;
-    cursor: pointer;
-  }
-
-  .home-bottom:hover path, 
-  .home-bottom:focus path, 
-  .home-bottom:active path {
-    fill: #c55050;
-    transition: .2s;
-  }
-
-
-
-
+  /* NAV/FOOTER STYLES */
   nav {
     width: 100%;
   }
@@ -157,9 +84,24 @@
 .item-to-underline:hover .hover-text-from-middle::before {
   left: 0;
 }
-   /* ------------------------ */
+
+  .home-bottom {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    margin-left: -25px;
+    cursor: pointer;
+  }
+
+  .home-bottom:hover path, 
+  .home-bottom:focus path, 
+  .home-bottom:active path {
+    fill: #c55050;
+    transition: .2s;
+  }
 
   .copyright {
+    position: relative;
     color: rgb(168, 168, 168);
     font-size: .7rem;
     text-align: center;

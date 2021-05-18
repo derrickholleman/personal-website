@@ -30,6 +30,8 @@
         display: none;
     }
     .mobile-nav {
+        position: relative;
+        top: 1rem;
         display: flex;
         flex-direction: column;
         height: 400px;
@@ -45,6 +47,9 @@
     .mobile-nav li a:focus, 
     .mobile-nav li a:active {
         color: #c55050;
+    }
+    .home-bottom {
+        bottom: 4.5rem;
     }
     .copyright {
         margin-top: 4rem;
