@@ -31,9 +31,25 @@
   }
 
   .project-section {
-    display: flex;
-    flex-flow: row;
-    flex: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: max-content;
+    gap: 3rem;
+    margin: 5rem auto;
+  }
+  .project {
+    margin: 0 1rem;
+  }
+  .project-title {
+    color: rgb(168, 168, 168);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    padding-bottom: 1rem;
+  }
+  .project img:hover, 
+  .project img:active {
+    opacity: .7;
   }
 
   /* NAV/FOOTER STYLES */
