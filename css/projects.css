@@ -55,6 +55,11 @@
     font-size: clamp(1.8rem, 3vw, 3rem);
     padding-bottom: 1rem;
   }
+  .project-description {
+    color: #c55050;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  }
   .project img:hover, 
   .project img:active {
     opacity: .7;
