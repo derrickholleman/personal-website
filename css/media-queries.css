@@ -49,6 +49,9 @@
     .hero-title {
         margin-top: 9rem;
     }
+    .hero-p {
+        color: #8b3b3b;
+    }
     .mobile-heart {
         display: block;
         margin: 4rem .5rem;
