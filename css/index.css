@@ -1,0 +1,195 @@
+ .hamburger {
+    display: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  
+  .container {
+    position: relative;
+    width: 1440px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .header-container {
+    position: relative;
+    width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgb(23, 22, 22);
+  }
+
+  .hero-title {
+    color: #c55050;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    letter-spacing: .15rem;
+    text-align: center;
+  }
+  .period {
+    color: rgb(168, 168, 168);
+  }
+  .hero-gray {
+    color: rgb(168, 168, 168);
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    font-weight: 300;
+  }
+
+  .hero-buttons {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .hero-btn {
+    color: rgb(168, 168, 168);
+    background-color: transparent;
+    border: 2px solid rgb(168, 168, 168);
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: .35s;
+  }
+  .hero-btn:hover, 
+  .hero-btn:focus, 
+  .hero-btn:active {
+    color: rgb(23, 22, 22);
+    background-color: #c55050;
+    border: 2px solid rgb(23, 22, 22);
+  }
+  .hero-btn a {
+    text-decoration: none;
+    display: block; /* display block allows height and width to be edited */
+    color: inherit;
+    height: 3.5rem; /* specifying height/width makes whole button clickable */
+    width: 10rem;
+    line-height: 3.5rem;
+  }
+
+  .hero-p {
+    padding-top: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: clamp(.85rem, 2vw, 1rem);
+    color: #833636;
+    max-width: 70%;
+    text-align: center;
+    line-height: 1.75rem;
+  }
+
+  .hero-p-title {
+    color: rgb(168, 168, 168);
+    font-size: clamp(1.7rem, 2vw, 3rem);
+    text-align: center;
+    width: 85%;
+  }
+
+  nav {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  @keyframes Pulse {
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  .heart {
+    transform: scale(1);
+    animation: Pulse 1.5s infinite ease-in-out;
+  }
+
+  .mobile-heart {
+    display: none;
+  }
+
+  .nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+
+  .nav-ul li {
+    flex: 20%; /* each li takes up 20% of the space */
+    text-align: center;
+  }
+
+  .nav-ul li a {
+    color: rgb(168, 168, 168);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    transition: .2s;
+    position: relative; /* needed for underline */
+  }
+  .nav-ul li a:hover, 
+  .nav-ul li a:focus, 
+  .nav-ul li a:active {
+    color: #c55050;
+  }
+
+  /* UNDERLINE FROM MIDDLE */
+.hover-text-from-middle::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 50%;
+  right: 100%;
+  bottom: -5px;
+  border-bottom: 2px solid #c55050;
+  transition: .8s;
+}
+.hover-text-from-middle::before {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 50%;
+  left: 100%;
+  bottom: -5px;
+  border-bottom: 2px solid #c55050;
+  transition: .8s;
+}
+   /* ------------------------ */
+
+.item-to-underline:hover .hover-text-from-middle::after {
+  right: -2px; /* 10px goes to the edge of the text, 0 is too far */
+}
+.item-to-underline:hover .hover-text-from-middle::before {
+  left: 0;
+}
+
+  footer {
+    width: 100%;
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    margin: 0 auto;
+  }
+  .icon path {
+    fill: "#a8a8a8";
+    transition: .35s;
+  }
+  .icon:hover path {
+    fill: #c55050;
+  }
+
+  .copyright {
+    color: rgb(168, 168, 168);
+    font-size: .7rem;
+    text-align: center;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+  }

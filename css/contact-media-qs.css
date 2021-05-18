@@ -1,0 +1,8 @@
+@media screen and (max-width: 583px) {
+    .social-icons {
+        width: 50% !important;
+    }
+    .title {
+        margin-bottom: 1rem;
+    }
+}
