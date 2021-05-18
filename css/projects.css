@@ -1,4 +1,11 @@
-  .container {
+  .header-container {
+    position: relative;
+    width: 1440px;
+    margin: 4rem auto;
+    max-width: 100%;
+  }
+  
+  .section-container {
     position: relative;
     width: 1440px;
     margin: 4rem auto;
@@ -41,7 +48,7 @@
 
   .project-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: max-content;
     gap: 3rem;
     margin-bottom: 4rem;
@@ -63,7 +70,7 @@
     height: 1px;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 60%;
     background-color: #833636;
   }
   .project-description {
@@ -72,7 +79,7 @@
     font-weight: 400;
     font-size: clamp(.9rem, 2vw, 1rem);
     padding-bottom: 1rem;
-    width: 90%;
+    width: 60%;
   }
   .faq {
     padding-bottom: 1.15rem;
@@ -172,7 +179,7 @@
     position: absolute;
     bottom: 3rem;
     left: 50%;
-    margin-left: -25px;
+    margin-left: -26px;
     cursor: pointer;
   }
 

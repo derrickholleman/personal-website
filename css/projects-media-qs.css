@@ -1,3 +1,15 @@
+@media screen and (max-width: 490px) {
+    .header-container {
+        margin: 4rem auto 0rem auto
+    }
+    .section-container {
+        margin: 0rem auto 4rem auto;
+    }
+    .project-description {
+        font-size: .8rem;
+    }
+}
+
 @media screen and (max-width: 782px) {
     footer {
         margin-top: -2rem;
