@@ -1,7 +1,7 @@
   .container {
     position: relative;
     width: 1440px;
-    margin: 4rem auto 6rem auto;
+    margin: 4rem auto;
     max-width: 100%;
   }
 
@@ -46,7 +46,7 @@
     gap: 3rem;
   }
   .project {
-    margin: 0 1rem;
+    margin: 2rem 1rem;
   }
   .project-title {
     color: rgb(168, 168, 168);
