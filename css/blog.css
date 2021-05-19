@@ -117,9 +117,37 @@
     font-weight: 400;
     color: rgb(168, 168, 168);
     font-size: 1rem;
-    width: 75%;
+    width: 65%;
     border-top: 1px solid #00ffffb3;
     padding-top: 2rem;
+  }
+
+  .blog-btn {
+    color: rgb(168, 168, 168);
+    background-color: transparent;
+    border: 2px solid rgb(168, 168, 168);
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 2rem 0 1rem 0;
+    font-weight: 700;
+    font-size: .8rem;
+    transition: .35s;
+    width: max-content;
+  }
+  .blog-btn:hover, 
+  .blog-btn:focus, 
+  .blog-btn:active {
+    color: rgb(23, 22, 22);
+    background-color: #c55050;
+    border: 2px solid rgb(23, 22, 22);
+  }
+  .blog-btn a {
+    text-decoration: none;
+    display: block; /* display block allows height and width to be edited */
+    color: inherit;
+    height: 2.8rem; /* specifying height/width makes whole button clickable */
+    width: 7.8rem;
+    line-height: 2.8rem;
   }
 
 /* NAV/FOOTER STYLES */

@@ -83,7 +83,7 @@
     color: inherit;
     height: 3.5rem; /* specifying height/width makes whole button clickable */
     width: 10rem;
-    line-height: 3.5rem;
+    line-height: 3.5rem; /* needed to center text, must equal height */
   }
 
   .hero-p {
