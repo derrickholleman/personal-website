@@ -29,8 +29,8 @@
 
   .title {
     color: #833636;
-    font-size: clamp(2.5rem, 6vw, 5rem);
-    letter-spacing: .15rem;
+    font-size: clamp(3.5rem, 6vw, 5rem);
+    letter-spacing: .18rem;
     text-align: center;
   }
   .period {
@@ -44,8 +44,9 @@
     font-size: .8rem;
     width: 90%;
     margin: 0 auto;
-    animation: Pulse 2s ease-in-out, Bright 2s ease-in-out;
-    animation-iteration-count: 3;
+    animation: Pulse 2s ease-in-out, 
+    Bright 5.5s ease-in-out, 
+    Translate 6s ease-in-out;
   }
 
   @keyframes Pulse {
@@ -56,6 +57,17 @@
   @keyframes Bright {
     50% {
       color: white;
+    }
+  }
+  @keyframes Translate {
+    0% {
+      transform: translateY(-5rem);
+    }
+    50% {
+      transform: scale(1.4)
+    }
+    100% {
+      transform: translateY(0rem);
     }
   }
 
