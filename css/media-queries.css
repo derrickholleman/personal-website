@@ -86,7 +86,7 @@
         background-color: rgb(0, 0, 0);
         padding-top: 5rem;
         transition: .4s ease-in-out;
-        color: #833636;
+        color: #c55050;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 1.7rem;
@@ -99,7 +99,7 @@
     .mobile-nav li:hover, 
     .mobile-nav li:focus, 
     .mobile-nav li:active {
-        color: #c55050;
+        color: #df7171;
     }
     /* mobile nav fade in animation START */
     .mobile-nav.is-active li { 
