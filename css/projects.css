@@ -78,11 +78,15 @@
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: max-content;
     gap: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
   .fadein-right {
     position: relative;
     right: 0;
+  }
+  .fadein-left {
+    position: relative;
+    left: 0;
   }
   .project {
     margin: 2rem 1rem;

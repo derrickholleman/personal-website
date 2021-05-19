@@ -28,7 +28,12 @@
         position: relative;
         right: -800px;
         opacity: .6;
-      }
+    }
+    .fadein-left {
+        position: relative;
+        left: -800px;
+        opacity: .6;
+    }
     .project {
         margin: 5rem 1rem;
     }
