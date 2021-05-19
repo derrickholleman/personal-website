@@ -59,7 +59,7 @@
     margin: 5rem auto 3rem auto;
     animation: Pulse 2s ease-in-out, 
     Bright 4.5s ease-in-out, 
-    Translate 6s ease-in-out,
+    Translate 7s ease-in-out;
   }
 
   @keyframes Pulse {
