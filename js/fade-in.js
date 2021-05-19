@@ -8,8 +8,8 @@ $(document).ready(function() {
 
             if( bottom_of_window + 100 > bottom_of_object ){
                 /* two animations at the same time with different durations */
-                $(this).animate({'right':'0'}, 500);  
-                $(this).animate({'opacity' : '1'}, {duration: 900, queue: false}); 
+                $(this).animate({'right':'0'}, 600);  
+                $(this).animate({'opacity' : '1'}, {duration: 700, queue: false}); 
             }            
         });     
     });    
