@@ -51,9 +51,9 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     text-align: center;
-    font-size: .8rem;
+    font-size: 1.2rem;
     width: 90%;
-    margin: 5rem auto 3rem auto;
+    margin: 3rem auto 5rem auto;
     animation: Bright 4s ease-in-out, 
     Translate 4s ease-in-out 1.2s;   
   }
