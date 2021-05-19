@@ -57,8 +57,8 @@
     font-size: .8rem;
     width: 90%;
     margin: 5rem auto 3rem auto;
-    animation: Bright 4.5s ease-in-out, 
-    Translate 5s ease-in-out 2s;   
+    animation: Bright 5.5s ease-in-out, 
+    Translate 6s ease-in-out 1.2s;   
   }
 
   @keyframes Bright {

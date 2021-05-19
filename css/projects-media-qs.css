@@ -15,7 +15,7 @@
     .directions {
         width: 75%;
         margin-top: 5rem;
-        margin-bottom: 10rem;
+        margin-bottom: 15rem;
     }
     .project-section {
         grid-template-columns: repeat(1, 1fr);
