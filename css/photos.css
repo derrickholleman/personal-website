@@ -38,14 +38,14 @@
   }
 
   p {
-    color: rgb(168, 168, 168);
+    color: rgb(192, 190, 190);
     text-align: center;
     width: 50%;
     margin: 0 auto;
     padding-top: 1rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: clamp(.9rem, 2vw, 1.05rem);
+    font-size: clamp(1rem, 2vw, 1.05rem);
     line-height: 1.75rem;
   }
 
