@@ -14,15 +14,21 @@
     .directions {
         width: 75%;
         margin-top: 5rem;
+        margin-bottom: 10rem;
     }
     .project-section {
         grid-template-columns: repeat(1, 1fr);
         gap: 0rem;
         margin-bottom: 0rem;
-        margin-top: 3rem;
+        margin-top: 1.5rem;
     }
+    .fadein-right {
+        position: relative;
+        right: -800px;
+        opacity: 0;
+      }
     .project {
-        margin: 2.7rem 1rem;
+        margin: 4rem 1rem;
     }
     .project-title {
         font-size: clamp(1.7rem, 7vw, 3rem);
