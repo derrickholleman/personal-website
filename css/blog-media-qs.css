@@ -27,7 +27,8 @@
         height: 250px;
     }
     section .post-p {
-        width: 90%;
+        width: 97%;
+        text-align: center;
     }
     footer .nav-ul {
         display: none;
