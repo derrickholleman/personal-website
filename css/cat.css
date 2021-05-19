@@ -1,7 +1,7 @@
   .container {
     position: relative;
     display: inline-block;
-    margin: 8rem 0 2rem 0;
+    margin: 12rem 0 2rem 0;
   }
   .home-top {
     position: absolute;
@@ -120,5 +120,5 @@
     font-size: .7rem;
     text-align: center;
     width: 90%;
-    margin: 8rem auto 1rem auto;
+    margin: 8rem auto 2rem auto;
   }
