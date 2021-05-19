@@ -50,6 +50,7 @@
     }
     .home-bottom {
         bottom: 4.5rem;
+        margin-left: -20px;
     }
     .copyright {
         margin-top: 4rem;

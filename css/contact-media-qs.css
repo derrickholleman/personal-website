@@ -39,4 +39,7 @@
     footer .copyright {
         margin-top: 4rem;
     }
+    footer .home-bottom {
+        margin-left: -20px;
+    }
 }

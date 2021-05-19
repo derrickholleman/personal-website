@@ -37,6 +37,9 @@
         margin: 0 auto;
         color: #df7171;
     }
+    .home-bottom {
+        margin-left: -20px;
+    }
     footer .nav-ul {
         display: none;
     }
