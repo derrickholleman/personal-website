@@ -35,6 +35,9 @@
 /* SWITCH TO MOBILE VIEW */
 /* --------------------- */
 @media screen and (max-width: 768px) {
+    body {
+        background-repeat: repeat !important;
+    }
     .nav-ul {
         display: none;
     }
