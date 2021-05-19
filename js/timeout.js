@@ -1,3 +1,3 @@
 setTimeout(function(){
     document.body.className="";
-},900);
+},1100);
