@@ -37,7 +37,7 @@
     display: inline-block; /* animation on span won't work without display property */
     color: rgb(168, 168, 168);
     text-shadow: 0px -3px 9px rgba(255, 255, 255, .7), 0px 1px 9px rgba(255, 255, 255, 0.7);
-    animation: Jump 1.5s ease-in-out 7;
+    animation: Jump 1.5s ease-in-out 5;
   }
   @keyframes Jump {
     50% {
