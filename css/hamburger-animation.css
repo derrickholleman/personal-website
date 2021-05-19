@@ -20,7 +20,7 @@
     position: absolute;
     height: 4px; /* change height of hamburger bars */
     width: 90%;
-    background: #833636; /* change color of hamburger */
+    background: rgba(0, 255, 255, .7); /* change color of hamburger */
     border-radius: 9px;
     opacity: 1;
     left: 0;
