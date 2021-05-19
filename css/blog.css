@@ -30,6 +30,7 @@
     color: rgb(168, 168, 168);
     text-shadow: 0px -3px 9px rgba(255, 255, 255, 0.8), 0px 1px 9px rgba(255, 255, 255, 0.8);
     animation: Jump 1.5s ease-in-out 5;
+    font-size: clamp(2.5rem, 3vw, 3.5rem);
   }
   @keyframes Jump {
     50% {
