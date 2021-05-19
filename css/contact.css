@@ -194,7 +194,7 @@
   }
 
   .floating__input:focus + .floating__label::before {
-    color: rgba(0, 255, 255, .7);
+    color: #00ffffb3;
   }
   
 /* NAV/FOOTER STYLES */
