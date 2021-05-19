@@ -16,6 +16,18 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .blog-post {
+        align-items: center;
+    }
+    .post-title {
+        text-align: center;
+    }
+    section .blog-photo {
+        height: 250px;
+    }
+    section .post-p {
+        width: 90%;
+    }
     footer .nav-ul {
         display: none;
     }
@@ -38,5 +50,9 @@
     }
     footer .copyright {
         margin-top: 4rem;
+    }
+
+    footer {
+        margin-top: -10rem !important;
     }
 }
