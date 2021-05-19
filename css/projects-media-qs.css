@@ -12,7 +12,10 @@
 }
 
 @media screen and (max-width: 782px) {
-    
+
+    .home-top {
+        top: -3rem;
+    }   
     .directions {
         width: 75%;
         margin-top: 5rem;
