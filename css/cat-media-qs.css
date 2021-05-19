@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+    footer .nav-ul {
+        display: none;
+    }
+    footer .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    footer .mobile-nav li a {
+        color: rgb(148, 148, 148);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+    }
+    footer .mobile-nav li a:hover, 
+    footer .mobile-nav li a:focus, 
+    footer .mobile-nav li a:active {
+        color: #c55050;
+    }
+    footer .copyright {
+        margin-top: 4rem;
+    }
+    footer .home-bottom {
+        margin-left: -20px;
+        bottom: 3.75rem;
+    }
+}
