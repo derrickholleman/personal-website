@@ -1,6 +1,6 @@
-  body.preload *{
+  /* body.preload *{
     animation-duration: 0s !important;
-  }
+  } */
   
   .header-container {
     position: relative;
@@ -59,7 +59,7 @@
     margin: 5rem auto 3rem auto;
     animation: Pulse 2s ease-in-out, 
     Bright 4.5s ease-in-out, 
-    Translate 5s ease-in-out;
+    /* Translate 5s ease-in-out; */
   }
 
   @keyframes Pulse {
@@ -72,17 +72,11 @@
       color: white;
     }
   }
-  @keyframes Translate {
-    0% {
-      transform: translateY(-5rem);
-    }
+  /* @keyframes Translate {
     50% {
-      transform: scale(1.3) translateY(5rem)
+      transform: scale(1.3);
     }
-    100% {
-      transform: translateY(0rem);
-    }
-  }
+  } */
 
   .project-section {
     display: grid;
