@@ -16,7 +16,7 @@
     .directions {
         width: 75%;
         margin-top: 5rem;
-        margin-bottom: 15rem;
+        margin-bottom: 12rem;
         animation: TranslateMobile 6s ease-in-out 1.2s;
     }
     .project-section {
