@@ -44,6 +44,19 @@
     font-size: .8rem;
     width: 90%;
     margin: 0 auto;
+    animation: Pulse 2s ease-in-out, Bright 2s ease-in-out;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes Pulse {
+    50% {
+      transform: scale(1.5);
+    }
+  }
+  @keyframes Bright {
+    50% {
+      color: white;
+    }
   }
 
   .project-section {
