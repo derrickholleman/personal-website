@@ -16,6 +16,9 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .container {
+        margin: -1rem auto 5rem auto !important;
+    }
     section .blog-post {
         align-items: center;
         margin-bottom: 6rem;
