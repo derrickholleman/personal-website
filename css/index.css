@@ -30,22 +30,23 @@
 
   .hero-title {
     color: #c55050;
-    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-size: clamp(3rem, 6vw, 5rem);
     letter-spacing: .15rem;
     text-align: center;
+    font-weight: 700;
   }
   .period {
     display: inline-block; /* animation on span won't work without display property */
     color: rgb(168, 168, 168);
     text-shadow: 0px -3px 9px rgba(255, 255, 255, .7), 0px 1px 9px rgba(255, 255, 255, 0.7);
-    animation: Jump 1.5s ease-in-out infinite;
+    animation: Jump 1.5s ease-in-out 5;
   }
   @keyframes Jump {
     50% {
       transform: translateY(-7px);
     }
   }
-  
+
   .hero-gray {
     color: rgb(168, 168, 168);
     font-size: clamp(1.5rem, 3vw, 3rem);
