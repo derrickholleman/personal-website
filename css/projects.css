@@ -1,3 +1,7 @@
+  body.preload *{
+    animation-duration: 0s !important;
+  }
+  
   .header-container {
     position: relative;
     width: 1440px;
