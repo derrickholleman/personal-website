@@ -20,18 +20,18 @@
         margin: -1rem auto 5rem auto !important;
     }
     section .blog-post {
-        align-items: center;
+        align-items: left;
         margin-bottom: 6rem;
     }
     .post-title {
-        text-align: center;
+        text-align: left;
     }
     section .blog-photo {
         height: 250px;
     }
     section .post-p {
         width: 97%;
-        text-align: center;
+        text-align: left;
     }
     footer .nav-ul {
         display: none;
