@@ -64,7 +64,7 @@
 
   .blog-post {
     width: 90%;
-    margin: 0 auto 12rem auto;
+    margin: 0 auto 9rem auto;
     display: flex;
     flex-direction: column;
   }
