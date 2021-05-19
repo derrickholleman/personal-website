@@ -57,26 +57,20 @@
     font-size: .8rem;
     width: 90%;
     margin: 5rem auto 3rem auto;
-    animation: Pulse 2s ease-in-out, 
-    Bright 4.5s ease-in-out, 
-    /* Translate 5s ease-in-out; */
+    animation: Bright 4.5s ease-in-out, 
+    Translate 5s ease-in-out 2s;   
   }
 
-  @keyframes Pulse {
-    50% {
-      transform: scale(2);
-    }
-  }
   @keyframes Bright {
     50% {
       color: white;
     }
   }
-  /* @keyframes Translate {
+  @keyframes Translate {
     50% {
-      transform: scale(1.3);
+      transform: scale(1.3) translateY(5rem)
     }
-  } */
+  }
 
   .project-section {
     display: grid;
