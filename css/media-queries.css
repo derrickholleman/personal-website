@@ -58,10 +58,11 @@
     .hero-p {
         color: #df7171;
         font-size: 1.1rem;
+        margin-bottom: 1rem;
     }
     .mobile-heart {
         display: block;
-        margin: 4rem .5rem;
+        margin: 1rem .5rem;
     }
     @keyframes Pulse {
         50% {
@@ -133,6 +134,10 @@
          transform: translateX(0); /* placement when animation ends */
          opacity: 1;
         }
+       }
+
+       footer {
+           margin-top: 1rem;
        }
 
        .copyright {
