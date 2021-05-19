@@ -64,7 +64,7 @@
   }
   @keyframes TranslateMobile {
     50% {
-      transform: scale(1.3) translateY(5rem)
+      transform: scale(1.3) translateY(3rem)
     }
   }
   @keyframes Translate {
