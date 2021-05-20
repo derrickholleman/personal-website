@@ -129,7 +129,7 @@
     font-size: clamp(2rem, 4vw, 3rem);
     padding-left: .75rem;
     border-left: 3px solid #00ffffb3;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .accent {
@@ -150,6 +150,9 @@
     font-size: clamp(.9rem, 3vw, 1rem);
     width: 65%;
     padding-top: 1rem;
+  }
+  .last-paragraph {
+    margin-bottom: 6rem;
   }
 
   /* ------------- */ 
