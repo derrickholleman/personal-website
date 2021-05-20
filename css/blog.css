@@ -63,7 +63,7 @@
     flex-direction: column-reverse;
   }
 
-  .blog-post {
+  .blog-header {
     width: 90%;
     margin: 0 auto 9rem auto;
     display: flex;
