@@ -70,10 +70,15 @@
     flex-direction: column;
   }
 
-  .blog-photo {
+  .blog-photo-small {
     margin-bottom: 1rem;
     height: 450px;
     min-width: 75%;
+  }
+  .blog-photo-big {
+    margin-bottom: 1rem;
+    height: 450px;
+    max-width: 75%;
   }
 
   .post-title {
