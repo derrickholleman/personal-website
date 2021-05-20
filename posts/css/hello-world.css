@@ -1,0 +1,87 @@
+.page-container {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.home-top {
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    margin-left: -25px;
+    cursor: pointer;
+  }
+
+  .home-top:hover path, 
+  .home-top:focus path, 
+  .home-top:active path {
+    fill: #c55050;
+    transition: .2s;
+  }
+  .go-back-top a {
+    position: absolute;
+    display: flex;
+    top: 2.5rem;
+    left: 10%;
+    margin-left: -25px;
+    cursor: pointer;
+  }
+  .go-back-top a:hover, 
+  .go-back-top a:focus, 
+  .go-back-top a:active {
+    color: #c55050;
+    transition: .3s ease-in-out;
+  }
+
+  @keyframes FadeIn {
+      0% {
+          opacity: 0;
+          transform: translateX(0rem);
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(-1rem);
+      }
+  }
+  @keyframes MoveLeft {
+    0% {
+        transform: translateX(0rem);
+    }
+    50% {
+        transform: translateX(-.55rem);
+    }
+    100% {
+        transform: translateX(0rem);
+    }
+  }
+
+  .go-back-top a::before {
+      position: absolute;
+      content: url('../images/left-chevron.svg');
+      left: -2rem;
+      width: 24px;
+      height: 24px;
+      animation: FadeIn .5s ease-in-out, MoveLeft .5s ease-in-out infinite;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* ------------- */
+  /* MEDIA QUERIES */
+  /* ------------- */
+
+  @media screen and (max-width: 768px) {
+      .home-top {
+        left: 85%;
+      }
+      .go-back-top a {
+          left: 20%;
+      }
+  }
