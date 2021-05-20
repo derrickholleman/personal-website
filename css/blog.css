@@ -77,16 +77,16 @@
   }
   .blog-photo-big {
     margin-bottom: 1rem;
-    height: 450px;
+    height: 500px;
     max-width: 75%;
   }
 
   .post-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(1.75rem, 6vw, 3.5rem);
     color: #c55050;
-    padding-bottom: 1.2rem;
+    padding-bottom: .75rem;
   }
   
   .author {
