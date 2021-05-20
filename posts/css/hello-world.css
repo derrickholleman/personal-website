@@ -129,7 +129,7 @@
     font-size: clamp(2rem, 4vw, 3rem);
     padding-left: .75rem;
     border-left: 3px solid #00ffffb3;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .accent {
