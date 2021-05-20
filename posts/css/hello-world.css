@@ -64,6 +64,89 @@
       animation: FadeIn .5s ease-in-out, MoveLeft .5s ease-in-out infinite;
   }
 
+  header {
+    margin: 9rem auto 0rem auto;
+  }
+
+  .blog-header {
+    width: 90%;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-photo-small {
+    margin-bottom: 1rem;
+    height: 450px;
+    min-width: 75%;
+  }
+  .blog-photo-big {
+    margin-bottom: 1rem;
+    height: 500px;
+    max-width: 75%;
+  }
+
+  .post-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.75rem, 6vw, 3.5rem);
+    color: #c55050;
+    padding-bottom: .75rem;
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: .35rem;
+    width: 65%;
+    border-bottom: 1px solid #00ffffb3;
+    padding-bottom: .5rem;
+  }
+  .author-info {
+    margin-bottom: .3rem;
+  }
+
+  .name {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(168, 168, 168);
+    font-size: .8rem;
+  }
+  .date {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(131, 131, 131);
+    font-size: .7rem;
+  }
+
+  .profile-pic {
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  .section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #c55050;
+    font-size: clamp(2rem, 4vw, 3rem);
+    padding-left: .75rem;
+    border-left: 3px solid #00ffffb3;
+  }
+
+  .post-container {
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .main-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(168, 168, 168);
+    font-size: 1rem;
+    width: 65%;
+    padding-top: 2rem;
+    margin-bottom: 8rem;
+  }
+
   /* ------------- */ 
   /* FOOTER STYLES */
   /* ------------- */
@@ -190,7 +273,26 @@ left: 0;
     .go-back-top a {
       left: 20%;
     }
-    
+
+    .container {
+      margin: -1rem auto 5rem auto !important;
+    }
+    .header-post {
+        margin-bottom: 6rem;
+    }
+    .post-title {
+        text-align: left;
+    }
+    .blog-photo {
+        height: 250px;
+    }
+    .main-text {
+        width: 97%;
+        text-align: left;
+    }
+    .author {
+        width: 97%;
+    }
     footer .nav-ul {
         display: none;
     }
@@ -222,3 +324,10 @@ left: 0;
         margin-left: -20px;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+    .blog-header .blog-photo-big, .blog-header .blog-photo-small {
+        max-width: 100%;
+        height: auto;
+    }
+}
