@@ -93,6 +93,9 @@
     display: flex;
     align-items: center;
     margin-bottom: .35rem;
+    width: 65%;
+    border-bottom: 1px solid #00ffffb3;
+    padding-bottom: 1rem;
   }
   .author-info {
     margin-bottom: .3rem;
@@ -124,7 +127,6 @@
     color: rgb(168, 168, 168);
     font-size: 1rem;
     width: 65%;
-    border-top: 1px solid #00ffffb3;
     padding-top: 2rem;
   }
 
