@@ -113,7 +113,7 @@
     color: #c55050;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: clamp(.9rem, 2vw, 1rem);
+    font-size: clamp(1rem, 2vw, 1.3rem);
     padding-bottom: 1rem;
     width: 60%;
   }

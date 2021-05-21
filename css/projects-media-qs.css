@@ -6,8 +6,7 @@
         margin: 0rem auto 4rem auto;
     }
     .project-description {
-        font-size: .85rem;
-        line-height: 1.65;
+        line-height: 1.8;
     }
 }
 
@@ -43,15 +42,13 @@
     }
     .project-title {
         font-size: clamp(1.7rem, 7vw, 3rem);
-        text-align: center;
-        width: 85%;
+        width: 90%;
         margin: 0 auto 1rem auto;
     }
     .project-title::after {
         content: none;
       }
     .project-description {
-        text-align: center;
         width: 90%;
         margin: 0 auto;
         color: #df7171;
