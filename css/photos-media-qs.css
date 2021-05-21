@@ -7,6 +7,9 @@
   }
 /* makes columns stack in one column on mobile view */
 @media screen and (max-width: 491px) {
+    p {
+        line-height: 2.3rem;
+    }
    .photo-column {
     max-width: 100%;
     flex: 100%;
