@@ -126,7 +126,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgb(168, 168, 168);
-    font-size: clamp(1.12rem, 3vw, 1.2rem);
+    font-size: clamp(1.05rem, 3vw, 1.2rem);
     width: 65%;
     padding-top: 2rem;
   }
@@ -141,7 +141,7 @@
     margin: 2rem 0 1rem 0;
     font-weight: 700;
     font-size: .8rem;
-    transition: .35s;
+    transition: .2s;
     width: max-content;
   }
   .blog-btn:hover, 
