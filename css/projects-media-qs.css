@@ -30,12 +30,12 @@
     .fadein-right {
         position: relative;
         right: -800px;
-        opacity: .6;
+        opacity: 0;
     }
     .fadein-left {
         position: relative;
         left: -800px;
-        opacity: .6;
+        opacity: 0;
     }
     .project {
         margin: 5rem 1rem;

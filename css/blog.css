@@ -84,9 +84,10 @@
   .post-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: clamp(1.75rem, 6vw, 3.5rem);
+    font-size: clamp(2rem, 6vw, 3.5rem);
     color: #c55050;
     padding-bottom: .75rem;
+    word-wrap: break-word;
   }
   
   .author {
@@ -125,7 +126,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgb(168, 168, 168);
-    font-size: 1rem;
+    font-size: clamp(1.12rem, 3vw, 1.2rem);
     width: 65%;
     padding-top: 2rem;
   }

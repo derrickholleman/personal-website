@@ -1,3 +1,9 @@
+@media screen and (max-width: 481px) {
+    .post-p {
+        line-height: 32px;
+    }
+}
+
 @media screen and (max-width: 583px) {
     .social-icons {
         width: 65% !important;
@@ -31,6 +37,7 @@
     section .post-p {
         width: 97%;
         text-align: left;
+        line-height: 32px;
     }
     section .author {
         width: 97%;
