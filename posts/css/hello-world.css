@@ -63,11 +63,11 @@
       left: -2rem;
       width: 24px;
       height: 24px;
-      animation: FadeIn .5s ease-in-out, MoveLeft .5s ease-in-out infinite;
+      animation: FadeIn .5s ease-in-out, MoveLeft 1s ease-in-out infinite;
   }
 
   header {
-    margin: 9rem auto 0rem auto;
+    margin: 11rem auto 0rem auto;
   }
 
   .blog-header {
