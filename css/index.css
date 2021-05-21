@@ -124,6 +124,9 @@
   .mobile-heart {
     display: none;
   }
+  .cat-link {
+    display: none;
+  }
 
   .nav-ul {
     width: 1440px;

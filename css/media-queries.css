@@ -67,6 +67,9 @@
         display: block;
         margin: 1rem .5rem;
     }
+    .cat-link {
+        display: block;
+      }
     @keyframes Pulse {
         50% {
           transform: scale(1.2);
