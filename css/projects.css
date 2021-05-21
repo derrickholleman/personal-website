@@ -97,7 +97,7 @@
     color: rgb(168, 168, 168);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: clamp(1.8rem, 3vw, 3rem);
+    font-size: clamp(2.5rem, 3vw, 3rem);
     margin-bottom: 1.5rem;
   }
   .project-title::after {
@@ -113,7 +113,7 @@
     color: #c55050;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: clamp(1rem, 2vw, 1.15rem);
     padding-bottom: 1rem;
     width: 60%;
   }
