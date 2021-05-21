@@ -64,9 +64,6 @@
     height: 24px;
     animation: FadeIn .5s ease-in-out, MoveLeft 1s ease-in-out infinite;
   }
-  .arrow-text-container {
-    display: block;
-  }
 
   header {
     margin: 11rem auto 0rem auto;
