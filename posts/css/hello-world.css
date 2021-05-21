@@ -150,7 +150,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgb(168, 168, 168);
-    font-size: clamp(1.12rem, 3vw, 1.2rem);
+    font-size: clamp(1.05rem, 3vw, 1.2rem);
     width: 65%;
     padding-top: 1rem;
   }
