@@ -30,7 +30,7 @@
   }
 
   .home-top:hover path, 
-  .home-top:focus path, 
+  .home-top:focus-within path, 
   .home-top:active path {
     fill: #c55050;
     transition: .2s;
@@ -72,7 +72,9 @@
     fill: "#a8a8a8";
     transition: .35s;
   }
-  .icon:hover path {
+  .icon:hover path, 
+  .icon:focus-within path, 
+  .icon:active path {
     fill: #c55050;
   }
 
@@ -314,7 +316,7 @@
   }
 
   .home-bottom:hover path, 
-  .home-bottom:focus path, 
+  .home-bottom:focus-within path, 
   .home-bottom:active path {
     fill: #c55050;
     transition: .2s;
