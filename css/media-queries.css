@@ -38,12 +38,6 @@
     /* body {
         background: rgb(23, 22, 22) !important;
     } */
-    html {
-      background: linear-gradient(to right, 
-    rgba(23, 22, 22, .91), 
-    rgba(23, 22, 22, .91)), url(../images/stars.jpg) no-repeat center center fixed !important;
-    background-size: cover !important;
-    }
     .nav-ul {
         display: none;
     }
