@@ -28,7 +28,7 @@
   }
 
   .home-top:hover path, 
-  .home-top:focus path, 
+  .home-top:focus-within path, 
   .home-top:active path {
     fill: #c55050;
     transition: .2s;
@@ -264,7 +264,7 @@ left: 0;
 }
 
 .home-bottom:hover path, 
-.home-bottom:focus path, 
+.home-bottom:focus-within path, 
 .home-bottom:active path {
   fill: #c55050;
   transition: .2s;
