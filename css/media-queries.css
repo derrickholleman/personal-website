@@ -161,7 +161,7 @@
 /* SWITCH TO MOBILE VIEW */
 /* --------------------- */
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1024px) {
     .github-text {
         opacity: 1;
         transition: 0s ease-in-out;
