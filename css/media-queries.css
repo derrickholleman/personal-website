@@ -40,8 +40,8 @@
     } */
     html {
       background: linear-gradient(to right, 
-    rgba(23, 22, 22, .89), 
-    rgba(23, 22, 22, .89)), url(../images/chillin.png) no-repeat center center fixed !important;
+    rgba(23, 22, 22, .91), 
+    rgba(23, 22, 22, .91)), url(../images/stars.jpg) no-repeat center center fixed !important;
     background-size: cover !important;
     }
     .nav-ul {
