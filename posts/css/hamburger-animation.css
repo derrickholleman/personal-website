@@ -1,0 +1,56 @@
+/* ANIMATED HAMBURGER MENU STYLING */
+
+    /* <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button> */
+      
+.hamburger {
+    width: 53px;
+    height: 40px;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    position: relative;
+    position: absolute;
+    height: 4px; /* change height of hamburger bars */
+    width: 90%;
+    background: rgba(0, 255, 255, .7); /* change color of hamburger */
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 15px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 31px;
+}
+
+.hamburger.open span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+.hamburger.open span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+}
