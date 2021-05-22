@@ -26,7 +26,7 @@ $(document).ready(function() {
             if( bottom_of_window + 350 > bottom_of_object ){
                 /* two animations at the same time with different durations */
                 $(this).animate({'left':'0'}, 600);  
-                $(this).animate({'opacity' : '1'}, {duration: 1000, queue: false}); 
+                $(this).animate({'opacity' : '1'}, {duration: 100, queue: false}); 
             }            
         });     
     });    
