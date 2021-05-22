@@ -304,6 +304,9 @@ left: 0;
   }
 
   @media screen and (max-width: 768px) {
+    body {
+      background: rgb(23, 22, 22) !important;
+    }
     .home-top {
         display: none;
     } 

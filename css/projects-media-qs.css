@@ -11,6 +11,9 @@
 }
 
 @media screen and (max-width: 782px) {
+    body {
+        background: rgb(23, 22, 22) !important;
+    }
     .hamburger {
         display: block;
         z-index: 10000;
