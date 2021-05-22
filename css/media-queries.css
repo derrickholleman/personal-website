@@ -160,3 +160,40 @@
 /* --------------------- */
 /* SWITCH TO MOBILE VIEW */
 /* --------------------- */
+
+@media screen and (max-width: 1281px) {
+    .github-text {
+        opacity: 1;
+        transition: .5s ease-in-out;
+      }
+      .hero-btn:hover .github-text, 
+      .hero-btn:focus-within .github-text,
+      .hero-btn:active .github-text {
+        opacity: 1;
+      }
+      .github-container {
+        /* shares same height, width and line height as text */
+        display: none;
+        position: absolute;
+        top: 0%;
+        height: 3.5rem;
+        width: 10rem;
+        line-height: 3.5rem;
+      }
+      .github-icon {
+        display: none;
+        position: absolute;
+        top: .3rem;
+        left: 3.7rem;
+        width: 45px;
+        opacity: 0;
+        transition: .5s ease-in-out;
+        transform: translateX(150px);
+      }
+      .hero-btn:hover .github-icon, 
+      .hero-btn:focus-within .github-icon,
+      .hero-btn:active .github-icon {
+        opacity: 0;
+        transform: translate(0px);
+      }
+}

@@ -96,7 +96,8 @@
     transition: .5s ease-in-out;
   }
   .hero-btn:hover .github-text, 
-  .hero-btn:focus-within .github-text {
+  .hero-btn:focus-within .github-text,
+  .hero-btn:active .github-text {
     opacity: 0;
   }
   .github-container {
@@ -117,7 +118,8 @@
     transform: translateX(150px);
   }
   .hero-btn:hover .github-icon, 
-  .hero-btn:focus-within .github-icon {
+  .hero-btn:focus-within .github-icon,
+  .hero-btn:active .github-icon {
     opacity: 1;
     transform: translate(0px);
   }
