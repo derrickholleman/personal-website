@@ -71,11 +71,12 @@
     font-size: 1.2rem;
     transition: .2s ease-in-out;
     box-shadow: 0px 2px 3px rgba(95, 88, 88, 0.4);
+    position: relative;
   }
   .hero-btn:hover, 
-  .hero-btn:focus, 
+  .hero-btn:focus-within, 
   .hero-btn:active {
-    color: rgb(23, 22, 22);
+    color: #171616;
     background-color: #c55050;
     border: 2px solid rgb(23, 22, 22);
   }
@@ -87,6 +88,43 @@
     width: 10rem;
     line-height: 3.5rem; /* needed to center text, must equal height */
   }
+
+  /* IMAGE SWAP ON BUTTON HOVER */
+  /* -------------------------- */
+  .github-text {
+    opacity: 1;
+    transition: .5s ease-in-out;
+  }
+  .hero-btn:hover .github-text, 
+  .hero-btn:focus-within .github-text,
+  .hero-btn:active .github-text {
+    opacity: 0;
+  }
+  .github-container {
+    /* shares same height, width and line height as text */
+    position: absolute;
+    top: 0%;
+    height: 3.5rem;
+    width: 10rem;
+    line-height: 3.5rem;
+  }
+  .github-icon {
+    position: absolute;
+    top: .3rem;
+    left: 3.7rem;
+    width: 45px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    transform: translateX(150px);
+  }
+  .hero-btn:hover .github-icon, 
+  .hero-btn:focus-within .github-icon,
+  .hero-btn:active .github-icon {
+    opacity: 1;
+    transform: translate(0px);
+  }
+  /* -------------------------- */
+  /* -------------------------- */
 
   .hero-p {
     padding-top: 2rem;
@@ -201,7 +239,9 @@
     fill: "#a8a8a8";
     transition: .35s;
   }
-  .icon:hover path {
+  .icon:hover path, 
+  .icon:focus-within path, 
+  .icon:active path {
     fill: #c55050;
   }
 
