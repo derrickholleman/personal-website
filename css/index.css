@@ -84,8 +84,8 @@
     text-decoration: none;
     display: block; /* display block allows height and width to be edited */
     color: inherit;
-    height: 3.5rem; /* specifying height/width makes whole button clickable */
-    width: 10rem;
+    height: 3.5rem; /* height of button. specifying height/width makes whole button clickable */
+    width: 10rem; /* width of button */
     line-height: 3.5rem; /* needed to center text, must equal height */
   }
 
@@ -93,7 +93,7 @@
   /* -------------------------- */
   .resume-text {
     opacity: 1;
-    transition: .5s ease-in-out;
+    transition: .4s ease-in-out;
   }
   .hero-btn:hover .resume-text, 
   .hero-btn:focus-within .resume-text,
@@ -114,8 +114,8 @@
     left: 3.7rem;
     width: 45px;
     opacity: 0;
-    transition: .5s ease-in-out;
-    transform: translateX(150px);
+    transition: .4s ease-in-out;
+    transform: translateX(-110px);
   }
   .hero-btn:hover .resume-icon, 
   .hero-btn:focus-within .resume-icon,
@@ -123,11 +123,11 @@
     opacity: 1;
     transform: translate(0px);
   }
-  
+
   /* github button text swap styles */
   .github-text {
     opacity: 1;
-    transition: .5s ease-in-out;
+    transition: .4s ease-in-out;
   }
   .hero-btn:hover .github-text, 
   .hero-btn:focus-within .github-text,
@@ -148,8 +148,8 @@
     left: 3.7rem;
     width: 45px;
     opacity: 0;
-    transition: .5s ease-in-out;
-    transform: translateX(150px);
+    transition: .4s ease-in-out;
+    transform: translateX(110px);
   }
   .hero-btn:hover .github-icon, 
   .hero-btn:focus-within .github-icon,
