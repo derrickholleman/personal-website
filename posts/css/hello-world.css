@@ -11,6 +11,7 @@
   .mobile-nav li a.is-open {
     color: #00ffffb3
   }
+
   .page-container {
       width: 1440px;
       max-width: 100%;
@@ -277,9 +278,6 @@ left: 0;
   margin: 8rem auto 1rem auto;
 }
 
-/* footer {
-  margin-top: -6rem;
-} */
 
   /* ------------- */
   /* MEDIA QUERIES */
@@ -390,6 +388,7 @@ left: 0;
       }
      }
      /* mobile nav fade in animation END */
+     
     .container {
       margin: -1rem auto 5rem auto !important;
     }
