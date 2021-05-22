@@ -147,7 +147,8 @@
          opacity: 1;
         }
        }
-
+       /* mobile nav fade in animation END*/
+       
        footer {
            margin-top: 1rem;
        }
@@ -155,7 +156,6 @@
        .copyright {
            margin-bottom: 2rem;
        }
-       /* mobile nav fade in animation END*/
 }
 /* --------------------- */
 /* SWITCH TO MOBILE VIEW */

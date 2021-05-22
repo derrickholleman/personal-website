@@ -1,3 +1,13 @@
+  .hamburger {
+    display: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  
   .container {
     position: relative;
     width: 1440px;
@@ -10,7 +20,7 @@
 
   .home-top {
     position: absolute;
-    top: 1.25rem;
+    top: 1.75rem;
     left: 50%;
     margin-left: -25px;
     cursor: pointer;
@@ -105,7 +115,7 @@
       padding-bottom: .15rem;
   }
   
-  button {
+  form button {
     margin: 0 auto 1rem 1.5rem; /* aligns button to the left */
     padding: .5rem 1rem;
     border: 2px solid rgb(168, 168, 168);
@@ -118,9 +128,9 @@
     font-family: 'Roboto', sans-serif;
     transition: .2s;
   }
-  button:hover, 
-  button:focus, 
-  button:active {
+  form button:hover, 
+  form button:focus, 
+  form button:active {
     border: 2px solid #c55050;
     color: #c55050;
   }
@@ -227,7 +237,7 @@
     display: none;
   }
 
-  .mobile-nav {
+  .footer-mobile-nav {
     display: none;
   }
 
@@ -253,10 +263,10 @@
     transition: .2s;
     position: relative; /* needed for underline */
   }
-  .nav-ul li a.is-open, .mobile-nav li a.is-open {
+  .nav-ul li a.is-open, .footer-mobile-nav li a.is-open {
     color: #c55050;
   }
-  .hamburger-nav li a.is-open {
+  .mobile-nav li a.is-open {
     color: #00ffffb3
   }
   .nav-ul li a:hover, 
