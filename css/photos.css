@@ -1,3 +1,16 @@
+  .hamburger {
+    display: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .mobile-nav li a.is-open {
+    color: #00ffffb3
+  }
+  
   .container {
     position: relative;
     width: 1440px;
@@ -108,7 +121,7 @@
     display: none;
   }
 
-  .mobile-nav {
+  .footer-mobile-nav {
     display: none;
   }
 
@@ -134,7 +147,7 @@
     transition: .2s;
     position: relative; /* needed for underline */
   }
-  .nav-ul li a.is-open, .mobile-nav li a.is-open {
+  .nav-ul li a.is-open, .footer-mobile-nav li a.is-open {
     color: #c55050;
   }
   .nav-ul li a:hover, 

@@ -29,10 +29,92 @@
       }
     }
 @media screen and (max-width: 768px) {
+    .home-top {
+        display: none;
+    } 
+    header .hamburger {
+        display: block;
+        z-index: 10000;
+        position: absolute;
+        left: 50%;
+        margin-left: -26.5px;
+        top: -2.8rem;
+        background: none;
+        outline: none;
+        border: none;
+    }
+    header .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+        opacity: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgb(0, 0, 0);
+        padding-top: 5rem;
+        transition: .4s ease-in-out;
+        color: #c55050;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1.7rem;
+    }
+    .mobile-nav.is-active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .mobile-nav li:hover, 
+    .mobile-nav li:focus, 
+    .mobile-nav li:active {
+        color: #df7171;
+    }
+    .mobile-nav li a.is-open {
+        color: #00ffffb3;
+      }
+    /* mobile nav fade in animation START */
+        .mobile-nav.is-active li { 
+        opacity: 0; /* elements fade in from being invisible */
+       }
+       .mobile-nav.is-active li.open {
+        animation-name: fadeIn;
+        animation-fill-mode: forwards;
+        animation-duration: .5s; /* time between start and end of animation */
+        animation-delay: .15s; /* time before animation kicks in */
+        animation-timing-function: ease-in-out;
+       }
+       .mobile-nav.is-active li.open:nth-child(2) {
+        animation-delay: .25s;
+       }
+       .mobile-nav.is-active li.open:nth-child(3) {
+        animation-delay: .4s;
+       }
+       .mobile-nav.is-active li.open:nth-child(4) {
+        animation-delay: .6s;
+       }
+       .mobile-nav.is-active li.open:nth-child(5) {
+        animation-delay: .7s;
+       }
+       @keyframes fadeIn {
+        0% {
+         transform: translateX(75px); /* placement when animation begins */
+         opacity: 0;
+        }
+        100% {
+         transform: translateX(0); /* placement when animation ends */
+         opacity: 1;
+        }
+       }
+       /* mobile nav fade in animation END */
+
     .nav-ul {
         display: none;
     }
-    .mobile-nav {
+    .footer-mobile-nav {
         position: relative;
         top: 1rem;
         display: flex;
@@ -41,14 +123,14 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    .mobile-nav li a {
+    .footer-mobile-nav li a {
         color: rgb(148, 148, 148);
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
     }
-    .mobile-nav li a:hover, 
-    .mobile-nav li a:focus, 
-    .mobile-nav li a:active {
+    .footer-mobile-nav li a:hover, 
+    .footer-mobile-nav li a:focus, 
+    .footer-mobile-nav li a:active {
         color: #c55050;
     }
     .home-bottom {
