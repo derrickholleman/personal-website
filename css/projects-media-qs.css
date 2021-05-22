@@ -96,7 +96,7 @@
         width: 75%;
         margin-top: 5rem;
         margin-bottom: 7rem;
-        animation: TranslateMobile 4s ease-in-out .9s;
+        animation: TranslateMobile 2s ease-in-out .9s;
         font-size: 1rem;
     }
     .project-section {
