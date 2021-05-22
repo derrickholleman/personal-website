@@ -164,7 +164,7 @@
 @media screen and (max-width: 1281px) {
     .github-text {
         opacity: 1;
-        transition: .5s ease-in-out;
+        transition: 0s ease-in-out;
       }
       .hero-btn:hover .github-text, 
       .hero-btn:focus-within .github-text,
@@ -187,12 +187,47 @@
         left: 3.7rem;
         width: 45px;
         opacity: 0;
-        transition: .5s ease-in-out;
+        transition: 0s ease-in-out;
         transform: translateX(150px);
       }
       .hero-btn:hover .github-icon, 
       .hero-btn:focus-within .github-icon,
       .hero-btn:active .github-icon {
+        opacity: 0;
+        transform: translate(0px);
+      }
+
+      .resume-text {
+        opacity: 1;
+        transition: 0s ease-in-out;
+      }
+      .hero-btn:hover .resume-text, 
+      .hero-btn:focus-within .resume-text,
+      .hero-btn:active .resume-text {
+        opacity: 1;
+      }
+      .resume-icon-container {
+        /* shares same height, width and line height as text */
+        display: none;
+        position: absolute;
+        top: 0%;
+        height: 3.5rem;
+        width: 10rem;
+        line-height: 3.5rem;
+      }
+      .resume-icon {
+        display: none;
+        position: absolute;
+        top: .3rem;
+        left: 3.7rem;
+        width: 45px;
+        opacity: 0;
+        transition: 0s ease-in-out;
+        transform: translateX(150px);
+      }
+      .hero-btn:hover .resume-icon, 
+      .hero-btn:focus-within .resume-icon,
+      .hero-btn:active .resume-icon {
         opacity: 0;
         transform: translate(0px);
       }
