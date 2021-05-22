@@ -413,21 +413,21 @@ left: 0;
     footer .nav-ul {
         display: none;
     }
-    footer .mobile-nav {
+    footer .footer-mobile-nav {
         display: flex;
         flex-direction: column;
         height: 400px;
         align-items: center;
         justify-content: space-evenly;
     }
-    footer .mobile-nav li a {
+    footer .footer-mobile-nav li a {
         color: rgb(148, 148, 148);
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
     }
-    footer .mobile-nav li a:hover, 
-    footer .mobile-nav li a:focus, 
-    footer .mobile-nav li a:active {
+    footer .footer-mobile-nav li a:hover, 
+    footer .footer-mobile-nav li a:focus, 
+    footer .footer-mobile-nav li a:active {
         color: #c55050;
     }
     footer .copyright {
