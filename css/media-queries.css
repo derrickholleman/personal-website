@@ -164,11 +164,18 @@
 /* SWITCH TO MOBILE VIEW */
 /* --------------------- */
 
+/* reactivates typewriter animation for desktop */
 @media screen and (max-width: 1023px) {
   .typewriter-text {
     animation: none;
     border-right: transparent;
     white-space: normal;
+  }
+}
+/* avoids using jump and typewriter animation on the home page at the same time */
+@media screen and (max-width: 1022px) {
+  .period {
+    animation: Jump 1.5s ease-in-out 5;
   }
 }
 
