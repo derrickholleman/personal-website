@@ -268,8 +268,13 @@
         transform: translate(0px);
       }
 }
-@media screen and (min-width: 1024px) and (max-width: 1382px) {
+@media screen and (min-width: 1104px) and (max-width: 1200px) {
   .typewriter-text {
     animation: typing 5.5s steps(54, end), blink .75s step-end 6 forwards;
+  }
+}
+@media screen and (min-width: 1278px) and (max-width: 1382px) {
+  .typewriter-text {
+    animation: typing 5s steps(54, end), blink .75s step-end 5 forwards;
   }
 }
