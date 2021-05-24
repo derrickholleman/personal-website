@@ -178,6 +178,8 @@
     text-align: center;
     width: 85%;
   }
+  
+  /* TYPEWRITER ANIMATION */
   .typewriter {
     display: inline-block;
   }
@@ -204,6 +206,7 @@
       border-color: #00ffffb3;
     }
   }
+/* ---------------------- */
 
   nav {
     width: 100%;

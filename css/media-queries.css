@@ -234,4 +234,9 @@
         opacity: 0;
         transform: translate(0px);
       }
+      .typewriter-text {
+        animation: none;
+        border-right: transparent;
+        white-space: normal;
+      }
 }
