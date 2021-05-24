@@ -53,6 +53,7 @@
     color: rgb(168, 168, 168);
     font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: 300;
+    margin-top: 1rem;
   }
 
   .hero-buttons {
@@ -176,6 +177,32 @@
     font-size: clamp(1.7rem, 2vw, 3rem);
     text-align: center;
     width: 85%;
+  }
+  .typewriter {
+    display: inline-block;
+  }
+  .typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 5s steps(54, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    border-right: 3px solid #00ffffb3;
+  }
+  @keyframes typing {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    0%, 100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #00ffffb3;
+    }
   }
 
   nav {
