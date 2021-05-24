@@ -186,7 +186,7 @@
   .typewriter-text {
     display: inline-block;
     overflow: hidden;
-    animation: typing 5s steps(54, end), blink .75s step-end 9 forwards;
+    animation: typing 5s steps(54, end), blink .75s step-end 7 forwards;
     white-space: nowrap;
     border-right: 3px solid #00ffffb3;
   }
