@@ -164,6 +164,14 @@
 /* SWITCH TO MOBILE VIEW */
 /* --------------------- */
 
+@media screen and (max-width: 1023px) {
+  .typewriter-text {
+    animation: none;
+    border-right: transparent;
+    white-space: normal;
+  }
+}
+
 @media screen and (max-width: 1024px) {
     .github-text {
         opacity: 1;
@@ -234,12 +242,4 @@
         opacity: 0;
         transform: translate(0px);
       }
-}
-
-@media screen and (max-width: 1023px) {
-  .typewriter-text {
-    animation: none;
-    border-right: transparent;
-    white-space: normal;
-  }
 }
