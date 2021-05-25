@@ -180,7 +180,7 @@
     color: rgb(168, 168, 168);
     font-size: clamp(1.7rem, 2vw, 3rem);
     text-align: center;
-    width: 85%;
+    width: max-content; /* needed for animation to end on time */
   }
   
   /* TYPEWRITER ANIMATION */
