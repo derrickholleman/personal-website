@@ -294,9 +294,6 @@ left: 0;
     .go-back-top a {
       left: 20%;
     }
-    .main-text {
-      line-height: 32px;
-    }
   }
 
   @media screen and (min-width: 482px) and (max-width: 768px) {
