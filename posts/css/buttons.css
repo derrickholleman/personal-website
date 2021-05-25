@@ -74,7 +74,7 @@
     position: absolute;
     left: -2rem;
     width: 37px;
-    height: 24px;
+    height: 37px;
     animation: FadeIn .5s ease-in-out, MoveLeft 1s ease-in-out infinite;
   }
 
@@ -103,7 +103,7 @@
   .post-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(2rem, 6vw, 5rem);
     color: #c55050;
     padding-bottom: .75rem;
     word-wrap: break-word;
@@ -124,12 +124,12 @@
   .name {
     font-family: 'Roboto', sans-serif;
     color: rgb(168, 168, 168);
-    font-size: .8rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
   }
   .date {
     font-family: 'Roboto', sans-serif;
     color: rgb(131, 131, 131);
-    font-size: .7rem;
+    font-size: clamp(.9rem, 2vw, 1.1rem);
   }
 
   .profile-pic {
@@ -149,7 +149,7 @@
 
   .accent {
     color: #c55050;
-    font-size: clamp(1.55rem, 3.5vw, 1.75rem);
+    font-size: clamp(2.2rem, 3.5vw, 2.7rem);
   }
 
   .post-container {
@@ -162,7 +162,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgb(168, 168, 168);
-    font-size: clamp(1.05rem, 3vw, 1.15rem);
+    font-size: clamp(1.3rem, 3vw, 2rem);
     width: 65%;
     padding-top: 1rem;
   }
@@ -449,4 +449,14 @@ left: 0;
         max-width: 100%;
         height: auto;
     }
+}
+
+@media screen and (max-width: 834px) {
+  .arrow-left {
+    position: absolute;
+    left: -2rem;
+    width: 37px;
+    height: 24px;
+    animation: FadeIn .5s ease-in-out, MoveLeft 1s ease-in-out infinite;
+  }
 }
