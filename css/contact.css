@@ -267,7 +267,7 @@
     font-weight: 300;
     transition: .2s;
     position: relative; /* needed for underline */
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
   }
   .nav-ul li a.is-open, .footer-mobile-nav li a.is-open {
     color: #c55050;

@@ -137,7 +137,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgb(168, 168, 168);
-    font-size: clamp(1.05rem, 3vw, 1.15rem);
+    font-size: clamp(1.3rem, 3vw, 2rem);
     width: 65%;
     padding-top: 2rem;
   }
@@ -167,9 +167,10 @@
     text-decoration: none;
     display: block; /* display block allows height and width to be edited */
     color: inherit;
-    height: 2.8rem; /* specifying height/width makes whole button clickable */
-    width: 7.8rem;
-    line-height: 2.8rem;
+    height: 3.8rem; /* specifying height/width makes whole button clickable */
+    width: 8.8rem;
+    line-height: 3.8rem;
+    font-size: 1.3rem;
   }
 
 /* NAV/FOOTER STYLES */
@@ -216,7 +217,7 @@
     font-weight: 300;
     transition: .2s;
     position: relative; /* needed for underline */
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
   }
   .nav-ul li a.is-open, .footer-mobile-nav li a.is-open {
     color: #c55050;
