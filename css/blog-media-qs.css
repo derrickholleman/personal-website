@@ -121,7 +121,7 @@
     section .post-p {
         width: 97%;
         text-align: left;
-        line-height: 32px;
+        line-height: 2;
     }
     section .author {
         width: 97%;

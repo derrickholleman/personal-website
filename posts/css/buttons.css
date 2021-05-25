@@ -163,7 +163,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgb(168, 168, 168);
-    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    font-size: clamp(1.5rem, 3vw, 1.7rem);
     width: 65%;
     padding-top: 1rem;
   }
@@ -405,7 +405,7 @@ left: 0;
     .main-text {
         width: 97%;
         text-align: left;
-        line-height: 32px;
+        line-height: 2;
     }
     .author {
         width: 97%;
