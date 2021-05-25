@@ -245,8 +245,8 @@
   }
 
   .nav-ul li {
-    flex: 20%; /* each li takes up 20% of the space */
-    text-align: center;
+    margin: 0 auto;
+    width: max-content;
   }
 
   .nav-ul li a {

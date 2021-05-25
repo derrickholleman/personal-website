@@ -257,8 +257,8 @@
   }
 
   .nav-ul li {
-    flex: 20%;
-    text-align: center;
+    margin: 0 auto;
+    width: max-content;
   }
 
   .nav-ul li a {
