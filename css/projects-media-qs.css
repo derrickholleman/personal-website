@@ -1,3 +1,9 @@
+@media screen and (max-width: 361px) {
+    .home-bottom {
+        bottom: 5rem;
+    }
+}
+
 @media screen and (max-width: 490px) {
     .header-container {
         margin: 4rem auto 0rem auto
@@ -110,7 +116,7 @@
         margin-top: 5rem;
         margin-bottom: 7rem;
         animation: TranslateMobile 2s ease-in-out .9s;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .project-section {
         grid-template-columns: repeat(1, 1fr);
