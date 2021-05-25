@@ -275,7 +275,7 @@
   .copyright {
     position: relative;
     color: rgb(168, 168, 168);
-    font-size: .7rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-align: center;
     width: 90%;
     margin: 8rem auto 1rem auto;
