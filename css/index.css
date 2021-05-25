@@ -169,11 +169,10 @@
     padding-top: 2rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1.3rem, 3vw, 2rem);
     color: #c55050;
     max-width: 70%;
     text-align: center;
-    line-height: 1.75rem;
   }
 
   .hero-p-title {
@@ -256,6 +255,7 @@
     font-weight: 300;
     transition: .2s;
     position: relative; /* needed for underline */
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
   }
   .nav-ul li a:hover, 
   .nav-ul li a:focus, 
