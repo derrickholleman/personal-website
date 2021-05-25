@@ -219,7 +219,8 @@
 
   @keyframes Pulse {
     50% {
-      transform: scale3d(1.2, 1.2, 1.2);
+      transform: scale(1.2);
+      -moz-transform: scale3d(1.2, 1.2, 1.2);
     }
   }
   .heart {
