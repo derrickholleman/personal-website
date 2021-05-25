@@ -133,9 +133,10 @@
         text-decoration: none;
         display: block; /* display block allows height and width to be edited */
         color: inherit;
-        height: 2.8rem; /* specifying height/width makes whole button clickable */
-        width: 7.8rem;
-        line-height: 2.8rem;
+        height: 2.8rem !important; /* specifying height/width makes whole button clickable */
+        width: 7.8rem !important;
+        line-height: 2.8rem !important;
+        font-size: 1.1rem !important;
       }
     footer .nav-ul {
         display: none;
