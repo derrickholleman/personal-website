@@ -79,7 +79,7 @@
 <!---------------->
     <div class="page-container">
       
-      <h1 class="hero-title">
+      <h1 class="hero-title" data-aos="fade-down">
         <div class='hero-gray'>
           Hello!  My name is
         </div>
@@ -87,7 +87,7 @@
       </h1>
       <!--RESUME BUTTON-->
       <div class="hero-buttons">
-        <button class="hero-btn" tabindex="-1">
+        <button class="hero-btn" tabindex="-1" data-aos="fade-right">
           <a href="#">
             <span class="resume-text">Resume</span>
             <div class="resume-icon-container">
@@ -98,7 +98,7 @@
           </a>
         </button>
         <!--GITHUB BUTTON-->
-        <button class="hero-btn" tabindex="-1">
+        <button class="hero-btn" tabindex="-1" data-aos="fade-left">
           <a href="https://github.com/derrickholleman" target="_blank">
             <span class="github-text">Github</span>
             <div class="github-container">
@@ -130,7 +130,7 @@
       <!-------------->
       <!--MOBILE NAV-->
       <!-------------->
-      <button class="hamburger" aria-label="open the menu">
+      <button class="hamburger" aria-label="open the menu" data-aos="fade-down">
         <span></span>
         <span></span>
         <span></span>
@@ -197,5 +197,21 @@
     </div>
  <!-- For JS Scripts -->
  <script src="js/hamburger.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    AOS.init({
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 600, // values from 0 to 3000, with step 50ms
+  easing: 'ease-in-out-cubic', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+  </script>
 </body>
 </html>
