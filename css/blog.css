@@ -155,7 +155,8 @@
     cursor: pointer;
     margin: 2rem 0 1rem 0;
     font-weight: 700;
-    font-size: .8rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
     transition: .2s ease-in-out;
     width: max-content;
   }
