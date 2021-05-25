@@ -169,7 +169,7 @@
     padding-top: 2rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
     color: #c55050;
     max-width: 70%;
     text-align: center;
@@ -177,7 +177,7 @@
 
   .hero-p-title {
     color: rgb(168, 168, 168);
-    font-size: clamp(1.7rem, 2vw, 3rem);
+    font-size: clamp(1.7rem, 3.5vw, 2.8rem);
     text-align: center;
     width: max-content; /* needed for animation to end on time */
   }
