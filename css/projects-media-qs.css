@@ -9,8 +9,17 @@
         line-height: 1.8;
     }
 }
-
+/* directions dont fade in on desktop/tablet */
+@media screen and (min-width: 783px) {
+    .directions {
+        animation: none;
+    }
+}
 @media screen and (max-width: 782px) {
+    [data-aos] {
+        transform: none !important;
+        opacity: 1 !important;
+    }
     body {
         background: rgb(23, 22, 22) !important;
     }
