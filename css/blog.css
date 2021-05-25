@@ -137,7 +137,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgb(168, 168, 168);
-    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-size: clamp(1.3rem, 3vw, 1.7rem);
     width: 65%;
     padding-top: 2rem;
   }
@@ -168,9 +168,9 @@
     display: block; /* display block allows height and width to be edited */
     color: inherit;
     height: 3.8rem; /* specifying height/width makes whole button clickable */
-    width: 8.8rem;
+    width: 9rem;
     line-height: 3.8rem;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 
 /* NAV/FOOTER STYLES */
