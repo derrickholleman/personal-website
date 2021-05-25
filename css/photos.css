@@ -33,10 +33,6 @@
     margin-top: .5rem; /* vertical space between photos */
   }
 
-  img {
-    color: rgb(168, 168, 168);
-  }
-
   .page-title {
     color: #833636;
     text-align: center;
