@@ -121,6 +121,10 @@
     display: none;
   }
 
+  footer {
+    position: relative;
+  }
+
   .nav-ul {
     width: 1440px;
     max-width: 100%;
