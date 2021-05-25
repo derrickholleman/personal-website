@@ -126,10 +126,11 @@
         align-items: center;
         justify-content: space-evenly;
     }
-    .footer-mobile-nav li a {
+    footer .footer-mobile-nav li a {
         color: rgb(148, 148, 148);
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
+        font-size: clamp(1.5rem, 2vw, 1.7rem);
     }
     .footer-mobile-nav li a:hover, 
     .footer-mobile-nav li a:focus, 
