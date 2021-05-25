@@ -16,6 +16,7 @@
     }
 }
 @media screen and (max-width: 782px) {
+    /* no titles animation on mobile */
     [data-aos] {
         transform: none !important;
         opacity: 1 !important;
