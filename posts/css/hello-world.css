@@ -150,6 +150,7 @@
   .accent {
     color: #c55050;
     font-size: clamp(2rem, 3.1vw, 2.7rem);
+    line-height: 1.5;
   }
 
   .post-container {
@@ -307,9 +308,6 @@ left: 0;
     .main-text {
       line-height: 2;
     }
-    .accent {
-      line-height: 1.5;
-    }
   }
 
   @media screen and (max-width: 768px) {
@@ -413,6 +411,9 @@ left: 0;
     .blog-photo {
         height: 250px;
     }
+    .accent {
+      line-height: 1.5;
+    }
     .main-text {
         width: 97%;
         text-align: left;
@@ -458,14 +459,4 @@ left: 0;
         max-width: 100%;
         height: auto;
     }
-}
-
-@media screen and (max-width: 834px) {
-  .arrow-left {
-    position: absolute;
-    left: -2rem;
-    width: 37px;
-    height: 24px;
-    animation: FadeIn .5s ease-in-out, MoveLeft 1s ease-in-out infinite;
-  }
 }
