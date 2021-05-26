@@ -18,6 +18,11 @@
     max-width: 100%;
   }
 
+  /* header {
+    width: 90%;
+    margin: 0 auto;
+  } */
+
   .photo-display {
     display: flex;
     flex-wrap: wrap;
@@ -57,12 +62,12 @@
   p {
     color: rgb(192, 190, 190);
     text-align: center;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     padding-top: 1rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: clamp(1.15rem, 2.3vw, 1.3rem);
+    font-size: clamp(1.15rem, 2.8vw, 1.3rem);
   }
 
   .home-top {
