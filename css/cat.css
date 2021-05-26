@@ -31,7 +31,6 @@
     }
   }
   .heart {
-    transform: scale(1);
     animation: Pulse 1.5s infinite ease-in-out;
   }
 
