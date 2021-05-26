@@ -189,7 +189,7 @@
   .typewriter-text {
     display: inline-block;
     overflow: hidden;
-    animation: typing 5s steps(54, end), blink .75s step-end 7 forwards;
+    animation: typing 5s steps(54, end), blink .75s step-end infinite; /* 7 forwards makes the blink stop and disappear */
     white-space: nowrap;
     border-right: 3px solid #00ffffb3;
   }
