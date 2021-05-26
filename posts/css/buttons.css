@@ -75,7 +75,7 @@
     position: absolute;
     left: -2rem;
     width: 37px;
-    height: 24px;
+    height: 22px;
     animation: FadeIn .5s ease-in-out, MoveLeft 1s ease-in-out infinite;
   }
 
