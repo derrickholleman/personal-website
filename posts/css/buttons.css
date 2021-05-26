@@ -167,7 +167,7 @@
     font-size: clamp(1.15rem, 2.5vw, 1.5rem);
     width: 65%;
     padding-top: 1rem;
-    line-height: 1.8;
+    line-height: 1.5;
   }
   .last-paragraph {
     margin-bottom: 6rem;
@@ -416,7 +416,7 @@ left: 0;
     .main-text {
         width: 97%;
         text-align: left;
-        line-height: 2;
+        line-height: 1.8;
     }
     .author {
         width: 97%;
