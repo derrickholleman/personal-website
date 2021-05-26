@@ -62,7 +62,7 @@
     padding-top: 1rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: clamp(1.15rem, 2vw, 1.3rem);
+    font-size: clamp(1.15rem, 2.3vw, 1.3rem);
   }
 
   .home-top {
