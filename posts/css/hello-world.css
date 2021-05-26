@@ -124,12 +124,12 @@
   .name {
     font-family: 'Roboto', sans-serif;
     color: rgb(168, 168, 168);
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: clamp(.9rem, 1.5vw, 1.1rem);
   }
   .date {
     font-family: 'Roboto', sans-serif;
     color: rgb(131, 131, 131);
-    font-size: clamp(.9rem, 2vw, 1.1rem);
+    font-size: clamp(.8rem, 1.35vw, .9rem);
   }
 
   .profile-pic {

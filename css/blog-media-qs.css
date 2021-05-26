@@ -1,6 +1,6 @@
 @media screen and (max-width: 481px) {
     .post-p {
-        line-height: 32px;
+        line-height: 1.8 !important;
     }
 }
 
@@ -33,7 +33,7 @@
         z-index: 10000;
         position: absolute;
         left: 50%;
-        margin-left: -26.5px;
+        margin-left: -22px;
         top: 1.75rem;
         background: none;
         outline: none;
@@ -121,7 +121,7 @@
     section .post-p {
         width: 97%;
         text-align: left;
-        line-height: 2;
+        line-height: 1.5;
     }
     section .author {
         width: 97%;

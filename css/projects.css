@@ -125,7 +125,7 @@
     color: #c55050;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: clamp(1.15rem, 2.8vw, 2rem);
+    font-size: clamp(1.15rem, 2.8vw, 1.5rem);
     padding-bottom: 1rem;
     width: 60%;
   }
