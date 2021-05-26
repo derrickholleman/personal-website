@@ -40,7 +40,7 @@
     left: 10%;
     margin-left: -25px;
     cursor: pointer;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.rem, 1.5vw, 1.2rem);
   }
   .go-back-top a:hover, 
   .go-back-top a:focus, 
@@ -75,7 +75,7 @@
     position: absolute;
     left: -2rem;
     width: 37px;
-    height: 37px;
+    height: 24px;
     animation: FadeIn .5s ease-in-out, MoveLeft 1s ease-in-out infinite;
   }
 
@@ -104,7 +104,7 @@
   .post-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: clamp(2.7rem, 6vw, 5rem);
+    font-size: clamp(2.5rem, 6vw, 4.8rem);
     color: #c55050;
     padding-bottom: .75rem;
     word-wrap: break-word;
@@ -150,7 +150,7 @@
 
   .accent {
     color: #c55050;
-    font-size: clamp(2.1rem, 3.5vw, 2.7rem);
+    font-size: clamp(2rem, 3.1vw, 2.7rem);
   }
 
   .post-container {
@@ -163,9 +163,10 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgb(168, 168, 168);
-    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    font-size: clamp(1.15rem, 2.7vw, 1.5rem);
     width: 65%;
     padding-top: 1rem;
+    line-height: 1.8;
   }
   .last-paragraph {
     margin-bottom: 6rem;
@@ -300,6 +301,16 @@ left: 0;
       left: 13%;
     }
   }
+
+  @media screen and (max-width: 581px) {
+    .main-text {
+      line-height: 2;
+    }
+    .accent {
+      line-height: 1.5;
+    }
+  }
+
 
   @media screen and (max-width: 768px) {
     body {
