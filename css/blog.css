@@ -97,7 +97,6 @@
   }
 
   .post-title {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: clamp(2.5rem, 6vw, 3.5rem);
     color: #c55050;
@@ -150,8 +149,8 @@
     border-radius: 40px;
     cursor: pointer;
     margin: 2rem 0 1rem 0;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-family: 'Open-Sans', sans-serif;
     font-size: .9rem;
     transition: .2s ease-in-out;
     width: max-content;
