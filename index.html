@@ -281,6 +281,7 @@
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   });
   </script>
+  <!--smooth scroll-->
   <script>
     $('a[href*="#"]').on('click', function (e) {
     e.preventDefault()
@@ -289,7 +290,7 @@
       {
         scrollTop: $($(this).attr('href')).offset().top,
       },
-      400, // scroll speed in ms //
+      250, // scroll speed in ms //
       'linear'
     )
   })
