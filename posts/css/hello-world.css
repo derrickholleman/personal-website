@@ -149,8 +149,8 @@
 
   .accent {
     color: #c55050;
-    font-size: clamp(2rem, 3.1vw, 2.7rem);
-    line-height: 1.5;
+    font-size: clamp(2rem, 3.1vw, 2.4rem);
+    line-height: 1.3;
   }
 
   .post-container {
@@ -163,10 +163,10 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: rgb(168, 168, 168);
-    font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+    font-size: clamp(1.2rem, 2.5vw, 1.3rem);
     width: 65%;
     padding-top: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
   }
   .last-paragraph {
     margin-bottom: 6rem;
@@ -411,9 +411,6 @@ left: 0;
     .blog-photo {
         height: 250px;
     }
-    .accent {
-      line-height: 1.5;
-    }
     .main-text {
         width: 97%;
         text-align: left;
@@ -460,4 +457,13 @@ left: 0;
         max-width: 100%;
         height: auto;
     }
+}
+
+@media screen and (min-width: 2000px) {
+  .main-text {
+    font-size: 2rem !important;
+  }
+  .accent {
+    font-size: 3rem !important;
+  }
 }
