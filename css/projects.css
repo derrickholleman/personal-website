@@ -106,7 +106,7 @@
   }
   .project-title {
     position: relative;
-    color: rgb(168, 168, 168);
+    color: rgb(202, 201, 201);
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: clamp(2.5rem, 3vw, 3rem);
