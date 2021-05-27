@@ -168,7 +168,7 @@ function renderLines(){
            fraction = getDisOf(balls[i], balls[j]) / dis_limit;
             
            if(fraction < 1){
-               alpha = (1 - fraction).toString();
+               alpha = (.85 - fraction).toString();
 
                ctx.strokeStyle = 'rgba(150,150,150,'+alpha+')';
                ctx.lineWidth = link_line_width;
@@ -193,7 +193,7 @@ function getDisOf(b1, b2){
 
 // add balls if there a little balls
 function addBallIfy(){
-    if(balls.length < 20){
+    if(balls.length < 25){
         balls.push(getRandomBall());
     }
 }
@@ -223,14 +223,14 @@ function initBalls(num){
             vy: getRandomSpeed('top')[1],
             r: R,
             alpha: 1,
-            phase: randomNumFrom(0, 10)
+            phase: randomNumFrom(0, 40) // # of balls 
         });
     }
 }
 // Init Canvas
 function initCanvas(){
     canvas.setAttribute('width', window.innerWidth);
-    canvas.setAttribute('height', window.innerHeight);
+    canvas.setAttribute('height', window.innerHeight + 750); // height of canvas
     
     can_w = parseInt(canvas.getAttribute('width'));
     can_h = parseInt(canvas.getAttribute('height'));
@@ -242,7 +242,7 @@ window.addEventListener('resize', function(e){
 
 function goMovie(){
     initCanvas();
-    initBalls(30);
+    initBalls(60); // default value 30
     window.requestAnimationFrame(render);
 }
 goMovie();

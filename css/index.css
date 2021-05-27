@@ -51,7 +51,7 @@
   }
 
   .hero-gray {
-    color: rgb(168, 168, 168);
+    color: rgb(202, 201, 201);
     font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: 300;
     margin-top: 3rem;
@@ -65,7 +65,7 @@
   .hero-btn {
     color: rgb(202, 201, 201);
     background-color: transparent;
-    border: 2px solid rgb(168, 168, 168);
+    border: 2px solid rgb(202, 201, 201);
     border-radius: 40px;
     cursor: pointer;
     margin: 1rem;
