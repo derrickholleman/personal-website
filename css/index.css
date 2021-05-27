@@ -186,7 +186,7 @@
     width: max-content; /* needed for animation to end on time */
     margin-bottom: 34rem;
   }
-  .about {
+  .mission {
     color: #c55050;
     font-size: clamp(1.7rem, 2.8vw, 2.3rem);
     cursor: pointer;
@@ -195,9 +195,9 @@
     position: relative;
     z-index: 3;
   }
-  .about:hover, 
-  .about:focus-within, 
-  .about:active {
+  .mission:hover, 
+  .mission:focus-within, 
+  .mission:active {
     animation-name: hvr-wobble-horizontal;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -238,9 +238,8 @@
       transform: translateY(1.5rem);
     }
   }
-  .down-arrow:hover, 
-  .down-arrow:focus-within, 
-  .down-arrow:active {
+   
+  .down-arrow:focus-within {
     outline: 1px solid white;
   }
   
