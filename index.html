@@ -127,7 +127,7 @@
       </div>
       <h2 class="hero-p-title typewriter">
         <div class="typewriter-text">I'm a Front End web developer and Full Stack developer in training.</div>
-        <div class="about" data-aos='slide-up' data-aos-duration='1000'>
+        <div class="about">
           <a href="#bottom">My Mission</a>
           <?xml version="1.0" encoding="iso-8859-1"?>
 <svg class ="down-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -280,6 +280,19 @@
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   });
+  </script>
+  <script>
+    $('a[href*="#"]').on('click', function (e) {
+    e.preventDefault()
+  
+    $('html, body').animate(
+      {
+        scrollTop: $($(this).attr('href')).offset().top,
+      },
+      1, // scroll speed in ms //
+      'linear'
+    )
+  })
   </script>
 </body>
 </html>
