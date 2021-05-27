@@ -184,7 +184,6 @@
     font-size: clamp(2rem, 3.2vw, 2.6rem);
     text-align: center;
     width: max-content; /* needed for animation to end on time */
-    z-index: 3;
     margin-bottom: 34rem;
   }
   .about {
@@ -194,6 +193,7 @@
     width: max-content;
     margin: 0 auto;
     position: relative;
+    z-index: 3;
   }
   .about:hover, 
   .about:focus-within, 
