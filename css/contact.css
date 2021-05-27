@@ -84,7 +84,7 @@
     width: 95%;
     max-width: 500px; /* stops form from getting larger */
     margin: 3rem auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open-Sans', sans-serif;
   }
 
   .form-field {
@@ -99,7 +99,7 @@
     width: 100%;
     background-color: rgba(255, 255, 255, .1);
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open-Sans', sans-serif;
   }
 
   input:focus, textarea:focus,
@@ -130,7 +130,7 @@
     color: rgb(168, 168, 168);
     font-size: 1rem;
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open-Sans', sans-serif;
     transition: .2s;
   }
   form button:hover, 
