@@ -269,23 +269,26 @@
   }
 /* ---------------------- */
 
-.p-section {
-  position: relative;
-  display: block;
-  max-width: 90%; /* allows pseudo element to be centered */
-  margin: 0 auto;
-} 
+  .p-section {
+    position: relative;
+    display: block;
+    max-width: 90%; /* allows pseudo element to be centered */
+    margin: 0 auto;
+  } 
 
-.p-section::before {
-  content: '';
-  position: absolute;
-  background-color: #00ffffb3;
-  width: 50px;
-  height: 2px;
-  top: -1.5rem;
-  left: 50%;
-  margin-left: -25px;
-}
+  .p-section::before {
+    content: '';
+    position: absolute;
+    background-color: #00ffffb3;
+    width: 50px;
+    height: 2px;
+    top: -1.5rem;
+    left: 50%;
+    margin-left: -25px;
+  }
+  .p-section:nth-child(1) {
+    margin-top: 5rem;
+  }
 
   nav {
     width: 100%;
