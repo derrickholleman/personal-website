@@ -28,6 +28,9 @@
     .hero-buttons {
       margin-bottom: 5rem;
     }
+    .about[data-aos='slide-up'] {
+      transform: none !important;
+    }
 }
 /* -------------- */
 
