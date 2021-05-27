@@ -181,13 +181,17 @@
     display: flex;
     flex-direction: column;
     color: rgb(202, 201, 201);
-    font-size: clamp(2rem, 3.2vw, 2.6rem);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: clamp(2rem, 3.2vw, 2.9rem);
     text-align: center;
     width: max-content; /* needed for animation to end on time */
     margin-bottom: 34rem;
   }
   .mission {
     color: #c55050;
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: 300;
     font-size: clamp(1.7rem, 2.8vw, 2.3rem);
     cursor: pointer;
     width: max-content;
