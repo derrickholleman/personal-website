@@ -126,9 +126,9 @@
   }
 
   .post-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: clamp(2.5rem, 6vw, 4.8rem);
+    font-size: clamp(2.5rem, 6vw, 4.4rem);
     color: #c55050;
     padding-bottom: .75rem;
     word-wrap: break-word;
