@@ -167,10 +167,10 @@
     text-decoration: none;
     display: block; /* display block allows height and width to be edited */
     color: inherit;
-    height: 3.7rem; /* specifying height/width makes whole button clickable */
-    width: 10rem;
-    line-height: 3.7rem;
-    font-size: 1.3rem;
+    height: 3.1rem; /* specifying height/width makes whole button clickable */
+    width: 8.8rem;
+    line-height: 3.1rem;
+    font-size: 1.1rem;
   }
 
 /* NAV/FOOTER STYLES */
