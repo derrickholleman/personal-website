@@ -177,3 +177,9 @@
         height: auto;
     }
 }
+
+@media screen and (min-width: 2000px) {
+    .post-p {
+        font-size: 1.6rem !important;
+    }
+}
