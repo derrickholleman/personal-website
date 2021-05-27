@@ -223,12 +223,6 @@
       transform: translateX(0);
     }
   }
-  .hvr-wobble-horizontal {
-    display: inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
   .down-arrow {
     position: absolute;
     z-index: 3;
@@ -319,6 +313,7 @@
     transition: .2s;
     position: relative; /* needed for underline */
     font-size: clamp(1rem, 2vw, 1.2rem);
+    z-index: 3;
   }
   .nav-ul li a:hover, 
   .nav-ul li a:focus, 
@@ -366,6 +361,7 @@
     justify-content: space-evenly;
     width: 30%;
     margin: 0 auto;
+    z-index: 3;
   }
   .icon path {
     fill: "#a8a8a8";
