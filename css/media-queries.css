@@ -269,3 +269,12 @@
         transform: translate(0px);
       }
 }
+
+@media screen and (min-width: 2000px) {
+  .hero-p{
+    font-size: 2em !important;
+  }
+  .hero-p-title {
+    font-size: 3em !important;
+  }
+}
