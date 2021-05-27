@@ -107,8 +107,8 @@
   .project-title {
     position: relative;
     color: rgb(202, 201, 201);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: clamp(2.5rem, 3vw, 3rem);
     margin-bottom: 1.5rem;
   }
