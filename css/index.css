@@ -238,6 +238,11 @@
       transform: translateY(1.5rem);
     }
   }
+  .down-arrow:hover, 
+  .down-arrow:focus-within, 
+  .down-arrow:active {
+    outline: 1px solid white;
+  }
   
   /* TYPEWRITER ANIMATION */
   .typewriter {
