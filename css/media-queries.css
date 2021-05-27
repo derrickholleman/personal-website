@@ -18,7 +18,7 @@
 }
 
 /* largest phones */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 414px) {
     .hero-p {
         max-width: 80%;
     }
@@ -30,6 +30,7 @@
     }
     .about[data-aos='slide-up'] {
       transform: none !important;
+      opacity: 1 !important;
     }
 }
 /* -------------- */
