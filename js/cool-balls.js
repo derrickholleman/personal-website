@@ -168,7 +168,7 @@ function renderLines(){
            fraction = getDisOf(balls[i], balls[j]) / dis_limit;
             
            if(fraction < 1){
-               alpha = (.85 - fraction).toString();
+               alpha = (.9 - fraction).toString(); // lines frequency
 
                ctx.strokeStyle = 'rgba(150,150,150,'+alpha+')';
                ctx.lineWidth = link_line_width;
@@ -193,7 +193,7 @@ function getDisOf(b1, b2){
 
 // add balls if there a little balls
 function addBallIfy(){
-    if(balls.length < 25){
+    if(balls.length < 30){
         balls.push(getRandomBall());
     }
 }
