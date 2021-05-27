@@ -2,10 +2,11 @@
     
 }
 
-@media screen and (min-width: 321px) and (max-width: 479px) {
-
+@media screen and (max-width: 387px) {
+  .hero-buttons {
+    margin-bottom: 3rem !important;
+  }
 }
-
 @media screen and (max-width: 398px) {
     .hero-title {
         margin: 7rem 1rem .5rem 1rem;
@@ -23,6 +24,9 @@
     }
     .social-icons {
         width: 75%;
+    }
+    .hero-buttons {
+      margin-bottom: 5rem;
     }
 }
 /* -------------- */
@@ -54,9 +58,6 @@
     }
     .hero-title {
         margin-top: 9rem;
-    }
-    .hero-p-title {
-        margin-bottom: 3rem;
     }
     .hero-p {
         color: #df7171;
@@ -187,7 +188,6 @@
     white-space: normal;
   }
   .hero-p-title {
-    margin-bottom: 3rem;
     width: 95%;
 }
 }
@@ -271,10 +271,10 @@
 }
 
 @media screen and (min-width: 2000px) {
-  .hero-p{
+  .hero-p {
     font-size: 2em !important;
   }
-  .hero-p-title {
+  .hero-p-title, .about {
     font-size: 3em !important;
   }
 }
