@@ -56,12 +56,10 @@
         margin-top: 9rem;
     }
     .hero-p-title {
-        font-size: 2rem;
         margin-bottom: 3rem;
     }
     .hero-p {
         color: #df7171;
-        font-size: 1.5rem;
         margin-bottom: 1rem;
         line-height: 1.8;
     }
@@ -189,7 +187,6 @@
     white-space: normal;
   }
   .hero-p-title {
-    font-size: 1.9rem;
     margin-bottom: 3rem;
     width: 95%;
 }
