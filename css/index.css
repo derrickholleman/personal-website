@@ -235,11 +235,11 @@
     left: 50%;
     margin-left: -12.5px;
     bottom: -1.5rem;
-    animation: pointDown 2s infinite ease-in-out;
+    animation: pointDown 1.7s infinite ease-in-out;
   }
   @keyframes pointDown {
     50% {
-      transform: translateY(1.5rem);
+      transform: translateY(1rem);
     }
   }
    
