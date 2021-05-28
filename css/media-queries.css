@@ -2,8 +2,10 @@
   .back-to-top {
     right: 40px !important;
     bottom: 150px !important;
-    width: 34px !important;
-    height: 34px !important;
+  }
+  .back-to-top svg {
+    width: 37px !important;
+    height: 37px !important;
   }
 }
 
@@ -176,7 +178,7 @@
        }
 }
 @media screen and (min-width: 768px) {
-  .back-to-top {
+  .back-to-top svg {
     width: 50px;
     height: 50px;
   }
