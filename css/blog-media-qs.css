@@ -3,6 +3,11 @@
         line-height: 1.8 !important;
     }
 }
+@media screen and (min-width: 492px) {
+    .space {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 583px) {
     .social-icons {
