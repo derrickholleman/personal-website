@@ -412,4 +412,17 @@
 
   .back-to-top {
     display: none;
+    animation: Flip 3.2s 1s infinite forwards;
+  }
+/* 20% and 100% makes a delay between each animation iteration */
+  @keyframes Flip {
+    0% {
+      transform: rotate(270deg)
+    }
+    20% {
+      transform: rotate(630deg);
+    }
+    100% {
+      transform: rotate(630deg);
+    }
   }
