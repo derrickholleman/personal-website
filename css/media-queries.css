@@ -1,3 +1,12 @@
+@media screen and (max-width: 320px) {
+  .back-to-top {
+    right: 40px !important;
+    bottom: 150px !important;
+    width: 34px !important;
+    height: 34px !important;
+  }
+}
+
 @media screen and (max-width: 387px) {
   .hero-buttons {
     margin-bottom: 3rem !important;
@@ -158,6 +167,19 @@
        .copyright {
            margin-bottom: 2rem;
        }
+       .back-to-top {
+         display: block;
+         position: absolute;
+         bottom: 140px;
+         right: 50px;
+         transform: rotate(270deg);
+       }
+}
+@media screen and (min-width: 768px) {
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+  }
 }
 /* --------------------- */
 /* SWITCH TO MOBILE VIEW */
