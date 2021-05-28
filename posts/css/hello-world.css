@@ -330,6 +330,12 @@ left: 0;
     }
   }
 
+  @media screen and (min-width: 492px) {
+    .space {
+        display: none;
+    }
+}
+
   @media screen and (max-width: 581px) {
     .main-text {
       line-height: 2;
