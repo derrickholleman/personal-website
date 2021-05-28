@@ -167,7 +167,7 @@
   /* -------------------------- */
 
   .hero-p {
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: clamp(1.3rem, 2vw, 1.5rem);
