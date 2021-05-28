@@ -198,7 +198,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 3;
-    animation: wobble-horizontal 2.5s ease-in-out infinite;
+    animation: wobble-horizontal 2s ease-in-out infinite;
   }
   .mission:hover, 
   .mission:focus-within, 
