@@ -225,22 +225,26 @@
       transform: translateX(0);
     }
   }
-  .down-arrow {
+
+  .right-arrow:focus-within {
+    outline: 1px solid white;
+  }
+  .right-arrow {
     position: absolute;
     z-index: 3;
-    width: 25px;
-    height: 25px;
-    left: 50%;
-    bottom: -1.5rem;
+    width: 22px;
+    height: 22px;
+    left: 107%;
+    bottom: .55rem;
   }
 
-  .mission:hover .down-arrow path, 
-  .mission:focus-within .down-arrow path, 
-  .mission:active .down-arrow path {
+  .mission:hover .right-arrow path, 
+  .mission:focus-within .right-arrow path, 
+  .mission:active .right-arrow path {
     fill: #c55050;
   }
    
-  .down-arrow:focus-within {
+  .right-arrow:focus-within {
     outline: 1px solid white;
   }
   

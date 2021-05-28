@@ -282,6 +282,14 @@
       }
 }
 
+@media screen and (min-width: 1187px) {
+  .right-arrow {
+    width: 30px;
+    height: 30px;
+    bottom: .7rem;
+  }
+}
+
 @media screen and (min-height: 1270px) {
   .hero-p-title {
     margin-bottom: 45rem !important;
