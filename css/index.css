@@ -189,7 +189,7 @@
     margin-bottom: 34rem;
   }
   .mission {
-    color: #c55050;
+    color: #00ffffb3;
     font-family: 'Open-Sans', sans-serif;
     font-weight: 600;
     font-size: clamp(1.7rem, 2.8vw, 2.3rem);
@@ -198,30 +198,31 @@
     margin: 0 auto;
     position: relative;
     z-index: 3;
+    animation: wobble-horizontal 3s ease-in-out infinite;
   }
   .mission:hover, 
   .mission:focus-within, 
   .mission:active {
-    animation-name: hvr-wobble-horizontal;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+    color: #c55050;
   }
-  @keyframes hvr-wobble-horizontal {
-    16.65% {
+  @keyframes wobble-horizontal {
+    6.65% {
       transform: translateX(8px);
     }
-    33.3% {
+    18.3% {
       transform: translateX(-6px);
     }
-    49.95% {
+    34.95% {
       transform: translateX(4px);
     }
-    66.6% {
+    50.6% {
       transform: translateX(-2px);
     }
-    83.25% {
+    68.25% {
       transform: translateX(1px);
+    }
+    85% {
+      transform: translateX(0);
     }
     100% {
       transform: translateX(0);
@@ -235,12 +236,18 @@
     left: 50%;
     margin-left: -12.5px;
     bottom: -1.5rem;
-    animation: pointDown 1.7s infinite ease-in-out;
+    /* animation: pointDown 1.7s infinite ease-in-out; */
   }
-  @keyframes pointDown {
+  /* @keyframes pointDown {
     50% {
       transform: translateY(1rem);
     }
+  } */
+
+  .mission:hover .down-arrow path, 
+  .mission:focus-within .down-arrow path, 
+  .mission:active .down-arrow path {
+    fill: #c55050;
   }
    
   .down-arrow:focus-within {
