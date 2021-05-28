@@ -182,7 +182,7 @@
     flex-direction: column;
     color: rgb(202, 201, 201);
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: clamp(2rem, 3.2vw, 2.9rem);
     text-align: center;
     width: max-content; /* needed for animation to end on time */
@@ -191,7 +191,7 @@
   .mission {
     color: #c55050;
     font-family: 'Open-Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     font-size: clamp(1.7rem, 2.8vw, 2.3rem);
     cursor: pointer;
     width: max-content;
