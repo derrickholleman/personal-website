@@ -307,17 +307,6 @@
       'linear'
     )
   })
-  $('[xlink|href*="#"]').on('click', function (e) {
-    e.preventDefault()
-  
-    $('html, body').animate(
-      {
-        scrollTop: $($(this).attr('href')).offset().top,
-      },
-      300, // scroll speed in ms //
-      'linear'
-    )
-  })
   </script>
 </body>
 </html>
