@@ -1,3 +1,8 @@
+@media screen and (max-width: 319px) {
+  .hero-title {
+    font-size: 2.6rem !important;
+  }
+}
 @media screen and (max-width: 320px) {
   .back-to-top {
     right: 40px !important;
