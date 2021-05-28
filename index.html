@@ -307,7 +307,7 @@
       'linear'
     )
   })
-  $('a[xlink:href*="#"]').on('click', function (e) {
+  $('[xlink|href*="#"]').on('click', function (e) {
     e.preventDefault()
   
     $('html, body').animate(
