@@ -32,8 +32,6 @@
     top: 1.5rem;
     right: 0;
     color: rgb(168, 168, 168);
-    font-weight: 300;
-    font-family: 'Open-Sans', sans-serif;
     font-size: clamp(1.1rem, 2vw, 1.3rem);
     z-index: 3;
   }
@@ -47,6 +45,8 @@
   }
   .nav-ul-top li a {
     position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
   }
   .nav-ul-top li a:hover, 
   .nav-ul-top li a:focus, 
@@ -371,7 +371,7 @@
     font-weight: 300;
     transition: .2s;
     position: relative; /* needed for underline */
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
     z-index: 3;
   }
   .nav-ul li a:hover, 
