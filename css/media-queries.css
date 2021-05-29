@@ -50,7 +50,7 @@
     body {
         background: rgb(23, 22, 22) !important;
     }
-    .nav-ul {
+    .nav-ul-top {
         display: none;
     } 
     .hamburger {

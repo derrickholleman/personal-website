@@ -26,6 +26,33 @@
     max-width: 100%;
     margin: 0 auto;
   }
+/* copy and paste to other .css files */
+  .nav-ul-top {
+    position: absolute;
+    top: 1.5rem;
+    right: 0;
+    color: rgb(168, 168, 168);
+    font-weight: 300;
+    font-family: 'Open-Sans', sans-serif;
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    z-index: 3;
+  }
+  .is-active-top {
+    color: #c55050;
+  }
+  .nav-ul-top ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nav-ul-top li a {
+    position: relative;
+  }
+  .nav-ul-top li a:hover, 
+  .nav-ul-top li a:focus, 
+  .nav-ul-top  li a:active {
+    color: #c55050;
+  }
 
   .hero-title {
     color: #c55050;
@@ -34,8 +61,9 @@
     text-align: center;
     font-weight: 700;
     width: 95%;
-    margin: 0 auto;
+    margin: 4rem auto 1rem 2rem;
   }
+/* copy and paste to other .css files */
   .period {
     display: inline-block; /* animation on span won't work without display property */
     color: rgb(168, 168, 168);
