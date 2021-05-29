@@ -26,7 +26,7 @@
     max-width: 100%;
     margin: 0 auto;
   }
-/* copy and paste to other .css files */
+/* copy and paste to other .css files for easy nav add */
   .nav-ul-top {
     position: absolute;
     top: 1.5rem;
@@ -63,7 +63,8 @@
     width: 95%;
     margin: 4rem auto 1rem 2rem;
   }
-/* copy and paste to other .css files */
+/* copy and paste to other .css files for easy nav add */
+
   .period {
     display: inline-block; /* animation on span won't work without display property */
     color: rgb(168, 168, 168);

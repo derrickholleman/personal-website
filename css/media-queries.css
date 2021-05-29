@@ -53,6 +53,9 @@
     .nav-ul-top {
         display: none;
     } 
+    .nav-ul {
+      display: none;
+    }
     .hamburger {
         display: block;
         z-index: 10000;
