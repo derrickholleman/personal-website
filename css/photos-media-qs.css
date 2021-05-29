@@ -29,6 +29,9 @@
     body {
         background: rgb(23, 22, 22) !important;
     }
+    .nav-ul {
+        display: none;
+    }
     .home-top {
         display: none;
     } 
