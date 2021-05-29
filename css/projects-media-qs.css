@@ -10,12 +10,12 @@
     }
 }
 /* directions dont fade in on desktop/tablet */
-@media screen and (min-width: 783px) {
+@media screen and (min-width: 769px) {
     .directions {
         animation: none;
     }
 }
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 768px) {
     /* no titles animation on mobile */
     [data-aos] {
         transform: none !important;
