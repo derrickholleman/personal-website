@@ -1,6 +1,12 @@
+@media screen and (max-width: 275px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
 @media screen and (max-width: 490px) {
     .header-container {
-        margin: 4rem auto 0rem auto
+        margin: 5rem auto 0rem auto
     }
     .section-container {
         margin: 0rem auto 4rem auto;
@@ -38,7 +44,7 @@
         position: absolute;
         left: 50%;
         margin-left: -26.5px;
-        top: -2.3rem;
+        top: -3rem;
         background: none;
         outline: none;
         border: none;

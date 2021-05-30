@@ -13,7 +13,7 @@
   .header-container {
     position: relative;
     width: 1440px;
-    margin: 5rem auto;
+    margin: 6rem auto;
     max-width: 100%;
   }
   @media screen and (min-width: 768px) {
