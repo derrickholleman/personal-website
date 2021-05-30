@@ -34,6 +34,9 @@
     .home-top {
         display: none;
     } 
+    .nav-ul-top {
+        display: none;
+    } 
     header .hamburger {
         display: block;
         z-index: 10000;

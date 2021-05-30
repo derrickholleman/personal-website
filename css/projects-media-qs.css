@@ -24,6 +24,13 @@
     body {
         background: rgb(23, 22, 22) !important;
     }
+    
+    .home-top {
+        display: none;
+    }  
+    .nav-ul-top {
+        display: none;
+    } 
 
     .hamburger {
         display: block;
@@ -102,10 +109,7 @@
          opacity: 1;
         }
        }
-       /* mobile nav fade in animation END */
-    .home-top {
-        display: none;
-    }   
+       /* mobile nav fade in animation END */ 
     .directions {
         width: 75%;
         margin-top: 5rem;
