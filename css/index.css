@@ -27,9 +27,19 @@
     margin: 0 auto;
   }
 /* copy and paste to other .css files for easy nav add */
+
+  .home-top:hover path, 
+  .home-top:focus-within path, 
+  .home-top:active path {
+    fill: #c55050;
+    transition: .2s ease-in-out;
+  }
+  .is-active-top path {
+    fill: #c55050;
+  }
   .nav-ul-top {
     position: absolute;
-    top: 1.5rem;
+    top: 2rem;
     right: 0;
     color: rgb(168, 168, 168);
     font-size: clamp(1.1rem, 2vw, 1.3rem);
@@ -47,12 +57,14 @@
     position: relative;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    transition: .2s ease-in-out;
   }
   .nav-ul-top li a:hover, 
   .nav-ul-top li a:focus, 
   .nav-ul-top  li a:active {
     color: #c55050;
   }
+/* copy and paste to other .css files for easy nav add */
 
   .hero-title {
     color: #c55050;
@@ -61,9 +73,8 @@
     text-align: center;
     font-weight: 700;
     width: 95%;
-    margin: 4rem auto 1rem 2rem;
+    margin: 5rem auto 1rem 2rem;
   }
-/* copy and paste to other .css files for easy nav add */
 
   .period {
     display: inline-block; /* animation on span won't work without display property */
