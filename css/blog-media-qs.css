@@ -37,13 +37,16 @@
     .nav-ul-top {
         display: none;
     } 
+    header {
+        margin: 5rem auto 6.5rem auto !important;
+      }
     header .hamburger {
         display: block;
         z-index: 10000;
         position: absolute;
         left: 50%;
         margin-left: -22px;
-        top: 1.75rem;
+        top: -2.5rem;
         background: none;
         outline: none;
         border: none;

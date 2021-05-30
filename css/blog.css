@@ -10,24 +10,49 @@
   .mobile-nav li a.is-open {
     color: #00ffffb3
   }
+  header {
+    position: relative;
+  }
   
-  .home-top {
-    position: absolute;
-    top: 1.5rem;
-    left: 50%;
-    margin-left: -25px;
-    cursor: pointer;
-  }
+/* copy and paste to other .css files for easy nav add */
 
-  .home-top:hover path, 
-  .home-top:focus-within path, 
-  .home-top:active path {
-    fill: #c55050;
-    transition: .2s;
-  }
+.home-top:hover path, 
+.home-top:focus-within path, 
+.home-top:active path {
+  fill: #c55050;
+  transition: .2s ease-in-out;
+}
+.nav-ul-top {
+  position: absolute;
+  top: -4rem;
+  right: 0;
+  color: rgb(168, 168, 168);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  z-index: 3;
+}
+.is-active-top {
+  color: #c55050;
+}
+.nav-ul-top ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-ul-top li a {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  transition: .2s ease-in-out;
+}
+.nav-ul-top li a:hover, 
+.nav-ul-top li a:focus, 
+.nav-ul-top  li a:active {
+  color: #c55050;
+}
+/* copy and paste to other .css files for easy nav add */
 
   header {
-    margin: 5rem auto 6.5rem auto;
+    margin: 6.5rem auto 6.5rem auto;
   }
 
   .title {

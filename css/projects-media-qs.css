@@ -5,9 +5,6 @@
 }
 
 @media screen and (max-width: 490px) {
-    .header-container {
-        margin: 5rem auto 0rem auto
-    }
     .section-container {
         margin: 0rem auto 4rem auto;
     }
@@ -30,7 +27,9 @@
     body {
         background: rgb(23, 22, 22) !important;
     }
-    
+    .header-container {
+        margin: 5rem auto 0rem auto
+    }
     .home-top {
         display: none;
     }  
@@ -44,7 +43,7 @@
         position: absolute;
         left: 50%;
         margin-left: -26.5px;
-        top: -3rem;
+        top: -2.5rem;
         background: none;
         outline: none;
         border: none;
