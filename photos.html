@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="css/photos.css">
   <link rel="stylesheet" type="text/css" href="css/photos-media-qs.css">
   <link rel="stylesheet" type="text/css" href="css/hamburger-animation.css">
+  <!-- fade in on scroll style sheet -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--jQuery import link-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!--Custom fonts-->
@@ -209,5 +211,21 @@
  <script src="js/hamburger.js"></script>
  <script src="js/vanilla-tilt.js"></script>
  <script src="js/cool-balls.js"></script>
+  <!--FADE IN ON SCROLL SCRIPT-->
+  <script>
+    AOS.init();
+
+    AOS.init({
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease-in-out-cubic', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+  </script>
 </body>
 </html>
