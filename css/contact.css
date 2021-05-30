@@ -257,7 +257,7 @@
 
   .nav-ul li {
     margin: 0 auto;
-    width: max-content;
+    /* width: max-content; */
   }
 
   .nav-ul li a {

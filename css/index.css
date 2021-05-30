@@ -329,7 +329,7 @@
   }
 
   nav {
-    width: 100%;
+    width: 100%; /* takes up 100% of screen size, allows for responsive absolutely positioned top nav */
     margin-bottom: 4rem;
   }
 
@@ -362,7 +362,7 @@
 
   .nav-ul li {
     margin: 0 auto;
-    width: max-content;
+    /* width: max-content; */
   }
 
   .nav-ul li a {
