@@ -361,7 +361,7 @@
   }
 
   .nav-ul li {
-    margin: 0 auto;
+    margin: 0 auto; /* evenly spaces nav ul items */
     /* width: max-content; */
   }
 
