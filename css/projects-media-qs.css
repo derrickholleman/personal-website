@@ -133,14 +133,14 @@
     }
     .project-title {
         font-size: clamp(2.2rem, 7vw, 3rem);
-        width: 90%;
+        width: 100%;
         margin: 0 auto 1rem auto;
     }
     .project-title::after {
        width: 100%;
       }
     .project-description {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         color: #df7171;
         line-height: 1.5;
@@ -174,5 +174,12 @@
     }
     footer {
         margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 1475px) {
+    .project-section {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
