@@ -68,7 +68,7 @@
       margin-top: -1rem;
     }
     .hero-title {
-        margin-top: 9rem;
+        margin: 9rem auto 0 auto;
     }
     .hero-p {
         color: #df7171;
