@@ -151,7 +151,7 @@
     .project-description {
         width: 100%;
         margin: 0 auto;
-        color: #df7171;
+        color: rgb(168, 168, 168);
         line-height: 1.5;
     }
     .home-bottom {
