@@ -26,6 +26,9 @@
     .nav-ul-top {
         display: none;
     } 
+    .title {
+        top: -1rem;
+    }
     header .hamburger {
         display: block;
         z-index: 10000;
