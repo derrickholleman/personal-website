@@ -67,6 +67,7 @@
   .nav-ul-top  li a:active {
     color: #c55050;
   }
+  /* wrapped svg in a div so it can be equal length as heart svg */
   .svg-container {
     width: 75px;
     text-align: center;
