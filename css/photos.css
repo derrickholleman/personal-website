@@ -45,6 +45,9 @@
   align-items: center;
   justify-content: space-evenly;
 }
+.nav-ul-top li {
+  margin: 0 auto;
+}
 .nav-ul-top li a {
   position: relative;
   font-family: 'Open Sans', sans-serif;
@@ -55,6 +58,10 @@
 .nav-ul-top li a:focus, 
 .nav-ul-top  li a:active {
   color: #c55050;
+}
+.svg-container {
+  width: 75px;
+  text-align: center;
 }
 /* copy and paste to other .css files for easy nav add */
 
