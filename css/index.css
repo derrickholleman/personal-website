@@ -163,7 +163,7 @@
   }
   .resume-icon {
     position: absolute;
-    width: 45px;
+    width: 0px;
     top: .3rem;
     left: 3.7rem;
     opacity: 0;
@@ -175,6 +175,7 @@
   .hero-btn:focus-within .resume-icon,
   .hero-btn:active .resume-icon {
     visibility: visible;
+    width: 45px;
     opacity: 1;
     transform: translate(0px);
   }
@@ -199,7 +200,7 @@
   }
   .github-icon {
     position: absolute;
-    width: 45px;
+    width: 0px;
     top: .3rem;
     left: 3.7rem;
     opacity: 0;
@@ -211,6 +212,7 @@
   .hero-btn:focus-within .github-icon,
   .hero-btn:active .github-icon {
     visibility: visible;
+    width: 45px;
     opacity: 1;
     transform: translate(0px);
   }
