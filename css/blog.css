@@ -64,7 +64,6 @@
     letter-spacing: .15rem;
     text-align: center;
     position: relative;
-    left: 9px;
   }
   .period {
     display: inline-block; /* animation on span won't work without display property */
