@@ -247,7 +247,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 3;
-    animation: wobble-horizontal 2s ease-in-out infinite;
+    animation: wobble-horizontal 4s ease-in-out infinite;
   }
 
   .mission:hover, 
@@ -256,20 +256,23 @@
     color: #c55050;
   }
   @keyframes wobble-horizontal {
-    16.65% {
+    8.325% {
       transform: translateX(8px);
     }
-    33.3% {
+    16.65% {
       transform: translateX(-6px);
     }
-    49.95% {
+    24.975% {
       transform: translateX(4px);
     }
-    66.6% {
+    33.3% {
       transform: translateX(-2px);
     }
-    83.25% {
+    41.625% {
       transform: translateX(1px);
+    }
+    50% {
+      transform: translateX(0);
     }
     100% {
       transform: translateX(0);
