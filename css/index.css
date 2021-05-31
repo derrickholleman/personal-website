@@ -163,16 +163,18 @@
   }
   .resume-icon {
     position: absolute;
+    width: 45px;
     top: .3rem;
     left: 3.7rem;
-    width: 45px;
     opacity: 0;
     transition: .3s ease-in-out;
     transform: translateX(-110px);
+    visibility: hidden; /* can't be clickable until hover state activates */
   }
   .hero-btn:hover .resume-icon, 
   .hero-btn:focus-within .resume-icon,
   .hero-btn:active .resume-icon {
+    visibility: visible;
     opacity: 1;
     transform: translate(0px);
   }
@@ -197,16 +199,18 @@
   }
   .github-icon {
     position: absolute;
+    width: 45px;
     top: .3rem;
     left: 3.7rem;
-    width: 45px;
     opacity: 0;
     transition: .25s ease-in-out;
     transform: translateX(110px);
+    visibility: hidden; /* can't be clickable until hover state activates */
   }
   .hero-btn:hover .github-icon, 
   .hero-btn:focus-within .github-icon,
   .hero-btn:active .github-icon {
+    visibility: visible;
     opacity: 1;
     transform: translate(0px);
   }
