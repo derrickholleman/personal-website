@@ -31,6 +31,9 @@
 
 /* largest phones */
 @media screen and (max-width: 480px) {
+    .hero-title {
+      letter-spacing: .05rem;
+    }
     .hero-p {
         max-width: 80%;
     }
