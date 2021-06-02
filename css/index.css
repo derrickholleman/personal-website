@@ -220,7 +220,6 @@
   /* -------------------------- */
 
   .hero-p {
-    padding-top: 1rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: clamp(1.3rem, 2vw, 1.5rem);
@@ -239,8 +238,37 @@
     font-size: clamp(2rem, 3.2vw, 2.9rem);
     text-align: center;
     width: max-content; /* needed for animation to end on time */
-    margin-bottom: 34rem;
+    margin-bottom: 10rem;
   }
+  /* TYPEWRITER ANIMATION */
+  .typewriter {
+    display: inline-block;
+  }
+  .typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    animation: typing 5s steps(54, end), blink .75s step-end 7 forwards;
+    white-space: nowrap;
+    border-right: 3px solid #00ffffb3;
+    margin-bottom: 1.5rem;
+  }
+  @keyframes typing {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    0%, 100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #00ffffb3;
+    }
+  }
+/* ---------------------- */
   .mission {
     display: flex; /* adding display flex makes the inner "a" child the same height as parent div, allowing whole "a" element to be clickable */
     color: #00ffffb3;
@@ -305,36 +333,36 @@
   .right-arrow:focus-within {
     outline: 1px solid white;
   }
-  
-  /* TYPEWRITER ANIMATION */
-  .typewriter {
-    display: inline-block;
+
+  .skills-container {
+    max-width: 1440px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
   }
-  .typewriter-text {
-    display: inline-block;
-    overflow: hidden;
-    animation: typing 5s steps(54, end), blink .75s step-end 7 forwards;
-    white-space: nowrap;
-    border-right: 3px solid #00ffffb3;
+  .skills-section {
+    margin: 2rem 0;
+  }
+  .skills-title {
+    color: rgb(202, 201, 201);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    text-align: center;
     margin-bottom: 1.5rem;
   }
-  @keyframes typing {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 100%;
-    }
+  .skills-row {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
   }
-  @keyframes blink {
-    0%, 100% {
-      border-color: transparent;
-    }
-    50% {
-      border-color: #00ffffb3;
-    }
+  .skills-row img {
+    margin: 0 1rem;
   }
-/* ---------------------- */
 
   .p-section {
     position: relative;
