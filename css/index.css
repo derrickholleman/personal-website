@@ -238,7 +238,7 @@
     font-size: clamp(2rem, 3.2vw, 2.9rem);
     text-align: center;
     width: max-content; /* needed for animation to end on time */
-    margin-bottom: 10rem;
+    margin-bottom: 11rem;
   }
   /* TYPEWRITER ANIMATION */
   .typewriter {
