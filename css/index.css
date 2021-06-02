@@ -228,7 +228,9 @@
     text-align: center;
     line-height: 1.6;
   }
-
+  h2 {
+    font-size: inherit;
+  }
   .hero-p-title {
     display: flex;
     flex-direction: column;
