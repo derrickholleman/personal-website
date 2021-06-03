@@ -300,18 +300,12 @@
   }
 }
 
-@media screen and (min-height: 1270px) {
-  .hero-p-title {
-    margin-bottom: 45rem !important;
-  }
-}
-
 @media screen and (min-width: 2000px) {
   .hero-p {
     font-size: 2em !important;
   }
   .hero-p-title {
     font-size: 3em !important;
-    margin-bottom: 48rem !important;
+    margin-bottom: 15rem !important;
   }
 }
