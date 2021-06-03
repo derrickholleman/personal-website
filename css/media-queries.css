@@ -28,6 +28,11 @@
         flex-direction: column;
     }
 }
+/* @media screen and (max-width: 390px) {
+  .mission {
+    left: -.5rem;
+  }
+} */
 
 /* largest phones */
 @media screen and (max-width: 480px) {
@@ -211,7 +216,7 @@
   }
   .hero-p-title {
     width: 95%;
-}
+  }
 }
 /* avoids using jump and typewriter animation on the home page at the same time */
 @media screen and (max-width: 1022px) {
