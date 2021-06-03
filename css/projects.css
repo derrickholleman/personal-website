@@ -156,7 +156,7 @@
     background-color: #00ffffb3;
   }
   .project-description {
-    color: rgb(168, 168, 168);
+    color: rgb(202, 201, 201);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: clamp(1.15rem, 2.8vw, 1.5rem);
