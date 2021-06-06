@@ -124,6 +124,9 @@
         font-weight: 300;
         font-size: clamp(1.2rem, 2vw, 1.7rem);
     }
+    footer .copyright {
+        margin-top: 4rem;
+    }
     footer .footer-mobile-nav li a:hover, 
     footer .footer-mobile-nav li a:focus, 
     footer .footer-mobile-nav li a:active {
