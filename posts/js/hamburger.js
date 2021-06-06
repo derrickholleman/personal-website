@@ -25,3 +25,15 @@ jQuery('.hamburger').click(function(){
     }
 });
 
+/* aria accessibility (expanded and collapsed) */
+function ariaToggle() {
+    var x = document.querySelector(".hamburger").getAttribute("aria-expanded"); 
+    if (x == "true") 
+    {
+    x = "false"
+    } else {
+    x = "true"
+    }
+    document.querySelector(".hamburger").setAttribute("aria-expanded", x);
+    }
+
