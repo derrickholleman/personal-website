@@ -31,3 +31,8 @@
         bottom: 3rem;
     }
 }
+@media screen and (min-width: 2000px) {
+    .nav-ul li a {
+      font-size: 1.75rem !important;
+    } 
+  }
