@@ -136,3 +136,22 @@
         margin-left: -20px;
     }
 }
+
+@media screen and (min-width: 2000px) {
+    body {
+        display: grid;
+        place-items: center;
+    }
+    .title {
+        margin-bottom: 2rem;
+    }
+    .contact-form {
+        min-width: 447px;
+    }
+    ul li {
+        font-size: 1.75rem;
+    }
+    footer ul li a {
+        font-size: 1.75rem !important;
+    }
+}

@@ -491,4 +491,7 @@ left: 0;
   .accent {
     font-size: 3rem !important;
   }
+  .nav-ul li a {
+    font-size: 1.75rem !important;
+  } 
 }

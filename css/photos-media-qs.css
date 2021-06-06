@@ -159,3 +159,11 @@
         width: 50%;
     }
 }
+@media screen and (min-width: 2000px) {
+    ul li {
+        font-size: 1.75rem;
+    }
+    .nav-ul li a {
+        font-size: 1.75rem !important;
+    } 
+}
