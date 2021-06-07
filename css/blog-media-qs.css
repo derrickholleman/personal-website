@@ -179,7 +179,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1120px) {
     .blog-header .blog-photo-big, .blog-header .blog-photo-small {
         max-width: 100%;
         height: auto;
