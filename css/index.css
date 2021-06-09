@@ -133,8 +133,8 @@
     background-color: #c55050;
     border: 2px solid rgb(23, 22, 22);
   }
+  /* .hero-btn a creates the clickable space for the whole button */
   .hero-btn a {
-
     text-decoration: none;
     display: block; /* display block allows height and width to be edited */
     color: inherit;
@@ -154,14 +154,6 @@
   .hero-btn:active .resume-text {
     opacity: 0;
   }
-  .resume-icon-container {
-    /* shares same height, width and line height as text */
-    position: absolute;
-    top: 0%;
-    height: 3.5rem;
-    width: 10rem;
-    line-height: 3.5rem;
-  }
   .resume-icon {
     position: absolute;
     width: 0px;
@@ -177,6 +169,7 @@
   .hero-btn:active .resume-icon {
     visibility: visible;
     width: 45px;
+    height: 45px;
     opacity: 1;
     transform: translate(0px);
   }
@@ -190,14 +183,6 @@
   .hero-btn:focus-within .github-text,
   .hero-btn:active .github-text {
     opacity: 0;
-  }
-  .github-container {
-    /* shares same height, width and line height as text */
-    position: absolute;
-    top: 0%;
-    height: 3.5rem;
-    width: 10rem;
-    line-height: 3.5rem;
   }
   .github-icon {
     position: absolute;
@@ -214,6 +199,7 @@
   .hero-btn:active .github-icon {
     visibility: visible;
     width: 45px;
+    height: 45px;
     opacity: 1;
     transform: translate(0px);
   }
