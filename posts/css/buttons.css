@@ -181,7 +181,8 @@
   }
   code {
     background-color: rgba(201, 106, 106, .85);
-    padding: 0 .5rem;
+    padding: .2rem .5rem;
+    font-size: clamp(1rem, 2vw, 1.2rem)
   }
 
   .post-container {
