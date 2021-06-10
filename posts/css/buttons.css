@@ -179,8 +179,9 @@
     font-size: clamp(1.75rem, 2.5vw, 2.3rem);
     line-height: 1.3;
   }
-  .code {
-    font-family: monospace;
+  code {
+    background-color: rgba(201, 106, 106, .85);
+    padding: 0 .5rem;
   }
 
   .post-container {
