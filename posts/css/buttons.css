@@ -187,6 +187,11 @@
   .code-example {
     margin: 2rem 0;
   }
+  @media screen and (min-width: 490px) {
+    .code-example {
+      max-width: 80%;
+    }
+  }
 
   .post-container {
     width: 1440px;
