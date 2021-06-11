@@ -158,14 +158,14 @@
           In terms of accessibility, this Javascript option seemed to cover most of the bases.  There's always an exception of course and that exception is that this solution won't work for internet users who don't have Javascript enabled on their device.  You can take a look at this <a href="https://deliberatedigital.com/blockmetry/javascript-disabled" target="_blank">article</a> and decide if that is worth it for you!
         </p>
         <p class="main-text last-paragraph">
-          <span class="accent">So.. yeah, lots of options.</span> In my opinion you should style your buttons how you're most comfortable, but at the same time be aware of all of the different ways to do it.  If your client/company you're working for has a way they like their buttons styled, you'll be ready for any request! 
+          <span class="accent">So.. yeah, lots of options.</span> In my opinion you should style your buttons how you're most comfortable, but at the same time be aware of all of the different ways to do it.  If your client/company you're working for has a way they like their buttons styled, or a certain audience they're wanting to look out for more than another, you'll be ready for any request! 
         </p>
 
         <h2 class="section-title">
           Troubleshooting some common issues
         </h2>
         <p class="main-text">
-          If you're like me, you like wrapping your <code>a</code> tag in a <code>button</code>.  But, this can create a couple different problems.  The first problem is that both the <code>button</code> and <code>a</code> tags will be focusable.  To force a focus event to happen only once on your button instead of twice, put <code>tabindex="1"</code> on your <code>button</code> element.
+          If you're like me, you like wrapping your <code>a</code> tag in a <code>button</code>.  But, this can create a couple different problems.  The first problem is that both the <code>button</code> and <code>a</code> tags will be focusable.  To force a focus event to only happen once on your button instead of twice, put <code>tabindex="1"</code> on your <code>button</code> element.
           <img src="images/tabindex-min.png" class="code-example" width="576" height="194" alt="example showing tabindex being used on a button element">
           <br />
           <span class="accent">Why won't the :focus state work?</span>  It definitely isn't immediately obvious, but in order to make your <code>:focus</code> state work when nesting an <code>a</code> tag (in any element not just a button, example: <code>svg</code>), you need to change <code>:focus</code> to <code>:focus-within</code>.
