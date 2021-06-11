@@ -169,6 +169,7 @@
         </h2>
         <p class="main-text">
           If you're like me, you like wrapping your <code>a</code> tag in a <code>button</code>.  But, this can create a couple different problems.  The first problem is that both the <code>button</code> and <code>a</code> tags will be focusable.  To force a focus event to only happen once on your button instead of twice, put <code>tabindex="1"</code> on your <code>button</code> element.
+          <br />
           <img src="images/tabindex-min.png" class="code-example" width="576" height="194" alt="example showing tabindex being used on a button element">
           <br />
           <span class="accent">Why won't the :focus state work?</span>  It definitely isn't immediately obvious, but in order to make your <code>:focus</code> state work when nesting an <code>a</code> tag (in any element, not just a button- example: <code>svg</code>), you need to change <code>:focus</code> to <code>:focus-within</code>.
@@ -183,6 +184,7 @@
           <img src="images/a-tag-correct-min.png" class="code-example" width="254" height="113" alt="example showing a correctly styled a tag nested in a button"> 
           <br />
           As you can see the clickable area is much larger, even spilling out of the corners of the button a little.  Leaving no question that when the user clicks the button, they'll click the link!  Code and further explanation below.
+          <br />
           <img src="images/a-tag-code-min.png" class="code-example" width="718" height="867" alt="code for the example above">
         </p>
         <p class="main-text last-paragraph">
