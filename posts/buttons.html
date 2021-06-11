@@ -171,7 +171,7 @@
           <span class="accent">Why won't the :focus state work?</span>  It definitely isn't immediately obvious, but in order to make your <code>:focus</code> state work when nesting an <code>a</code> tag (in any element, not just a button- example: <code>svg</code>), you need to change <code>:focus</code> to <code>:focus-within</code>.
           <br />
           <br />
-          <span class="accent">How can I make the entire button clickable?</span> This is a common issue I notice on many sites where people are nesting their <code>a</code> tags within <code>button</code> tags.  Only the text or image inside the button is clickable and not the surrounding button surface area.  This can create a user experience (UX) problem when users need to aim their mouse (or even more annoying, tap with their finger) directly on text or an image in order to activate the button.
+          <span class="accent">How can I make the entire button clickable?</span> This is a common issue I notice on many sites where people are nesting their <code>a</code> tags within <code>button</code> tags.  Only the text or image inside the button is clickable and not the surrounding button surface area.  This can create a user experience (UX) problem when users need to aim with their mouse (or even more annoying, tap with their finger) directly on text or an image in order to activate the button.
           <br />
           <img src="images/a-tag-incorrect-min.png" class="code-example" width="250" height="98" alt="example showing an incorrectly styled a tag nested in a button">
           <br />
@@ -214,7 +214,7 @@
           <img src="images/button-box-shadow-code-min.png" class="code-example" width="760" height="636" alt="code to go with the above box shadow example">
         </p>
         <p class="main-text last-paragraph">
-          So, in this code the <code>//html</code> section is just a basic <code>button</code> element with text inside.  Everything in the <code>//css</code> section can be up to you, except for the <code>box-shadow</code> property.  But note, the <code>box-shadow</code> does depend on your <code>background-color</code>.  What I mean by this is that whatever your <code>background-color</code> is, your <code>box-shadow</code> color should simply just be a darker shade of the <code>background-color</code>.  Luckily it's very easy nowadays to experiment with different color combinations quickly.  Try out some different shades and see what looks good!  The values 0, 3 and rgb in the <code>box-shadow</code> stand for- 0px offset to the right and left, 3px offset downwards and rgb is the color of the shadow.
+          So, in this code the <code>//html</code> section is just a basic <code>button</code> element with text inside.  Everything in the <code>//css</code> section can be up to you, except for the <code>box-shadow</code> property.  But note, the <code>box-shadow</code> does depend on your <code>background-color</code>.  What I mean by this is that whatever your <code>background-color</code> is, your <code>box-shadow</code> color should simply just be a darker shade of the <code>background-color</code>.  Luckily it's very easy nowadays to experiment with different color combinations quickly.  Try out some different shades and see what looks good!  The values 0, 3px and rgb in the <code>box-shadow</code> stand for- 0px offset to the right and left, 3px offset downwards and rgb is the color of the shadow.
         </p>
 
         <h2 class="section-title">
