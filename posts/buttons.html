@@ -140,7 +140,7 @@
           How should I style a button?
         </h2>
         <p class="main-text">
-          When I first tried seeking the answer to this question, I was surprised by the amount of answers I got.  I thought, "there must be a standard best practice for styling a button right?" <a href="https://bitsofco.de/anchors-vs-buttons/" target="_blank">Wrong!</a>  Unfortunately there are a lot of ways to go about it and each of them has their downsides.  In my opinion you should style your buttons how you're most comfortable, but at the same time be aware of all of the different ways to do it.  If your client/company you're working for has a way they like their buttons styled, you'll be ready for any request! 
+          When I first tried seeking the answer to this question, I was surprised by the amount of answers I got.  I thought, "there must be a standard best practice for styling a button right?" <a href="https://bitsofco.de/anchors-vs-buttons/" target="_blank">Wrong!</a>  Unfortunately there are a lot of ways to go about it and each of them has their downsides.
         </p>
         <br/>
         <p class="main-text">
@@ -149,12 +149,40 @@
           <br />
           Another common solution is wrapping an <code>a</code> tag around a <code>button</code> tag.
           <img src="images/a-around-btn-min.png" class="code-example" width="680" height="319" alt="example of an a tag wrapping around a button">
-          <br /> This and the vice versa option of wrapping a <code>button</code> tag around an <code>a</code> tag are other ways that seems to work in terms of functionality, but are technically <a href="https://stackoverflow.com/questions/6393827/can-i-nest-a-button-element-inside-an-a-using-html5" target="_blank">incorrect</a> in terms of web standards.
+          <br /> 
+          This and the vice versa option of wrapping a <code>button</code> tag around an <code>a</code> tag are other ways that seems to work in terms of functionality, but are technically <a href="https://stackoverflow.com/questions/6393827/can-i-nest-a-button-element-inside-an-a-using-html5" target="_blank">incorrect</a> in terms of web standards.
           <br />
           <br />
           <span class="accent">From what I gathered while reading around</span>, the most viable option seems to be using a Javascript <code>onclick</code> (or <code>onClick</code> if using React) function inside the button tag to go to the desired destination.
           <img src="images/location-href-min.png" class="code-example" width="841" height="572" alt="example of using an onclick Javascript function to activate a button">  
-          In terms of accessibility this seemed to cover most of the bases.  There's always an exception of course and that exception is that this won't work for people who don't have Javascript enabled on their device.  You can take a look at this <a href="https://deliberatedigital.com/blockmetry/javascript-disabled" target="_blank">article</a> and decide if that is worth it for you!
+          In terms of accessibility, this Javascript option seemed to cover most of the bases.  There's always an exception of course and that exception is that this solution won't work for internet users who don't have Javascript enabled on their device.  You can take a look at this <a href="https://deliberatedigital.com/blockmetry/javascript-disabled" target="_blank">article</a> and decide if that is worth it for you!
+        </p>
+        <p class="main-text last-paragraph">
+          <span class="accent">So.. yeah, lots of options.</span> In my opinion you should style your buttons how you're most comfortable, but at the same time be aware of all of the different ways to do it.  If your client/company you're working for has a way they like their buttons styled, you'll be ready for any request! 
+        </p>
+
+        <h2 class="section-title">
+          Troubleshooting some common issues
+        </h2>
+        <p class="main-text">
+          If you're like me, you like wrapping your <code>a</code> tag in a <code>button</code>.  This can create a couple different problems.  The first problem is that both the <code>button</code> and <code>a</code> tags will be focusable.  To force a focus event to happen only once on your button instead of twice, put <code>tabindex="1"</code> on your <code>button</code> element.
+          <img src="images/tabindex-min.png" class="code-example" width="576" height="194" alt="example showing tabindex being used on a button element">
+          <br />
+          <span class="accent">Why won't the :focus state work?</span>  It definitely isn't immediately obvious, but in order to make your <code>:focus</code> state work when nesting an <code>a</code> tag, you need to change <code>:focus</code> to <code>:focus-within</code>.
+          <br />
+          <br />
+          <span class="accent">How can I make the entire button clickable?</span> This is a common issue I notice on many sites where people are nesting their <code>a</code> tags within <code>button</code> tags.  Only the text or image inside the button is clickable and not the surrounding area.  This can create a user experience (UX) problem when users need to aim their mouse directly on text or an image in order to activate the button.
+          <img src="images/a-tag-incorrect-min.png" class="code-example" width="250" height="98" alt="example showing an incorrectly styled a tag nested in a button">
+          <br />
+          In the example above, you can see by the background color on the text that the clickable area only takes up the width and height of the text.  Below, I'll show you the difference in surface area coverage when the nested <code>a</code> tag is properly styled to fit the button. 
+          <br />
+          <img src="images/a-tag-correct-min.png" class="code-example" width="254" height="113" alt="example showing a correctly styled a tag nested in a button"> 
+          <br />
+          As you can see the clickable area is much larger, even spilling out of the corners of the button a little.  Leaving no question that when the user clicks the button, they'll click the link!  Code below.
+          <img src="images/a-tag-code-min.png" class="code-example" width="718" height="867" alt="code for the example above">
+        </p>
+        <p class="main-text last-paragraph">
+          <span class="accent">So what's going on in the code?</span> The <code>//html</code> section is just putting the basic button and nested <code>a</code> link onto the page.  Now going into the <code>//css</code> section, we need to globally reset any browser default <code>margin</code> and <code>padding</code>.  The <code>button</code> styling is just your average button styles, nothing fancy there.
         </p>
 
       </section>
