@@ -189,12 +189,28 @@
           The styling for the <code>a</code> tag is where the magic happens.
           <br />
           <br />
-          We need to first set the <code>a</code> element to <code>display: block</code> in order for the <code>height</code> and <code>width</code> of it to be edited.  <code>Text-decoration: none</code> and <code>color: inherit</code> are just resets so that the <code>a</code> element doesn't look how it does in its default state.  <code>Background-color</code> is just for the visual example (don't add that in your code) and <code>font-size</code> can be whatever works for your website layout.  So the biggest difference here is that instead of using <code>padding</code> to determine our button's width and height, we are instead going to be changing the <code>width</code> and <code>height</code> on the <code>a</code> element to determine the size of the button.  The final piece of the puzzle is that the value of <code>line-height</code> must be equal to the value of <code>height</code> in order for the text or image within the button to be centered.  That's that, a fully clickable button with an <code>a</code> element nested inside!
+          We need to first set the <code>a</code> element to <code>display: block</code> in order for the <code>height</code> and <code>width</code> of it to be edited.  <code>Text-decoration: none</code> and <code>color: inherit</code> are just resets so that the <code>a</code> element doesn't look how it does in its default state.  <code>Background-color</code> is just for the visual example (don't add that in your code) and <code>font-size</code> can be whatever works for your website layout.  So the biggest difference here is that instead of using <code>padding</code> to determine our button's width and height, we are instead going to be changing the <code>width</code> and <code>height</code> on the <code>a</code> element to determine the size of the button.  
+          <br />
+          <br />
+          The final piece of the puzzle is that the value of <code>line-height</code> must be equal to the value of <code>height</code> in order for the text or image within the button to be centered.  That's that, a fully clickable button with an <code>a</code> element nested inside!
         </p>
 
         <h2 class="section-title">
           Applying subtle box shadow to buttons
         </h2>
+
+        <p class="main-text">
+          Can you spot the difference between these two buttons?
+          <img src="images/box-shadow-example-min.png" class="code-example" width="408" height="73" alt="example showing one box with box shadow and one without">
+          <br />
+          I'm sure you can, but that's because they're placed side by side with not a lot else to look at surrounding them.  When you're designing a button from scratch on your webpage you probably wouldn't be thinking about this difference and that's why the benefit of adding a little box shadow onto your buttons is often overlooked!
+          <br />
+          <br />
+          <span class="accent">The button on the left has character</span>, appears 3-D- seemingly asking to be clicked and in my opinion, is generally more satisfying to look at.  Overall, the button on the left has a much better appearance than the one on the right, which looks fairly bland when compared side by side to the button on the left.
+          <br />
+          <br />
+          Now, how can you do this on your own buttons?  It's easy!  Let me show you with the code below.
+        </p>
 
       </section>
 
