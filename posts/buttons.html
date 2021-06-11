@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <meta name='description' content="Blog post about designing proper buttons that follow accessibility standards and that keep a common style throughout a website">
+  <meta name='description' content="Learn how to design proper buttons that follow accessibility standards and that keep a common style throughout a website">
   <meta property="og:type" content="article">
   <meta property="og:title" content="All about Buttons! - Accessibility and Design">
-  <meta property="og:description" content="blog post about how to style buttons for both accessibility and a good look throughout the page">
+  <meta property="og:description" content="Learn how to style buttons for both accessibility and a good look throughout the page">
   <!--favicon link-->
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
   <!-- For external style sheets -->
@@ -165,25 +165,36 @@
           Troubleshooting some common issues
         </h2>
         <p class="main-text">
-          If you're like me, you like wrapping your <code>a</code> tag in a <code>button</code>.  This can create a couple different problems.  The first problem is that both the <code>button</code> and <code>a</code> tags will be focusable.  To force a focus event to happen only once on your button instead of twice, put <code>tabindex="1"</code> on your <code>button</code> element.
+          If you're like me, you like wrapping your <code>a</code> tag in a <code>button</code>.  But, this can create a couple different problems.  The first problem is that both the <code>button</code> and <code>a</code> tags will be focusable.  To force a focus event to happen only once on your button instead of twice, put <code>tabindex="1"</code> on your <code>button</code> element.
           <img src="images/tabindex-min.png" class="code-example" width="576" height="194" alt="example showing tabindex being used on a button element">
           <br />
-          <span class="accent">Why won't the :focus state work?</span>  It definitely isn't immediately obvious, but in order to make your <code>:focus</code> state work when nesting an <code>a</code> tag, you need to change <code>:focus</code> to <code>:focus-within</code>.
+          <span class="accent">Why won't the :focus state work?</span>  It definitely isn't immediately obvious, but in order to make your <code>:focus</code> state work when nesting an <code>a</code> tag (in any element not just a button, example: <code>svg</code>), you need to change <code>:focus</code> to <code>:focus-within</code>.
           <br />
           <br />
-          <span class="accent">How can I make the entire button clickable?</span> This is a common issue I notice on many sites where people are nesting their <code>a</code> tags within <code>button</code> tags.  Only the text or image inside the button is clickable and not the surrounding area.  This can create a user experience (UX) problem when users need to aim their mouse directly on text or an image in order to activate the button.
+          <span class="accent">How can I make the entire button clickable?</span> This is a common issue I notice on many sites where people are nesting their <code>a</code> tags within <code>button</code> tags.  Only the text or image inside the button is clickable and not the surrounding button surface area.  This can create a user experience (UX) problem when users need to aim their mouse (or even more annoying, tap with their finger) directly on text or an image in order to activate the button.
+          <br />
           <img src="images/a-tag-incorrect-min.png" class="code-example" width="250" height="98" alt="example showing an incorrectly styled a tag nested in a button">
           <br />
           In the example above, you can see by the background color on the text that the clickable area only takes up the width and height of the text.  Below, I'll show you the difference in surface area coverage when the nested <code>a</code> tag is properly styled to fit the button. 
           <br />
           <img src="images/a-tag-correct-min.png" class="code-example" width="254" height="113" alt="example showing a correctly styled a tag nested in a button"> 
           <br />
-          As you can see the clickable area is much larger, even spilling out of the corners of the button a little.  Leaving no question that when the user clicks the button, they'll click the link!  Code below.
+          As you can see the clickable area is much larger, even spilling out of the corners of the button a little.  Leaving no question that when the user clicks the button, they'll click the link!  Code and further explanation below.
           <img src="images/a-tag-code-min.png" class="code-example" width="718" height="867" alt="code for the example above">
         </p>
         <p class="main-text last-paragraph">
-          <span class="accent">So what's going on in the code?</span> The <code>//html</code> section is just putting the basic button and nested <code>a</code> link onto the page.  Now going into the <code>//css</code> section, we need to globally reset any browser default <code>margin</code> and <code>padding</code>.  The <code>button</code> styling is just your average button styles, nothing fancy there.
+          <span class="accent">So what's going on in the code?</span> The <code>//html</code> section is just putting the basic <code>button</code> and nested <code>a</code> link onto the page.  Now going into the <code>//css</code> section, we need to globally reset any browser default <code>margin</code> and <code>padding</code>.  Then, the <code>button</code> styling is just your average button styles, nothing fancy there.  
+          <br />
+          <br />
+          The styling for the <code>a</code> tag is where the magic happens.
+          <br />
+          <br />
+          We need to first set the <code>a</code> element to <code>display: block</code> in order for the <code>height</code> and <code>width</code> of it to be edited.  <code>Text-decoration: none</code> and <code>color: inherit</code> are just resets so that the <code>a</code> element doesn't look how it does in its default state.  <code>Background-color</code> is just for the visual example (don't add that in your code) and <code>font-size</code> can be whatever works for your website layout.  So the biggest difference here is that instead of using <code>padding</code> to determine our button's width and height, we are instead going to be changing the <code>width</code> and <code>height</code> on the <code>a</code> element to determine the size of the button.  The final piece of the puzzle is that the value of <code>line-height</code> must be equal to the value of <code>height</code> in order for the text or image within the button to be centered.  That's that, a fully clickable button with an <code>a</code> element nested inside!
         </p>
+
+        <h2 class="section-title">
+          Applying subtle box shadow to buttons
+        </h2>
 
       </section>
 
