@@ -168,7 +168,7 @@
           If you're like me, you like wrapping your <code>a</code> tag in a <code>button</code>.  But, this can create a couple different problems.  The first problem is that both the <code>button</code> and <code>a</code> tags will be focusable.  To force a focus event to only happen once on your button instead of twice, put <code>tabindex="1"</code> on your <code>button</code> element.
           <img src="images/tabindex-min.png" class="code-example" width="576" height="194" alt="example showing tabindex being used on a button element">
           <br />
-          <span class="accent">Why won't the :focus state work?</span>  It definitely isn't immediately obvious, but in order to make your <code>:focus</code> state work when nesting an <code>a</code> tag (in any element not just a button, example: <code>svg</code>), you need to change <code>:focus</code> to <code>:focus-within</code>.
+          <span class="accent">Why won't the :focus state work?</span>  It definitely isn't immediately obvious, but in order to make your <code>:focus</code> state work when nesting an <code>a</code> tag (in any element, not just a button- example: <code>svg</code>), you need to change <code>:focus</code> to <code>:focus-within</code>.
           <br />
           <br />
           <span class="accent">How can I make the entire button clickable?</span> This is a common issue I notice on many sites where people are nesting their <code>a</code> tags within <code>button</code> tags.  Only the text or image inside the button is clickable and not the surrounding button surface area.  This can create a user experience (UX) problem when users need to aim their mouse (or even more annoying, tap with their finger) directly on text or an image in order to activate the button.
@@ -183,13 +183,13 @@
           <img src="images/a-tag-code-min.png" class="code-example" width="718" height="867" alt="code for the example above">
         </p>
         <p class="main-text last-paragraph">
-          <span class="accent">So what's going on in the code?</span> The <code>//html</code> section is just putting the basic <code>button</code> and nested <code>a</code> link onto the page.  Now going into the <code>//css</code> section, we need to globally reset any browser default <code>margin</code> and <code>padding</code>.  Then, the <code>button</code> styling is just your average button styles, nothing fancy there.  
+          <span class="accent">So what's going on in the code?</span> The <code>//html</code> section is just putting the basic <code>button</code> and nested <code>a</code> link onto the page.  Now going into the <code>//css</code> section, we need to globally reset any browser default <code>margin</code> and <code>padding</code> and we do this with the asterisk, <code>*</code> property.  Then, the <code>button</code> styling is just your average button styles, nothing fancy there.  
           <br />
           <br />
           The styling for the <code>a</code> tag is where the magic happens.
           <br />
           <br />
-          We need to first set the <code>a</code> element to <code>display: block</code> in order for the <code>height</code> and <code>width</code> of it to be edited.  <code>Text-decoration: none</code> and <code>color: inherit</code> are just resets so that the <code>a</code> element doesn't look how it does in its default state.  <code>Background-color</code> is just for the visual example (don't add that in your code) and <code>font-size</code> can be whatever works for your website layout.  So the biggest difference here is that instead of using <code>padding</code> to determine our button's width and height, we are instead going to be changing the <code>width</code> and <code>height</code> on the <code>a</code> element to determine the size of the button.  
+          We need to first set the <code>a</code> element to <code>display: block</code> in order for the <code>height</code> and <code>width</code> of it to be edited.  <code>Text-decoration: none</code> and <code>color: inherit</code> are resets so that the <code>a</code> element doesn't look how it does in its default state.  <code>Background-color</code> is solely for the visual example (don't add that in your code) and <code>font-size</code> can be whatever works for your website layout.  So the biggest difference here is that instead of using <code>padding</code> to determine our button's width and height, we are instead going to be changing the <code>width</code> and <code>height</code> on the <code>a</code> element to determine the size of the button.  
           <br />
           <br />
           The final piece of the puzzle is that the value of <code>line-height</code> must be equal to the value of <code>height</code> in order for the text or image within the button to be centered.  That's that, a fully clickable button with an <code>a</code> element nested inside!
@@ -200,7 +200,7 @@
         </h2>
 
         <p class="main-text">
-          Can you spot the difference between these two buttons?
+          Look closely, can you spot the difference between these two buttons?
           <img src="images/box-shadow-example-min.png" class="code-example" width="408" height="73" alt="example showing one button with box shadow and one without">
           <br />
           I'm sure you can, but that's because they're placed side by side with not a lot else to look at surrounding them.  When you're designing a button from scratch on your webpage you probably wouldn't be thinking about this difference and that's why the benefit of adding a little box shadow onto your buttons is often overlooked!
@@ -214,7 +214,7 @@
           <img src="images/button-box-shadow-code-min.png" class="code-example" width="760" height="636" alt="code to go with the above box shadow example">
         </p>
         <p class="main-text last-paragraph">
-          So, in this code the <code>//html</code> section is just a basic <code>button</code> element with text inside.  Everything in the <code>//css</code> section can be up to you, except for the <code>box-shadow</code> property.  But note, that the <code>box-shadow</code> does depend on your <code>background-color</code>.  What I mean by this is that whatever your <code>background-color</code> is, your <code>box-shadow</code> color should simply just be a darker shade of the <code>background-color</code>.  Luckily it's very easy nowadays to experiment with different color combinations quickly.  Try some different shades out and see what looks good!
+          So, in this code the <code>//html</code> section is just a basic <code>button</code> element with text inside.  Everything in the <code>//css</code> section can be up to you, except for the <code>box-shadow</code> property.  But note, the <code>box-shadow</code> does depend on your <code>background-color</code>.  What I mean by this is that whatever your <code>background-color</code> is, your <code>box-shadow</code> color should simply just be a darker shade of the <code>background-color</code>.  Luckily it's very easy nowadays to experiment with different color combinations quickly.  Try out some different shades and see what looks good!
         </p>
 
         <h2 class="section-title">
@@ -222,7 +222,10 @@
         </h2>
 
         <p class="main-text">
-          So this blog post went in depth into a lot of specifics regarding buttons and button styling.  It can be a lot to take in all at once.  But, in an effort to not overwhelm, in this section I'll list out the most important things you should take away from this blog post.  The following points are good habits to get into when styling every button you make regardless of the situation.
+          This blog post went in depth into a lot of specifics regarding buttons and button styling.  It can be a lot to take in all at once.  But, in an effort to not overwhelm, in this section I'll list out the most important things you should take away from this blog post.  
+          <br />
+          <br />
+          <span class="accent">The following points are good habits</span> to get into when styling every button you make regardless of the situation.
         </p>
           <div class="important-points">
             <div>
@@ -236,7 +239,7 @@
             </div>
             <div>
               If you decide to use an image or a symbol as a button, which can definitely be a cool change up from the traditional button, be sure to follow the accessibility guidelines regarding this.
-              This includes adding <code>aria-label="insert text here"</code> if the content is wrapped in a <code>button</code> tag.  Otherwise add both <code>role="button"</code> and <code>aria-label="insert text here"</code> inside the <code>img</code> tag.  <code>role="button"</code> allows screen readers to recognize a non <code>button</code> tag as a <code>button</code> tag and <code>aria-label="insert text here"</code> allows the image you chose to be translated into readable text.
+              This includes adding <code>aria-label="insert text here"</code> if the content is wrapped in a <code>button</code> tag.  Otherwise add both <code>role="button"</code> and <code>aria-label="insert text here"</code> inside the <code>img</code> tag.  <code>role="button"</code> allows screen readers to recognize a non <code>button</code> tag as a <code>button</code> tag and treat it as such and <code>aria-label="insert text here"</code> allows the image you chose to be translated into readable text for the screen reader.
             </div>
           </div>
 
