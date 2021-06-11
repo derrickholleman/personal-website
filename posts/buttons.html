@@ -212,10 +212,33 @@
           So, how can you achieve this box-shadow styling on your own buttons?  It's easy!  Let me show you with the code below.
           <br />
           <img src="images/button-box-shadow-code-min.png" class="code-example" width="760" height="636" alt="code to go with the above box shadow example">
-          <p class="main-text last-paragraph">
-            So, in this code the <code>//html</code> section is just a basic <code>button</code> element with text inside.  Everything in the <code>//css</code> section can be up to you, except for the <code>box-shadow</code> property.  But note, that the <code>box-shadow</code> does depend on your <code>background-color</code>.  What I mean by this is that whatever your <code>background-color</code> is, your <code>box-shadow</code> color should simply just be a darker shade of the <code>background-color</code>.  Luckily it's very easy nowadays to experiment with different color combinations quickly.  Try some different shades out and see what looks good!
-          </p>
         </p>
+        <p class="main-text last-paragraph">
+          So, in this code the <code>//html</code> section is just a basic <code>button</code> element with text inside.  Everything in the <code>//css</code> section can be up to you, except for the <code>box-shadow</code> property.  But note, that the <code>box-shadow</code> does depend on your <code>background-color</code>.  What I mean by this is that whatever your <code>background-color</code> is, your <code>box-shadow</code> color should simply just be a darker shade of the <code>background-color</code>.  Luckily it's very easy nowadays to experiment with different color combinations quickly.  Try some different shades out and see what looks good!
+        </p>
+
+        <h2 class="section-title">
+          If you aren't taking notes, this is the time to start.
+        </h2>
+
+        <p class="main-text">
+          So this blog post went in depth into a lot of specifics regarding buttons and button styling.  It can be a lot to take in all at once.  But, in an effort to not overwhelm, in this section I'll list out the most important things you should take away from this blog post.  The following points are good habits to get into when styling every button you make regardless of the situation.
+        </p>
+          <div class="important-points">
+            <div>
+              If nothing else, always add a <code>:hover</code> state to your buttons.  Preferably also add <code>:active</code> for phones and <code>:focus</code> for keyboards, but definitely <code>:hover</code> for desktops.
+            </div>
+            <div>
+              Make sure your button styling is consistent throughout your site.  This means fonts, text color, background-color, border sizes and colors, border radius', padding, :hover states.  It should all look uniform.  I'd say two different button stylings max throughout your site, but definitely not on the same page.  Buttons are a big part of the identity of your site, just the same as having a consistent font.  
+            </div>
+            <div>
+              Always include the <code>cursor: pointer</code> property and value in your button's CSS.  Having the cursor change is an easy, subtle and basically universal way to indicate to the user that they're on a clickable element.  If you forget to add a <code>:hover</code> state, then <code>cursor: pointer</code> will be a life saver.
+            </div>
+            <div>
+              If you decide to use an image or a symbol as a button, which can definitely be a cool change up from the traditional button, be sure to follow the accessibility guidelines regarding this.
+              This includes adding <code>aria-label="insert text here"</code> if the content is wrapped in a <code>button</code> tag.  Otherwise add both <code>role="button"</code> and <code>aria-label="insert text here"</code> inside the <code>img</code> tag.  <code>role="button"</code> allows screen readers to recognize a non <code>button</code> tag as a <code>button</code> tag and <code>aria-label="insert text here"</code> allows the image you chose to be translated into readable text.
+            </div>
+          </div>
 
       </section>
 

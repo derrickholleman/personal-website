@@ -206,6 +206,39 @@
   .last-paragraph {
     margin-bottom: 6rem;
   }
+  .important-points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 4rem auto 6rem auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgb(202, 201, 201);
+    font-size: clamp(1.2rem, 2.5vw, 1.3rem);
+    line-height: 1.6;
+  }
+  .important-points > div {
+    margin: .5rem 0;
+    position: relative;
+  }
+  .important-points > div::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    top: 10.5px;
+    left: -19px;
+    background-color: #00ffff;
+    animation: PulseDot 1.8s infinite ease-in-out;
+  }
+  @keyframes PulseDot {
+    50% {
+      transform: scale(1.2);
+      -moz-transform: scale3d(1.2, 1.2, 1.2);
+    }
+  }
 
   /* ------------- */ 
   /* FOOTER STYLES */
