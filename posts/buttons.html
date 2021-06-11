@@ -140,7 +140,7 @@
           How should I style a button?
         </h2>
         <p class="main-text">
-          When I first tried seeking the answer to this question, I was surprised by the amount of answers I got.  I thought, "there must be a standard best practice for styling a button, right?" <a href="https://bitsofco.de/anchors-vs-buttons/" target="_blank">Wrong!</a>  Unfortunately there are a lot of ways to go about it and each of them has their downsides.
+          When I first tried seeking the answer to this question, I was surprised by the amount of answers I found.  I thought, "there must be a standard best practice for styling a button, right?" <a href="https://bitsofco.de/anchors-vs-buttons/" target="_blank">Wrong!</a>  Unfortunately there are a lot of ways to go about it and each of them has their downsides.
         </p>
         <br/>
         <p class="main-text">
@@ -214,7 +214,7 @@
           <img src="images/button-box-shadow-code-min.png" class="code-example" width="760" height="636" alt="code to go with the above box shadow example">
         </p>
         <p class="main-text last-paragraph">
-          So, in this code the <code>//html</code> section is just a basic <code>button</code> element with text inside.  Everything in the <code>//css</code> section can be up to you, except for the <code>box-shadow</code> property.  But note, the <code>box-shadow</code> does depend on your <code>background-color</code>.  What I mean by this is that whatever your <code>background-color</code> is, your <code>box-shadow</code> color should simply just be a darker shade of the <code>background-color</code>.  Luckily it's very easy nowadays to experiment with different color combinations quickly.  Try out some different shades and see what looks good!
+          So, in this code the <code>//html</code> section is just a basic <code>button</code> element with text inside.  Everything in the <code>//css</code> section can be up to you, except for the <code>box-shadow</code> property.  But note, the <code>box-shadow</code> does depend on your <code>background-color</code>.  What I mean by this is that whatever your <code>background-color</code> is, your <code>box-shadow</code> color should simply just be a darker shade of the <code>background-color</code>.  Luckily it's very easy nowadays to experiment with different color combinations quickly.  Try out some different shades and see what looks good!  The values 0, 3 and rgb in the <code>box-shadow</code> stand for- 0px offset to the right and left, 3px offset downwards and rgb is the color of the shadow.
         </p>
 
         <h2 class="section-title">
@@ -229,13 +229,13 @@
         </p>
           <div class="important-points">
             <div>
-              If nothing else, always add a <code>:hover</code> state to your buttons.  Preferably also add <code>:active</code> for phones and <code>:focus</code> for keyboards, but definitely <code>:hover</code> for desktops.
+              If nothing else, always add a <code>:hover</code> state to your buttons.  Preferably also add <code>:active</code> for phones and <code>:focus</code> for keyboards, but definitely <code>:hover</code> for desktops.  People often take for granted how satisfying a <code>:hover</code> state is until it's not there!
             </div>
             <div>
-              Make sure your button styling is consistent throughout your site.  This means fonts, text color, background-color, border sizes and colors, border radius', padding, :hover states etc.  It should all look uniform.  I'd say two different button stylings max throughout your site, but definitely not on the same page.  Buttons are a big part of the identity of your site, just the same as having a consistent font.  
+              Make sure your button styling is consistent throughout your site.  This means fonts, text color, background-color, border sizes and colors, border radius', padding, :hover states etc.  It should all look uniform.  I'd say two different button stylings at max throughout your site, but definitely not more than one on the same page.  Buttons are a big part of the identity of your site, just the same as having a consistent font.  
             </div>
             <div>
-              Always include the <code>cursor: pointer</code> property and value in your button's CSS.  Having the cursor change is an easy, subtle and basically universal way to indicate to the user that they're on a clickable element.  If you forget to add a <code>:hover</code> state, then <code>cursor: pointer</code> will be a life saver.
+              Always include the <code>cursor: pointer</code> property and value in your button's CSS.  Having the cursor change is an easy, subtle and a basically universal way to indicate to the user that they're on a clickable element.  If you forget to add a <code>:hover</code> state, then <code>cursor: pointer</code> will be a life saver.
             </div>
             <div>
               If you decide to use an image or a symbol as a button, which can definitely be a cool change up from the traditional button, be sure to follow the accessibility guidelines regarding this.
