@@ -197,7 +197,7 @@
     max-height: 0;
     font-weight: 500;
     pointer-events: none;
-    color: rgb(80, 80, 80);
+    color: rgb(124, 124, 124);
   }
   
   .floating__label::before {
