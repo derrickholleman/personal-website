@@ -225,7 +225,7 @@
     color: rgb(202, 201, 201);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: clamp(2rem, 3.2vw, 2.9rem);
+    font-size: clamp(2rem, 3.8vw, 2.9rem);
     text-align: center;
     width: max-content; /* needed for animation to end on time */
     margin-bottom: 11rem;
@@ -238,7 +238,7 @@
   .typewriter-text {
     display: inline-block;
     overflow: hidden;
-    animation: typing 5s steps(54, end), blink .75s step-end 7 forwards;
+    animation: typing 5s steps(36, end), blink .75s step-end 7 forwards;
     white-space: nowrap;
     border-right: 3px solid #00ffffb3;
     margin-bottom: 1.5rem;
