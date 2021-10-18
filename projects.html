@@ -1,258 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="description" content="Here you can find all of my best projects which you can browse through.  They are related to front end design and were built with HTML, CSS and Javascript.">
-  <!--favicon link-->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-  <!-- For external style sheets -->
-  <link rel="stylesheet" type="text/css" href="css/projects.css">
-  <link rel="stylesheet" type="text/css" href="css/projects-media-qs.css">
-  <link rel="stylesheet" type="text/css" href="css/hamburger-animation.css">
-  <!-- fade in on scroll style sheet -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!--jQuery import link-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!--Custom fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <title>Derrick Holleman Portfolio Projects</title>
-  <style>
-
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0%;
-    padding: 0%;
-  }
-  html {
-    height: 100%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    /* full screen background works for all sizes of screens */
-    background: linear-gradient(to right, 
-    rgba(23, 22, 22, .98), 
-    rgba(23, 22, 22, .98)), url(images/stars-min.jpg) no-repeat center center fixed;
-    background-size: cover;
-    /* ------------------- */
-  }
-  body {
-    width: 1920px;
-    margin: 0 auto;
-    max-width: 100%;
-    min-height: 100%;
-    font-family: 'Montserrat', sans-serif; /* 300 400 500 700 */
-    /* font-family: 'Open Sans', sans-serif; 300 400 600 */
-    overflow-x: hidden;
-    font-size: 16px;
-    line-height: 1.5;
-    /* background-color: rgb(23, 22, 22); */
-    transition: .1s; /* transition back into light mode */
-    position: relative;
-    color: white;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  ul li::marker {
-    display: none;
-  }
-  ul, li {
-    list-style: none;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-</style>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="description"
+      content="Here you can find all of my best projects which you can browse through.  They are related to front end design and were built with HTML, CSS and Javascript."
+    />
+    <!--favicon link-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- For external style sheets -->
+    <link rel="stylesheet" type="text/css" href="css/projects.css" />
+    <link rel="stylesheet" type="text/css" href="css/projects-media-qs.css" />
+    <link rel="stylesheet" type="text/css" href="css/hamburger-animation.css" />
+    <!-- fade in on scroll style sheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--jQuery import link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Custom fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Derrick Holleman Portfolio Projects</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      html {
+        height: 100%;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        /* full screen background works for all sizes of screens */
+        background: linear-gradient(
+            to right,
+            rgba(23, 22, 22, 0.98),
+            rgba(23, 22, 22, 0.98)
+          ),
+          url(images/stars-min.jpg) no-repeat center center fixed;
+        background-size: cover;
+        /* ------------------- */
+      }
+      body {
+        width: 1920px;
+        margin: 0 auto;
+        max-width: 100%;
+        min-height: 100%;
+        font-family: "Montserrat", sans-serif; /* 300 400 500 700 */
+        /* font-family: 'Open Sans', sans-serif; 300 400 600 */
+        overflow-x: hidden;
+        font-size: 16px;
+        line-height: 1.5;
+        /* background-color: rgb(23, 22, 22); */
+        transition: 0.1s; /* transition back into light mode */
+        position: relative;
+        color: white;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      ul li::marker {
+        display: none;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
     <header class="header-container">
-      
       <nav class="nav-ul-top" data-aos="fade-down" id="top">
         <ul>
-          <li class="item-to-underline is-active-top"><a href="projects.html" class="hover-text-from-middle"><span aria-hidden="true">⚙️</span> Projects</a></li>
-          <li class="item-to-underline"><a href="contact.html" class="hover-text-from-middle"><span aria-hidden="true">📮</span> Contact Me</a></li>
-          <li class="item-to-underline" role="button" aria-label="Home" alt="Home button">
+          <li class="item-to-underline is-active-top">
+            <a href="projects.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">⚙️</span> Projects</a
+            >
+          </li>
+          <li class="item-to-underline">
+            <a href="contact.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">📮</span> Contact Me</a
+            >
+          </li>
+          <li
+            class="item-to-underline"
+            role="button"
+            aria-label="Home"
+            alt="Home button"
+          >
             <div class="svg-container">
-              <svg class="home-top" height="50px" viewBox="0 1 511 511.999" width="50px" xmlns="http://www.w3.org/2000/svg">
-              <a href="index.html" cursor="pointer" pointer-events="all">
-              <path fill="#00ffffb3" d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0" fill='#a8a8a8' />
-              <rect x="0" y="0" width="100%" height="100%" fill="none" /> 
-              </a>
-            </svg>
+              <svg
+                class="home-top"
+                height="50px"
+                viewBox="0 1 511 511.999"
+                width="50px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <a href="index.html" cursor="pointer" pointer-events="all">
+                  <path
+                    fill="#00ffffb3"
+                    d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0"
+                    fill="#a8a8a8"
+                  />
+                  <rect x="0" y="0" width="100%" height="100%" fill="none" />
+                </a>
+              </svg>
             </div>
           </li>
-          <li class="item-to-underline"><a href="blog.html" class="hover-text-from-middle"><span aria-hidden="true">🖍️</span> Blog</a></li>
-          <li class="item-to-underline"><a href="photos.html" class="hover-text-from-middle"><span aria-hidden="true">🖼️</span> Tumblr Dump</a></li>
+          <li class="item-to-underline">
+            <a href="blog.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">🖍️</span> Blog</a
+            >
+          </li>
+          <li class="item-to-underline">
+            <a href="photos.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">🖼️</span> Tumblr Dump</a
+            >
+          </li>
         </ul>
       </nav>
       <!-------------->
       <!--MOBILE NAV-->
       <!-------------->
-      <button class="hamburger" aria-label="open the menu" id="top" aria-expanded="false" onclick="ariaToggle()">
+      <button
+        class="hamburger"
+        aria-label="open the menu"
+        id="top"
+        aria-expanded="false"
+        onclick="ariaToggle()"
+      >
         <span></span>
         <span></span>
         <span></span>
-      </button> 
+      </button>
       <nav>
         <ul class="mobile-nav">
           <li class="open"><a href="index.html">Home</a></li>
-          <li class="open"><a href="projects.html" class="is-open">Projects</a></li>
+          <li class="open">
+            <a href="projects.html" class="is-open">Projects</a>
+          </li>
           <li class="open"><a href="contact.html">Contact Me</a></li>
           <li class="open"><a href="blog.html">Blog</a></li>
           <li class="open"><a href="photos.html">Tumblr Dump</a></li>
         </ul>
       </nav>
 
-      <h1 class="title">
-        projects<span class="period">.</span>
-      </h1>
+      <h1 class="title">projects<span class="period">.</span></h1>
       <p class="directions">
-        (Scroll through the projects and click any screenshot to see the live website!)
+        (Scroll through the projects and click any screenshot to see the live
+        website!)
       </p>
     </header>
 
     <section class="section-container">
       <div class="project-section">
+        <div class="project fadein-right">
+          <h2 class="project-title" data-aos="zoom-in-left">Accordion Card</h2>
+          <p class="project-description faq">
+            For this project I created an FAQ card that has questions displayed
+            on clickable drop down buttons. When you click on the button, the
+            answer folds out while pushing the other buttons out of the way. It
+            is a very slick design and the smooth drop down button transition,
+            made with Javascript, makes clicking the buttons satisfying.
+          </p>
+          <a
+            href="https://derrickholleman.github.io/accordion-card/"
+            target="_blank"
+            ><img
+              src="images/accordion-card-snip-min.png"
+              width="1920"
+              height="939"
+              alt="Accordion Card"
+          /></a>
+        </div>
 
-          <div class="project fadein-right">
-            <h2 class="project-title" data-aos="zoom-in-left">
-              Accordion Card
-            </h2>
-            <p class="project-description faq">
-              For this project I created an FAQ card that has questions displayed on clickable drop down buttons.  When you click on the button, the answer folds out while pushing the other buttons out of the way.  It is a very slick design and the smooth drop down button transition, made with Javascript, makes clicking the buttons satisfying.
-            </p>
-            <a href="https://derrickholleman.github.io/accordion-card/" target="_blank"><img src="images/accordion-card-snip-min.png" width="1920" height="939" alt="Accordion Card"></a>
-          </div>
-
-          <div class="project fadein-left">
-            <h2 class="project-title" data-aos="zoom-in-left">
-              Clipboard Landing Page
-            </h2>
-            <p class="project-description">
-              This landing page features a dark mode button which is able to remember if you last left the page on dark or light mode!  This works because the button interacts with your local storage and sees what the previously selected mode on your computer was.  Personally I prefer dark mode websites, so I had a lot of fun making this one and decided to screen shot it in dark mode.
-            </p>
-            <a href="https://derrickholleman.github.io/clipboard-landing-page/" target="_blank"><img src="images/clipboard-landing-page-snip-min.png" width="1920" height="937" alt="Clipboard Landing Page Dark Mode"></a>
-          </div>
+        <div class="project fadein-left">
+          <h2 class="project-title" data-aos="zoom-in-left">Blackjack App</h2>
+          <p class="project-description">
+            This is an app that began with a super simple tutorial about pushing
+            random numbers into an array and displaying them on a page, but I
+            expanded it into a fully playable blackjack game against a dealer. I
+            included a point system which makes it pretty addicting to see how
+            high you can get your score! There is a lot going on under the hood
+            to make this app possible including manipulating randomness and
+            breaking up complex logic into smaller readable functions.
+          </p>
+          <a href="https://blackjackgame001.netlify.app" target="_blank"
+            ><img
+              src="images/blackjack-game-min.png"
+              width="1865"
+              height="939"
+              alt="Blackjack App"
+          /></a>
+        </div>
       </div>
       <div class="project-section">
-          <div class="project fadein-right">
-            <h2 class="project-title" data-aos="zoom-in-left">
-              Blogr Landing Page
-            </h2>
-            <p class="project-description">
-              The Blogr project signifies a turning point in growth for me.  It's a stylish looking website with vibrant colors and what I would find out soon after trying it for the first time, a deceivingly intricate layout.  I was unable to even get past the header the first time I tried it!  But, about a month later after some more learning, I retried it and finished the design in a day.  Some time after completing it, I came back to it and played around with a fade in on scroll library I found on GitHub.  It's super easy to use and creates some smooth transitions. (fade in on scroll for the Blogr page is on mobile design only).
-            </p>
-            <a href="https://derrickholleman.github.io/blogr-landing-page/" target="_blank"><img src="images/blogr-snip-min.png" width="1920" height="938" alt="Blogr Landing Page"></a>
-          </div>
+        <div class="project fadein-right">
+          <h2 class="project-title" data-aos="zoom-in-left">
+            Blogr Landing Page
+          </h2>
+          <p class="project-description">
+            The Blogr project signifies a turning point in growth for me. It's a
+            stylish looking website with vibrant colors and what I would find
+            out soon after trying it for the first time, a deceivingly intricate
+            layout. I was unable to even get past the header the first time I
+            tried it! But, about a month later after some more learning, I
+            retried it and finished the design in a day. Some time after
+            completing it, I came back to it and played around with a fade in on
+            scroll library I found on GitHub. It's super easy to use and creates
+            some smooth transitions. (fade in on scroll for the Blogr page is on
+            mobile design only).
+          </p>
+          <a
+            href="https://derrickholleman.github.io/blogr-landing-page/"
+            target="_blank"
+            ><img
+              src="images/blogr-snip-min.png"
+              width="1920"
+              height="938"
+              alt="Blogr Landing Page"
+          /></a>
+        </div>
 
-          <div class="project fadein-left">
-            <h2 class="project-title" data-aos="zoom-in-left">
-              Loopstudios Landing Page
-            </h2>
-            <p class="project-description">
-              This LoopStudios landing page was the first ever page I tried designing!  It definitely didn't look like this the first time I pushed the code to GitHub, but I kept coming back to improve it and now it's somewhat of a playground I can use for trying new techniques that I learn!  Currently there's lots of cool design elements to catch your eye if you take your time browsing though the site!
-            </p>
-            <a href="https://derrickholleman.github.io/loopstudios-landing-page/" target="_blank"><img src="images/loopstudios-snip-min.png" width="1919" height="936" alt="Loopstudios Landing Page"></a>
-          </div>
+        <div class="project fadein-left">
+          <h2 class="project-title" data-aos="zoom-in-left">
+            Loopstudios Landing Page
+          </h2>
+          <p class="project-description">
+            This LoopStudios landing page was the first ever page I tried
+            designing! It definitely didn't look like this the first time I
+            pushed the code to GitHub, but I kept coming back to improve it and
+            now it's somewhat of a playground I can use for trying new
+            techniques that I learn! Currently there's lots of cool design
+            elements to catch your eye if you take your time browsing though the
+            site!
+          </p>
+          <a
+            href="https://derrickholleman.github.io/loopstudios-landing-page/"
+            target="_blank"
+            ><img
+              src="images/loopstudios-snip-min.png"
+              width="1919"
+              height="936"
+              alt="Loopstudios Landing Page"
+          /></a>
+        </div>
       </div>
 
       <div class="project-section">
-          <div class="project fadein-right">
-            <h2 class="project-title" data-aos="zoom-in-left">
-              Ping Coming Soon Page
-            </h2>
-            <p class="project-description ping">
-              For this specific project, it wasn't so much about the page layout (which did still turn out looking good), but it was more about the fixed bottom navigation bar that you see while browsing the site on mobile!  A popular way to navigate on mobile apps like Instagram, I wanted to give it a shot being used as a website nav bar.  I'm still trying to decide if I like it!
-            </p>
-            <a href="https://derrickholleman.github.io/ping-coming-soon-page/" target="_blank"><img src="images/ping-coming-soon-snip-min.png" width="1442" height="1000" alt="Coming Soon Landing Page"></a>
-          </div>
+        <div class="project fadein-right">
+          <h2 class="project-title" data-aos="zoom-in-left">
+            Ping Coming Soon Page
+          </h2>
+          <p class="project-description ping">
+            For this specific project, it wasn't so much about the page layout
+            (which did still turn out looking good), but it was more about the
+            fixed bottom navigation bar that you see while browsing the site on
+            mobile! A popular way to navigate on mobile apps like Instagram, I
+            wanted to give it a shot being used as a website nav bar. I'm still
+            trying to decide if I like it!
+          </p>
+          <a
+            href="https://derrickholleman.github.io/ping-coming-soon-page/"
+            target="_blank"
+            ><img
+              src="images/ping-coming-soon-snip-min.png"
+              width="1442"
+              height="1000"
+              alt="Coming Soon Landing Page"
+          /></a>
+        </div>
 
-          <div class="project fadein-left">
-            <h2 class="project-title" data-aos="zoom-in-left">
-              Fylo Dark Landing Page
-            </h2>
-            <p class="project-description">
-              Being the big fan of dark mode websites that I am, I had to give this Fylo Dark Landing Page a shot!  It's a fairly simple layout, the hardest part being the footer.  In the original design there was no hamburger navigation button because the header only has 3 links, but I decided to add a hamburger nav in for practice!  The site turned out looking good and I learned a lot while making it.
-            </p>
-            <a href="https://derrickholleman.github.io/fylo-landing-page/" target="_blank"><img src="images/fylo-snip-min.png" width="1436" height="933" alt="Fylo Landing Page"></a>
-          </div>
+        <div class="project fadein-left">
+          <h2 class="project-title" data-aos="zoom-in-left">
+            Clipboard Landing Page
+          </h2>
+          <p class="project-description">
+            This landing page features a dark mode button which is able to
+            remember if you last left the page on dark or light mode! This works
+            because the button interacts with your local storage and sees what
+            the previously selected mode on your computer was. Personally I
+            prefer dark mode websites, so I had a lot of fun making this one and
+            decided to screen shot it in dark mode.
+          </p>
+          <a
+            href="https://derrickholleman.github.io/clipboard-landing-page/"
+            target="_blank"
+            ><img
+              src="images/clipboard-landing-page-snip-min.png"
+              width="1920"
+              height="937"
+              alt="Clipboard Landing Page Dark Mode"
+          /></a>
+        </div>
       </div>
     </section>
 
-  <footer>
-    <ul class="nav-ul">
-      <li class="item-to-underline"><a href="#top" class="hover-text-from-middle is-open"><span aria-hidden="true">⚙️</span> Projects</a></li>
-      <li class="item-to-underline"><a href="contact.html" class="hover-text-from-middle"><span aria-hidden="true">📮</span> Contact Me</a></li>
-      <li>
-        <a href="cat.html">
-          <img src="images/heart.svg" width="75" height="75" class="heart" alt="heart icon" aria-label="click on the heart to see a cat picture">
-        </a>
-      </li>
-      <li class="item-to-underline"><a href="blog.html" class="hover-text-from-middle"><span aria-hidden="true">🖍️</span> Blog</a></li>
-      <li class="item-to-underline"><a href="photos.html" class="hover-text-from-middle"><span aria-hidden="true">🖼️</span> Tumblr Dump</a></li>
-    </ul>
+    <footer>
+      <ul class="nav-ul">
+        <li class="item-to-underline">
+          <a href="#top" class="hover-text-from-middle is-open"
+            ><span aria-hidden="true">⚙️</span> Projects</a
+          >
+        </li>
+        <li class="item-to-underline">
+          <a href="contact.html" class="hover-text-from-middle"
+            ><span aria-hidden="true">📮</span> Contact Me</a
+          >
+        </li>
+        <li>
+          <a href="cat.html">
+            <img
+              src="images/heart.svg"
+              width="75"
+              height="75"
+              class="heart"
+              alt="heart icon"
+              aria-label="click on the heart to see a cat picture"
+            />
+          </a>
+        </li>
+        <li class="item-to-underline">
+          <a href="blog.html" class="hover-text-from-middle"
+            ><span aria-hidden="true">🖍️</span> Blog</a
+          >
+        </li>
+        <li class="item-to-underline">
+          <a href="photos.html" class="hover-text-from-middle"
+            ><span aria-hidden="true">🖼️</span> Tumblr Dump</a
+          >
+        </li>
+      </ul>
 
-    <ul class="footer-mobile-nav">
-      <li><a href="#top" class="is-open">⚙️ Projects</a></li>
-      <li><a href="contact.html">📮 Contact Me</a></li>
-      <li><a href="blog.html">🖍️ Blog</a></li>
-      <li><a href="photos.html">🖼️ Tumblr Dump</a></li>
-    </ul>
+      <ul class="footer-mobile-nav">
+        <li><a href="#top" class="is-open">⚙️ Projects</a></li>
+        <li><a href="contact.html">📮 Contact Me</a></li>
+        <li><a href="blog.html">🖍️ Blog</a></li>
+        <li><a href="photos.html">🖼️ Tumblr Dump</a></li>
+      </ul>
 
-    <p class="copyright">
-      &copy 2021 Derrick Holleman.  All Rights Reserved.
-      <svg class="home-bottom" height="50px" viewBox="0 1 511 511.999" width="50px" xmlns="http://www.w3.org/2000/svg" aria-label="Home" role="button">
-        <a href="index.html" cursor="pointer" pointer-events="all">
-        <path fill="#00ffffb3" d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0" fill='#c55050' />
-        <rect x="0" y="0" width="100%" height="100%" fill="none" /> 
-        </a>
-      </svg>
-    </p>
-  </footer>
+      <p class="copyright">
+        &copy 2021 Derrick Holleman. All Rights Reserved.
+        <svg
+          class="home-bottom"
+          height="50px"
+          viewBox="0 1 511 511.999"
+          width="50px"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Home"
+          role="button"
+        >
+          <a href="index.html" cursor="pointer" pointer-events="all">
+            <path
+              fill="#00ffffb3"
+              d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0"
+              fill="#c55050"
+            />
+            <rect x="0" y="0" width="100%" height="100%" fill="none" />
+          </a>
+        </svg>
+      </p>
+    </footer>
 
-<script src="js/fade-in.js"></script>
-<script src="js/hamburger.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<!--FADE IN ON SCROLL SCRIPT-->
-<script>
-  AOS.init();
+    <script src="js/fade-in.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--FADE IN ON SCROLL SCRIPT-->
+    <script>
+      AOS.init();
 
-  AOS.init({
+      AOS.init({
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 900, // values from 0 to 3000, with step 50ms
+        easing: "ease-in-out", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 900, // values from 0 to 3000, with step 50ms
-  easing: 'ease-in-out', // default easing for AOS animations
-  once: true, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-  });
-</script>
+    <!--smooth scroll-->
+    <script>
+      $('a[href*="#"]').on("click", function (e) {
+        e.preventDefault();
 
-<!--smooth scroll-->
-<script>
-  $('a[href*="#"]').on('click', function (e) {
-  e.preventDefault()
-
-  $('html, body').animate(
-    {
-      scrollTop: $($(this).attr('href')).offset().top,
-    },
-    400, // scroll speed in ms //
-    'linear'
-  )
-})
-</script>
-
-</body>
+        $("html, body").animate(
+          {
+            scrollTop: $($(this).attr("href")).offset().top,
+          },
+          400, // scroll speed in ms //
+          "linear"
+        );
+      });
+    </script>
+  </body>
 </html>
