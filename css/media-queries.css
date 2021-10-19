@@ -177,6 +177,11 @@
         }
        }
        /* mobile nav fade in animation END*/
+
+       .skills-row {
+         width: 100%;
+         flex-wrap: wrap;
+       }
        
        footer {
            margin-top: 1rem;
