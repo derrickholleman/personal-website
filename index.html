@@ -1,124 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="description" content="Personal Portfolio Website of Web Designer and Developer, Derrick Holleman.">
-  <meta name="author" content="Derrick Holleman"/>
-  <!--meta tags for FB and LinkedIn-->
-  <meta property="og:title" content="Derrick Holleman Web Development Portfolio and Blog">
-  <meta property="og:image" content="https://derrickhollemandev.netlify.app/images/chillin.jpg"/>
-  <meta property="og:description" content="Personal Portfolio Website of Web Designer and Developer, Derrick Holleman.  Here you can find my blog posts about web design topics and my best projects I've worked on!">
-  <meta property="og:type" content="website">
-  <!--meta tags for Twitter-->
-  <meta name="twitter:title" content="Derrick Holleman Web Development Portfolio and Blog"/>
-  <meta name="twitter:description" content="Personal Portfolio Website of Web Designer and Developer, Derrick Holleman.  Here you can find my blog posts about web design topics and my best projects I've worked on!">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://derrickhollemandev.netlify.app/images/chillin.jpg"/>
-  <meta name="twitter:site" content="@derrickholleman">
-  <!--favicon link-->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
-  <!-- For external style sheets -->
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link rel="stylesheet" type="text/css" href="css/media-queries.css">
-  <link rel="stylesheet" type="text/css" href="css/hamburger-animation.css">
-  <!-- fade in on scroll style sheet -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!--jQuery import link-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- For custom fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <title>derrickholleman.dev - Home</title>
-  <style>
-
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0%;
-    padding: 0%;
-  }
-  html {
-    height: 100%;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    /* full screen background works for all sizes of screens */
-    /* background: linear-gradient(to right, 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="description"
+      content="Personal Portfolio Website of Web Designer and Developer, Derrick Holleman."
+    />
+    <meta name="author" content="Derrick Holleman" />
+    <!--meta tags for FB and LinkedIn-->
+    <meta
+      property="og:title"
+      content="Derrick Holleman Web Development Portfolio and Blog"
+    />
+    <meta
+      property="og:image"
+      content="https://derrickhollemandev.netlify.app/images/chillin.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Personal Portfolio Website of Web Designer and Developer, Derrick Holleman.  Here you can find my blog posts about web design topics and my best projects I've worked on!"
+    />
+    <meta property="og:type" content="website" />
+    <!--meta tags for Twitter-->
+    <meta
+      name="twitter:title"
+      content="Derrick Holleman Web Development Portfolio and Blog"
+    />
+    <meta
+      name="twitter:description"
+      content="Personal Portfolio Website of Web Designer and Developer, Derrick Holleman.  Here you can find my blog posts about web design topics and my best projects I've worked on!"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://derrickhollemandev.netlify.app/images/chillin.jpg"
+    />
+    <meta name="twitter:site" content="@derrickholleman" />
+    <!--favicon link-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- For external style sheets -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css" />
+    <link rel="stylesheet" type="text/css" href="css/hamburger-animation.css" />
+    <!-- fade in on scroll style sheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--jQuery import link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- For custom fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>derrickholleman.dev - Home</title>
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      html {
+        height: 100%;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        /* full screen background works for all sizes of screens */
+        /* background: linear-gradient(to right, 
     rgba(23, 22, 22, .96), 
     rgba(23, 22, 22, .96)), url(images/chillin.jpg) no-repeat center center fixed;
     background-size: cover; */
-    /* ------------------- */
-    background-color: rgba(23, 22, 22);
-  }
-  body {
-    width: 1920px;
-    margin: 0 auto;
-    max-width: 100%;
-    min-height: 100%;
-    /* font-family: 'Open Sans', sans-serif; 300 400 600 */
-    font-family: 'Montserrat', sans-serif; /* 300 400 500 700 */
-    overflow-x: hidden;
-    font-size: 16px;
-    line-height: 1.5;
-    position: relative;
-    color: white;
-  }
-  canvas {
-    position: absolute;
-    z-index: 3;
-    overflow-x: hidden !important;
-    overflow-y: hidden;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  ul li::marker {
-    display: none;
-  }
-  ul, li {
-    list-style: none;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-</style>
-</head>
+        /* ------------------- */
+        background-color: rgba(23, 22, 22);
+      }
+      body {
+        width: 1920px;
+        margin: 0 auto;
+        max-width: 100%;
+        min-height: 100%;
+        /* font-family: 'Open Sans', sans-serif; 300 400 600 */
+        font-family: "Montserrat", sans-serif; /* 300 400 500 700 */
+        overflow-x: hidden;
+        font-size: 16px;
+        line-height: 1.5;
+        position: relative;
+        color: white;
+      }
+      canvas {
+        position: absolute;
+        z-index: 3;
+        overflow-x: hidden !important;
+        overflow-y: hidden;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      ul li::marker {
+        display: none;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
 
-<body>
-<!---------------->
-<!--HEADER START-->
-<!---------------->
-<canvas id="nokey" width="800" height="800" aria-hidden="true"></canvas>
-    <div class="page-container" id='top'>
-
+  <body>
+    <!---------------->
+    <!--HEADER START-->
+    <!---------------->
+    <canvas id="nokey" width="800" height="800" aria-hidden="true"></canvas>
+    <div class="page-container" id="top">
       <nav class="nav-ul-top" data-aos="fade-down">
         <ul>
-          <li class="item-to-underline"><a href="projects.html" class="hover-text-from-middle"><span aria-hidden="true">⚙️</span> Projects</a></li>
-          <li class="item-to-underline"><a href="contact.html" class="hover-text-from-middle"><span aria-hidden="true">📮</span> Contact Me</a></li>
+          <li class="item-to-underline">
+            <a href="projects.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">⚙️</span> Projects</a
+            >
+          </li>
+          <li class="item-to-underline">
+            <a href="contact.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">📮</span> Contact Me</a
+            >
+          </li>
           <li class="item-to-underline" role="button" aria-label="Home">
             <div class="svg-container">
-              <svg class="home-top is-active-top" height="50px" viewBox="0 1 511 511.999" width="50px" xmlns="http://www.w3.org/2000/svg">
-              <a href="index.html" cursor="pointer" pointer-events="all">
-              <path fill="#00ffffb3" d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0" fill='#a8a8a8' />
-              <rect x="0" y="0" width="100%" height="100%" fill="none" /> 
-              </a>
-            </svg>
+              <svg
+                class="home-top is-active-top"
+                height="50px"
+                viewBox="0 1 511 511.999"
+                width="50px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <a href="index.html" cursor="pointer" pointer-events="all">
+                  <path
+                    fill="#00ffffb3"
+                    d="m498.699219 222.695312c-.015625-.011718-.027344-.027343-.039063-.039062l-208.855468-208.847656c-8.902344-8.90625-20.738282-13.808594-33.328126-13.808594-12.589843 0-24.425781 4.902344-33.332031 13.808594l-208.746093 208.742187c-.070313.070313-.144532.144531-.210938.214844-18.28125 18.386719-18.25 48.21875.089844 66.558594 8.378906 8.382812 19.441406 13.234375 31.273437 13.746093.484375.046876.96875.070313 1.457031.070313h8.320313v153.695313c0 30.417968 24.75 55.164062 55.167969 55.164062h81.710937c8.285157 0 15-6.71875 15-15v-120.5c0-13.878906 11.292969-25.167969 25.171875-25.167969h48.195313c13.878906 0 25.167969 11.289063 25.167969 25.167969v120.5c0 8.28125 6.714843 15 15 15h81.710937c30.421875 0 55.167969-24.746094 55.167969-55.164062v-153.695313h7.71875c12.585937 0 24.421875-4.902344 33.332031-13.8125 18.359375-18.367187 18.367187-48.253906.027344-66.632813zm-21.242188 45.421876c-3.238281 3.238281-7.542969 5.023437-12.117187 5.023437h-22.71875c-8.285156 0-15 6.714844-15 15v168.695313c0 13.875-11.289063 25.164062-25.167969 25.164062h-66.710937v-105.5c0-30.417969-24.746094-55.167969-55.167969-55.167969h-48.195313c-30.421875 0-55.171875 24.75-55.171875 55.167969v105.5h-66.710937c-13.875 0-25.167969-11.289062-25.167969-25.164062v-168.695313c0-8.285156-6.714844-15-15-15h-22.328125c-.234375-.015625-.464844-.027344-.703125-.03125-4.46875-.078125-8.660156-1.851563-11.800781-4.996094-6.679688-6.679687-6.679688-17.550781 0-24.234375.003906 0 .003906-.003906.007812-.007812l.011719-.011719 208.847656-208.839844c3.234375-3.238281 7.535157-5.019531 12.113281-5.019531 4.574219 0 8.875 1.78125 12.113282 5.019531l208.800781 208.796875c.03125.03125.066406.0625.097656.09375 6.644531 6.691406 6.632813 17.539063-.03125 24.207032zm0 0"
+                    fill="#a8a8a8"
+                  />
+                  <rect x="0" y="0" width="100%" height="100%" fill="none" />
+                </a>
+              </svg>
             </div>
           </li>
-          <li class="item-to-underline"><a href="blog.html" class="hover-text-from-middle"><span aria-hidden="true">🖍️</span> Blog</a></li>
-          <li class="item-to-underline"><a href="photos.html" class="hover-text-from-middle"><span aria-hidden="true">🖼️</span> Tumblr Dump</a></li>
+          <li class="item-to-underline">
+            <a href="blog.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">🖍️</span> Blog</a
+            >
+          </li>
+          <li class="item-to-underline">
+            <a href="photos.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">🖼️</span> Tumblr Dump</a
+            >
+          </li>
         </ul>
       </nav>
-      
+
       <h1 class="hero-title" data-aos="fade-down">
-        <div class='hero-gray'>
-          Hello!  My name is
-        </div>
+        <div class="hero-gray">Hello! My name is</div>
         Derrick Holleman<span class="period">.</span>
       </h1>
       <!--RESUME BUTTON-->
@@ -127,7 +176,12 @@
           <a href="images/Derrick-Holleman-resume.pdf" target="_blank">
             <span class="resume-text">Resume</span>
             <span class="resume-icon">
-              <img src="images/download.svg" alt="download link button" width="512" height="512">
+              <img
+                src="images/download.svg"
+                alt="download link button"
+                width="512"
+                height="512"
+              />
             </span>
           </a>
         </button>
@@ -136,116 +190,158 @@
           <a href="https://github.com/derrickholleman" target="_blank">
             <span class="github-text">Github</span>
             <span class="github-icon">
-              <img src="images/github-gray.svg" alt="link to my git hub" width="291" height="291">
+              <img
+                src="images/github-gray.svg"
+                alt="link to my git hub"
+                width="291"
+                height="291"
+              />
             </span>
           </a>
         </button>
       </div>
       <div class="hero-p-title typewriter">
-        <h2 class="typewriter-text">
-            I'm a Full Stack developer in training.
-        </h2>
-        <div class="mission" role="button" aria-label="click to go to content below">
+        <h2 class="typewriter-text">I'm a Full Stack developer in training.</h2>
+        <div
+          class="mission"
+          role="button"
+          aria-label="click to go to content below"
+        >
           <a href="#bottom">My Mission</a>
-          <svg class="right-arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 448.011 448.011" style="enable-background:new 0 0 448.011 448.011;" xml:space="preserve">
-   <a href="#bottom" cursor="pointer" pointer-events="all">
-        <g>
-          <g>
-            <path d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4
+          <svg
+            class="right-arrow"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 448.011 448.011"
+            style="enable-background: new 0 0 448.011 448.011"
+            xml:space="preserve"
+          >
+            <a href="#bottom" cursor="pointer" pointer-events="all">
+              <g>
+                <g>
+                  <path
+                    d="M438.731,209.463l-416-192c-6.624-3.008-14.528-1.216-19.136,4.48c-4.64,5.696-4.8,13.792-0.384,19.648l136.8,182.4
               l-136.8,182.4c-4.416,5.856-4.256,13.984,0.352,19.648c3.104,3.872,7.744,5.952,12.448,5.952c2.272,0,4.544-0.48,6.688-1.472
-              l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z" fill="#00ffffb3" />
-          </g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <rect x="0" y="0" width="100%" height="100%" fill="none" /></a>
+              l416-192c5.696-2.624,9.312-8.288,9.312-14.528S444.395,212.087,438.731,209.463z"
+                    fill="#00ffffb3"
+                  />
+                </g>
+              </g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <rect x="0" y="0" width="100%" height="100%" fill="none" />
+            </a>
           </svg>
         </div>
       </div>
 
       <!--SKILLS SECTION-->
       <div class="skills-container">
-
         <div class="skills-section">
-          <h3 class="skills-title">
-            I'm comfortable with...
-          </h3>
+          <h3 class="skills-title">I'm comfortable with...</h3>
           <div class="skills-row">
-            <img src="images/html.svg" width="50" height="50" alt="HTML">
-            <img src="images/css-3.svg" width="50" height="50" alt="CSS">
-            <img src="images/git.svg" width="50" height="50" alt="Git">
+            <img src="images/html.svg" width="50" height="50" alt="HTML" />
+            <img src="images/css-3.svg" width="50" height="50" alt="CSS" />
+            <img src="images/git.svg" width="50" height="50" alt="Git" />
+            <img
+              src="images/javascript.svg"
+              width="60"
+              height="60"
+              alt="Javascript"
+            />
           </div>
         </div>
 
         <div class="skills-section">
-          <h3 class="skills-title">
-            I'm currently learning...
-          </h3>
+          <h3 class="skills-title">I'm currently learning...</h3>
           <div class="skills-row">
-            <img src="images/javascript.svg" width="60" height="60" alt="Javascript">
-            <img src="images/react.svg" width="55" height="55" alt="React">
+            <img src="images/react.svg" width="55" height="55" alt="React" />
+            <img src="images/expressjs.svg" width="64" height="64" />
+            <img src="images/postgresql-icon.svg" width="64" height="64" />
           </div>
         </div>
-
       </div>
 
       <div class="hero-p" id="bottom">
         <span class="p-section" data-aos="fade-right" data-aos-duration="700">
-          Over the past year while faced with a loss of work during the COVID-19 pandemic, I’ve discovered an interest in programming and more-so, web design. 
+          Over the past year while faced with a loss of work during the COVID-19
+          pandemic, I’ve discovered an interest in programming and more-so, web
+          design.
         </span>
-        <br/>
-        <br/>
-        <span class="p-section" data-aos="fade-left" data-aos-delay="100" data-aos-duration="700">
-          I’ve come to appreciate responsive, mobile friendly and simple yet satisfying designs. I prefer my experiences on web sites to be focused on the content and less about fancy, but potentially slow-loading animations that make navigating through the site a chore.  I do my best to find a good balance between a site that looks and feels modern, but is also user-friendly.  
+        <br />
+        <br />
+        <span
+          class="p-section"
+          data-aos="fade-left"
+          data-aos-delay="100"
+          data-aos-duration="700"
+        >
+          I’ve come to appreciate responsive, mobile friendly and simple yet
+          satisfying designs. I prefer my experiences on web sites to be focused
+          on the content and less about fancy, but potentially slow-loading
+          animations that make navigating through the site a chore. I do my best
+          to find a good balance between a site that looks and feels modern, but
+          is also user-friendly.
         </span>
-        <br/>
-        <br/>
-        <span class="p-section" data-aos="fade-right" data-aos-delay="150" data-aos-duration="700">
-          Additionally, I've learned that as mobile devices become more popular for web browsing, it's now estimated that 56% of all web traffic comes through mobile users.  With this in mind, I make sure that my sites are equally as usable and accessible on phones and tablets as they are on computers.
+        <br />
+        <br />
+        <span
+          class="p-section"
+          data-aos="fade-right"
+          data-aos-delay="150"
+          data-aos-duration="700"
+        >
+          Additionally, I've learned that as mobile devices become more popular
+          for web browsing, it's now estimated that 56% of all web traffic comes
+          through mobile users. With this in mind, I make sure that my sites are
+          equally as usable and accessible on phones and tablets as they are on
+          computers.
         </span>
-        <br/>
-        <br/>
-        <span class="p-section" data-aos="fade-left" data-aos-delay="175" data-aos-duration="700"> 
-          Take a look around my website and feel free to reach out to me through my contact page or connect with me through my social media links. I hope to make many new connections on my programming journey!
+        <br />
+        <br />
+        <span
+          class="p-section"
+          data-aos="fade-left"
+          data-aos-delay="175"
+          data-aos-duration="700"
+        >
+          Take a look around my website and feel free to reach out to me through
+          my contact page or connect with me through my social media links. I
+          hope to make many new connections on my programming journey!
         </span>
       </div>
       <!-------------->
       <!--MOBILE NAV-->
       <!-------------->
-      <button class="hamburger" data-aos="fade-down" aria-label="open the menu" id="top" aria-expanded="false" onclick="ariaToggle()">
+      <button
+        class="hamburger"
+        data-aos="fade-down"
+        aria-label="open the menu"
+        id="top"
+        aria-expanded="false"
+        onclick="ariaToggle()"
+      >
         <span></span>
         <span></span>
         <span></span>
-      </button> 
+      </button>
       <nav>
         <ul class="mobile-nav">
           <li class="open"><a href="index.html" class="is-open">Home</a></li>
@@ -257,97 +353,183 @@
       </nav>
       <!--MOBILE CAT PAGE LINK-->
       <a href="cat.html" class="cat-link">
-      <img src="images/heart.svg" width="75" height="75" class="mobile-heart" alt="heart icon" aria-label="click on the heart to see a cat picture">
+        <img
+          src="images/heart.svg"
+          width="75"
+          height="75"
+          class="mobile-heart"
+          alt="heart icon"
+          aria-label="click on the heart to see a cat picture"
+        />
       </a>
       <!--------------->
       <!--DESKTOP NAV-->
       <!--------------->
       <nav>
         <ul class="nav-ul">
-          <li class="item-to-underline"><a href="projects.html" class="hover-text-from-middle"><span aria-hidden="true">⚙️</span> Projects</a></li>
-          <li class="item-to-underline"><a href="contact.html" class="hover-text-from-middle"><span aria-hidden="true">📮</span> Contact Me</a></li>
+          <li class="item-to-underline">
+            <a href="projects.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">⚙️</span> Projects</a
+            >
+          </li>
+          <li class="item-to-underline">
+            <a href="contact.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">📮</span> Contact Me</a
+            >
+          </li>
           <li>
             <a href="cat.html">
-              <img src="images/heart.svg" width="75" height="75" class="heart" alt="heart icon" aria-label="click on the heart to see a cat picture">
+              <img
+                src="images/heart.svg"
+                width="75"
+                height="75"
+                class="heart"
+                alt="heart icon"
+                aria-label="click on the heart to see a cat picture"
+              />
             </a>
           </li>
-          <li class="item-to-underline"><a href="blog.html" class="hover-text-from-middle"><span aria-hidden="true">🖍️</span> Blog</a></li>
-          <li class="item-to-underline"><a href="photos.html" class="hover-text-from-middle"><span aria-hidden="true">🖼️</span> Tumblr Dump</a></li>
+          <li class="item-to-underline">
+            <a href="blog.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">🖍️</span> Blog</a
+            >
+          </li>
+          <li class="item-to-underline">
+            <a href="photos.html" class="hover-text-from-middle"
+              ><span aria-hidden="true">🖼️</span> Tumblr Dump</a
+            >
+          </li>
         </ul>
       </nav>
 
       <footer>
         <div class="social-icons">
-          
-          <svg class='icon' enable-background="new 0 0 24 24" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg" aria-label="click to go to my Git Hub" role="button">
-            <a href="https://github.com/derrickholleman" target="_blank" cursor="pointer" pointer-events="all">
-            <path d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" fill="#a8a8a8"/>
-            <rect x="0" y="0" width="100%" height="100%" fill="none" />
+          <svg
+            class="icon"
+            enable-background="new 0 0 24 24"
+            height="30"
+            viewBox="0 0 24 24"
+            width="30"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="click to go to my Git Hub"
+            role="button"
+          >
+            <a
+              href="https://github.com/derrickholleman"
+              target="_blank"
+              cursor="pointer"
+              pointer-events="all"
+            >
+              <path
+                d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                fill="#a8a8a8"
+              />
+              <rect x="0" y="0" width="100%" height="100%" fill="none" />
             </a>
           </svg>
 
-          <svg class='icon' height="30px" viewBox="0 0 512 512" width="30px" xmlns="http://www.w3.org/2000/svg" aria-label="click to go to my LinkedIn" role="button">
-            <a href="https://www.linkedin.com/in/derrick-holleman-14327713b/" target="_blank" cursor="pointer" pointer-events="all">
-            <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0" fill="#a8a8a8" />
-            <rect x="0" y="0" width="100%" height="100%" fill="none" />
+          <svg
+            class="icon"
+            height="30px"
+            viewBox="0 0 512 512"
+            width="30px"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="click to go to my LinkedIn"
+            role="button"
+          >
+            <a
+              href="https://www.linkedin.com/in/derrick-holleman-14327713b/"
+              target="_blank"
+              cursor="pointer"
+              pointer-events="all"
+            >
+              <path
+                d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"
+                fill="#a8a8a8"
+              />
+              <rect x="0" y="0" width="100%" height="100%" fill="none" />
             </a>
           </svg>
 
-          <svg class='icon' height="30px" viewBox="0 0 512 512" width="30px" xmlns="http://www.w3.org/2000/svg" aria-label="click to go to my Twitter" role="button">
-            <a href="https://twitter.com/derrickholleman" target="_blank" cursor="pointer" pointer-events="all">
-            <path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0" fill="#a8a8a8" />
-            <rect x="0" y="0" width="100%" height="100%" fill="none" />
+          <svg
+            class="icon"
+            height="30px"
+            viewBox="0 0 512 512"
+            width="30px"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-label="click to go to my Twitter"
+            role="button"
+          >
+            <a
+              href="https://twitter.com/derrickholleman"
+              target="_blank"
+              cursor="pointer"
+              pointer-events="all"
+            >
+              <path
+                d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0"
+                fill="#a8a8a8"
+              />
+              <rect x="0" y="0" width="100%" height="100%" fill="none" />
             </a>
           </svg>
         </div>
         <p class="copyright">
-          &copy 2021 Derrick Holleman.  All Rights Reserved.
+          &copy 2021 Derrick Holleman. All Rights Reserved.
         </p>
       </footer>
       <div class="back-to-top" data-aos="fade-in">
-        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" aria-label="go back to top of the page" role="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="42"
+          height="42"
+          viewBox="0 0 24 24"
+          aria-label="go back to top of the page"
+          role="button"
+        >
           <a href="#top" cursor="pointer" pointer-events="all">
-          <path d="M16 8v-4l8 8-8 8v-4h-5v-8h5zm-7 0h-2v8h2v-8zm-4.014 0h-1.986v8h1.986v-8zm-3.986 0h-1v8h1v-8z" fill="#00ffffb3" />
-          <rect x="0" y="0" width="100%" height="100%" fill="none" />
+            <path
+              d="M16 8v-4l8 8-8 8v-4h-5v-8h5zm-7 0h-2v8h2v-8zm-4.014 0h-1.986v8h1.986v-8zm-3.986 0h-1v8h1v-8z"
+              fill="#00ffffb3"
+            />
+            <rect x="0" y="0" width="100%" height="100%" fill="none" />
           </a>
         </svg>
       </div>
-
     </div>
- <!-- For JS Scripts -->
- <script src="js/hamburger.js"></script>
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- <script src="js/cool-balls.js"></script>
+    <!-- For JS Scripts -->
+    <script src="js/hamburger.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/cool-balls.js"></script>
 
- <!--FADE IN ON SCROLL SCRIPT-->
-  <script>
-    AOS.init();
+    <!--FADE IN ON SCROLL SCRIPT-->
+    <script>
+      AOS.init();
 
-    AOS.init({
+      AOS.init({
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: "ease-in-out-cubic", // default easing for AOS animations
+        once: true, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+    <!--smooth scroll-->
+    <script>
+      $('a[href*="#"]').on("click", function (e) {
+        e.preventDefault();
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 1000, // values from 0 to 3000, with step 50ms
-  easing: 'ease-in-out-cubic', // default easing for AOS animations
-  once: true, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-  });
-  </script>
-  <!--smooth scroll-->
-  <script>
-    $('a[href*="#"]').on('click', function (e) {
-    e.preventDefault()
-  
-    $('html, body').animate(
-      {
-        scrollTop: $($(this).attr('href')).offset().top,
-      },
-      400, // scroll speed in ms //
-      'linear'
-    )
-  })
-  </script>
-</body>
+        $("html, body").animate(
+          {
+            scrollTop: $($(this).attr("href")).offset().top,
+          },
+          400, // scroll speed in ms //
+          "linear"
+        );
+      });
+    </script>
+  </body>
 </html>
