@@ -75,16 +75,6 @@
     }
   }
 
-  @keyframes FadeIn {
-      0% {
-          opacity: 0;
-          transform: translateX(0rem);
-      }
-      100% {
-          opacity: 1;
-          transform: translateX(-1rem);
-      }
-  }
   @keyframes MoveLeft {
     0% {
         transform: translateX(0rem);
@@ -102,7 +92,7 @@
     left: -2rem;
     width: 37px;
     height: 22px;
-    animation: FadeIn .5s ease-in-out, MoveLeft 1s ease-in-out infinite;
+    animation: MoveLeft 1s ease-in-out infinite;
   }
 
   header {
